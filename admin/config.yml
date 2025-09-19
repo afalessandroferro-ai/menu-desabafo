@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  base_url: https://desabafo25.netlify.app/
 
 publish_mode: editorial_workflow
 
