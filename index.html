@@ -413,8 +413,8 @@
     </style>
 </head>
 <body>
-    <button class="admin-login" onclick="showLogin()">🔐 Admin</button>
-    <button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>
+    <!--<button class="admin-login" onclick="showLogin()">🔐 Admin</button>-->
+    <!--<button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>-->
     
     <div class="login-modal" id="loginModal">
         <div class="login-box">
@@ -484,7 +484,7 @@
     let isAdminLoggedIn = false;
     const ADMIN_PASSWORD = "azzaBAFO2025!";
     let menuData = {};
-
+<!--
     function showLogin() {
         document.getElementById('loginModal').style.display = 'flex';
         document.getElementById('adminPassword').focus();
@@ -518,7 +518,7 @@
         document.querySelector('.admin-toggle').style.display = 'none';
         document.getElementById('adminPanel').style.display = 'none';
     }
-
+-->
     // Questa nuova funzione carica i dati del menu dal file JSON
     function loadMenu() {
         // Usa `fetch` per leggere il contenuto del file `menu-data.json`
@@ -620,6 +620,7 @@
 </body>
 
 </html>
+
 
 
 
