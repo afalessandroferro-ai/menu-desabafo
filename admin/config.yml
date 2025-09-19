@@ -14,31 +14,45 @@ collections:
     files:
       - file: "menu-data.json"
         label: "Dati del Menu"
-        name: "menu_data"
+        name: "menu_data_file" # Un nome interno univoco
         fields:
-          - label: "Categories"
-            name: "categories"
-            widget: "list"
+          - name: "menu_data"
+            label: "Dati del menu"
+            widget: "object"
             fields:
-              - label: "Category Name"
-                name: "name"
-                widget: "string"
-              - label: "Category Icon"
-                name: "icon"
-                widget: "string"
-              - label: "Items"
-                name: "items"
+              - name: "categories"
+                label: "Categorie"
                 widget: "list"
+                allow_add: true
+                collapsed: false
+                summary: "{{name}}"
                 fields:
-                  - label: "Name"
-                    name: "name"
+                  - name: "name"
+                    label: "Nome Categoria"
                     widget: "string"
-                  - label: "Description"
-                    name: "description"
-                    widget: "text"
-                  - label: "Price"
-                    name: "price"
+                    hint: "Es. 'Cocktail Classici'"
+                  - name: "icon"
+                    label: "Icona (Emoji)"
                     widget: "string"
-                  - label: "Available"
-                    name: "available"
-                    widget: "boolean"
+                    required: false
+                    hint: "Es. '🍸', '🍺', '☕'"
+                  - name: "items"
+                    label: "Articoli"
+                    widget: "list"
+                    collapsed: true
+                    summary: "{{name}}"
+                    fields:
+                      - name: "name"
+                        label: "Nome Articolo"
+                        widget: "string"
+                      - name: "description"
+                        label: "Descrizione"
+                        widget: "text"
+                        required: false
+                      - name: "price"
+                        label: "Prezzo"
+                        widget: "string"
+                      - name: "available"
+                        label: "Disponibile"
+                        widget: "boolean"
+                        default: true
