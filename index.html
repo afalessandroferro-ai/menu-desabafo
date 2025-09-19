@@ -84,6 +84,79 @@
             cursor: pointer;
             font-weight: bold;
             z-index: 1000;
+            display: none;
+        }
+        
+        .admin-login {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-brown);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        
+        .login-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+        
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        
+        .login-box h3 {
+            color: var(--primary-brown);
+            margin-bottom: 20px;
+        }
+        
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid var(--cream);
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .login-btn {
+            background: var(--primary-brown);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 5px;
+        }
+        
+        .cancel-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 5px;
         }
         
         .admin-panel {
@@ -340,7 +413,20 @@
     </style>
 </head>
 <body>
+    <button class="admin-login" onclick="showLogin()">🔐 Admin</button>
     <button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>
+    
+    <div class="login-modal" id="loginModal">
+        <div class="login-box">
+            <h3>🔐 Accesso Admin</h3>
+            <p>Inserisci la password per gestire il menu</p>
+            <input type="password" id="adminPassword" placeholder="Password Admin" onkeypress="if(event.key==='Enter') checkPassword()">
+            <br>
+            <button class="login-btn" onclick="checkPassword()">Accedi</button>
+            <button class="cancel-btn" onclick="closeLogin()">Annulla</button>
+            <div id="loginError" style="color: red; margin-top: 10px; display: none;">Password non corretta!</div>
+        </div>
+    </div>
     
     <div class="admin-panel" id="adminPanel">
         <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
@@ -354,6 +440,7 @@
             <div class="import-export">
                 <button class="export-btn" onclick="exportMenu()">📤 Esporta Menu</button>
                 <button class="import-btn" onclick="importMenu()">📥 Importa Menu</button>
+                <button class="cancel-btn" onclick="adminLogout()">🚪 Logout</button>
                 <input type="file" id="importFile" accept=".json" style="display: none;" onchange="handleImport(event)">
             </div>
             
@@ -378,47 +465,7 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Background arancione -->
-                    <rect width="400" height="400" fill="#FF8C42"/>
-                    
-                    <!-- Tronco del baobab -->
-                    <rect x="180" y="280" width="40" height="80" fill="#8B4513" rx="8"/>
-                    <rect x="175" y="260" width="50" height="30" fill="#A0522D" rx="10"/>
-                    
-                    <!-- Chioma principale del baobab -->
-                    <ellipse cx="200" cy="200" rx="120" ry="90" fill="#2F4F2F"/>
-                    
-                    <!-- Strati della chioma per profondità -->
-                    <ellipse cx="200" cy="195" rx="110" ry="80" fill="#3A5F3A"/>
-                    <ellipse cx="200" cy="190" rx="95" ry="70" fill="#4A6F4A"/>
-                    <ellipse cx="200" cy="185" rx="80" ry="60" fill="#5A7F5A"/>
-                    
-                    <!-- Rami che si estendono -->
-                    <path d="M200 200 Q150 170 110 150 Q95 145 100 140 Q115 145 160 175" fill="none" stroke="#654321" stroke-width="4"/>
-                    <path d="M200 200 Q250 170 290 150 Q305 145 300 140 Q285 145 240 175" fill="none" stroke="#654321" stroke-width="4"/>
-                    <path d="M200 200 Q185 140 180 110 Q178 95 185 98 Q192 108 195 160" fill="none" stroke="#654321" stroke-width="4"/>
-                    <path d="M200 200 Q215 140 220 110 Q222 95 215 98 Q208 108 205 160" fill="none" stroke="#654321" stroke-width="4"/>
-                    
-                    <!-- Piccole foglie e dettagli -->
-                    <circle cx="110" cy="155" r="12" fill="#228B22"/>
-                    <circle cx="290" cy="155" r="12" fill="#228B22"/>
-                    <circle cx="180" cy="115" r="8" fill="#228B22"/>
-                    <circle cx="220" cy="115" r="8" fill="#228B22"/>
-                    <circle cx="130" cy="180" r="6" fill="#32CD32"/>
-                    <circle cx="270" cy="180" r="6" fill="#32CD32"/>
-                    <circle cx="200" cy="140" r="5" fill="#32CD32"/>
-                    
-                    <!-- Texture sulla chioma -->
-                    <circle cx="160" cy="170" r="4" fill="#228B22" opacity="0.7"/>
-                    <circle cx="240" cy="170" r="4" fill="#228B22" opacity="0.7"/>
-                    <circle cx="180" cy="210" r="3" fill="#32CD32" opacity="0.8"/>
-                    <circle cx="220" cy="210" r="3" fill="#32CD32" opacity="0.8"/>
-                    <circle cx="200" cy="230" r="3" fill="#228B22" opacity="0.6"/>
-                    
-                    <!-- Scritta DESABAFO stilizzata -->
-                    <text x="200" y="330" font-family="serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#2F1B14">DESABAFO</text>
-                </svg>
+                <img src="data:image/png;base64,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" alt="Desabafo Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 15px;">
             </div>
             <h1>DESABAFO</h1>
             <p>Cocktail Bar</p>
@@ -435,6 +482,44 @@
     </div>
 
     <script>
+        // Admin authentication
+        let isAdminLoggedIn = false;
+        const ADMIN_PASSWORD = "desabafo2024"; // CAMBIA QUESTA PASSWORD!
+        
+        function showLogin() {
+            document.getElementById('loginModal').style.display = 'flex';
+            document.getElementById('adminPassword').focus();
+        }
+        
+        function closeLogin() {
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').style.display = 'none';
+        }
+        
+        function checkPassword() {
+            const password = document.getElementById('adminPassword').value;
+            
+            if (password === ADMIN_PASSWORD) {
+                isAdminLoggedIn = true;
+                closeLogin();
+                document.querySelector('.admin-login').style.display = 'none';
+                document.querySelector('.admin-toggle').style.display = 'block';
+                toggleAdmin();
+            } else {
+                document.getElementById('loginError').style.display = 'block';
+                document.getElementById('adminPassword').value = '';
+                document.getElementById('adminPassword').focus();
+            }
+        }
+        
+        function adminLogout() {
+            isAdminLoggedIn = false;
+            document.querySelector('.admin-login').style.display = 'block';
+            document.querySelector('.admin-toggle').style.display = 'none';
+            document.getElementById('adminPanel').style.display = 'none';
+        }
+
         // Menu data
         let menuData = {
             "cocktails": {
