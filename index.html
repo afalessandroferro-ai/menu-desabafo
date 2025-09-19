@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desabafo - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-brown: #8B4513;
+            --light-brown: #D2691E;
+            --dark-brown: #654321;
+            --cream: #F5DEB3;
+            --text-dark: #2F1B14;
+            --accent-gold: #DAA520;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: var(--primary-brown);
+            border-radius: 20px;
+            color: var(--cream);
+            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.3);
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: var(--cream);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .logo svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .admin-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--accent-gold);
+            color: var(--text-dark);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        
+        .admin-panel {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .admin-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .admin-tab {
+            padding: 10px 15px;
+            background: var(--cream);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .admin-tab.active {
+            background: var(--primary-brown);
+            color: white;
+        }
+        
+        .admin-content {
+            display: none;
+        }
+        
+        .admin-content.active {
+            display: block;
+        }
+        
+        .category-editor {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid var(--cream);
+            border-radius: 10px;
+        }
+        
+        .category-editor h4 {
+            color: var(--primary-brown);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .item-editor {
+            display: grid;
+            grid-template-columns: 2fr 3fr 1fr 80px;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            background: var(--cream);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .item-editor input, .item-editor textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        .item-editor textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        
+        .availability-toggle {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .delete-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .add-item-btn {
+            background: var(--accent-gold);
+            color: var(--text-dark);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .save-all-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .import-export {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .import-export button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .export-btn {
+            background: var(--light-brown);
+            color: white;
+        }
+        
+        .import-btn {
+            background: var(--accent-gold);
+            color: var(--text-dark);
+        }
+        
+        .categories {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+            border-left: 5px solid var(--primary-brown);
+        }
+        
+        .category h2 {
+            color: var(--primary-brown);
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .category-icon {
+            font-size: 1.2em;
+        }
+        
+        .items {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .item {
+            padding: 15px;
+            border-radius: 10px;
+            background: var(--cream);
+            border-left: 3px solid var(--light-brown);
+            transition: all 0.3s ease;
+        }
+        
+        .item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .item-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--dark-brown);
+            flex: 1;
+        }
+        
+        .item-price {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--primary-brown);
+            margin-left: auto;
+        }
+        
+        .item-description {
+            color: var(--text-dark);
+            line-height: 1.4;
+            margin-top: 5px;
+        }
+        
+        .qr-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        
+        .qr-code {
+            margin: 20px 0;
+        }
+        
+        @media print {
+            .admin-toggle, .qr-section, .admin-panel {
+                display: none !important;
+            }
+            
+            body {
+                background: white;
+            }
+            
+            .category {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>
+    
+    <div class="admin-panel" id="adminPanel">
+        <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
+        
+        <div class="admin-tabs">
+            <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
+            <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
+        </div>
+        
+        <div class="admin-content active" id="editorContent">
+            <div class="import-export">
+                <button class="export-btn" onclick="exportMenu()">📤 Esporta Menu</button>
+                <button class="import-btn" onclick="importMenu()">📥 Importa Menu</button>
+                <input type="file" id="importFile" accept=".json" style="display: none;" onchange="handleImport(event)">
+            </div>
+            
+            <div id="menuEditor"></div>
+            
+            <button class="save-all-btn" onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
+        </div>
+        
+        <div class="admin-content" id="toolsContent">
+            <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
+            <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
+            <button onclick="window.print()">🖨️ Stampa Menu</button>
+            <button onclick="resetMenu()">🔄 Ripristina Menu Originale</button>
+            
+            <div style="margin-top: 20px;">
+                <h4>📊 Statistiche Menu</h4>
+                <p id="menuStats"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background arancione -->
+                    <rect width="400" height="400" fill="#FF8C42"/>
+                    
+                    <!-- Tronco del baobab -->
+                    <rect x="180" y="280" width="40" height="80" fill="#8B4513" rx="8"/>
+                    <rect x="175" y="260" width="50" height="30" fill="#A0522D" rx="10"/>
+                    
+                    <!-- Chioma principale del baobab -->
+                    <ellipse cx="200" cy="200" rx="120" ry="90" fill="#2F4F2F"/>
+                    
+                    <!-- Strati della chioma per profondità -->
+                    <ellipse cx="200" cy="195" rx="110" ry="80" fill="#3A5F3A"/>
+                    <ellipse cx="200" cy="190" rx="95" ry="70" fill="#4A6F4A"/>
+                    <ellipse cx="200" cy="185" rx="80" ry="60" fill="#5A7F5A"/>
+                    
+                    <!-- Rami che si estendono -->
+                    <path d="M200 200 Q150 170 110 150 Q95 145 100 140 Q115 145 160 175" fill="none" stroke="#654321" stroke-width="4"/>
+                    <path d="M200 200 Q250 170 290 150 Q305 145 300 140 Q285 145 240 175" fill="none" stroke="#654321" stroke-width="4"/>
+                    <path d="M200 200 Q185 140 180 110 Q178 95 185 98 Q192 108 195 160" fill="none" stroke="#654321" stroke-width="4"/>
+                    <path d="M200 200 Q215 140 220 110 Q222 95 215 98 Q208 108 205 160" fill="none" stroke="#654321" stroke-width="4"/>
+                    
+                    <!-- Piccole foglie e dettagli -->
+                    <circle cx="110" cy="155" r="12" fill="#228B22"/>
+                    <circle cx="290" cy="155" r="12" fill="#228B22"/>
+                    <circle cx="180" cy="115" r="8" fill="#228B22"/>
+                    <circle cx="220" cy="115" r="8" fill="#228B22"/>
+                    <circle cx="130" cy="180" r="6" fill="#32CD32"/>
+                    <circle cx="270" cy="180" r="6" fill="#32CD32"/>
+                    <circle cx="200" cy="140" r="5" fill="#32CD32"/>
+                    
+                    <!-- Texture sulla chioma -->
+                    <circle cx="160" cy="170" r="4" fill="#228B22" opacity="0.7"/>
+                    <circle cx="240" cy="170" r="4" fill="#228B22" opacity="0.7"/>
+                    <circle cx="180" cy="210" r="3" fill="#32CD32" opacity="0.8"/>
+                    <circle cx="220" cy="210" r="3" fill="#32CD32" opacity="0.8"/>
+                    <circle cx="200" cy="230" r="3" fill="#228B22" opacity="0.6"/>
+                    
+                    <!-- Scritta DESABAFO stilizzata -->
+                    <text x="200" y="330" font-family="serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#2F1B14">DESABAFO</text>
+                </svg>
+            </div>
+            <h1>DESABAFO</h1>
+            <p>Cocktail Bar</p>
+        </div>
+        
+        <div class="qr-section">
+            <h3>Scansiona per il menu digitale</h3>
+            <div class="qr-code" id="qrCode"></div>
+        </div>
+        
+        <div class="categories" id="menuContent">
+            <!-- Menu content will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Menu data
+        let menuData = {
+            "cocktails": {
+                "name": "Cocktails/Mocktails",
+                "icon": "🍹",
+                "items": [
+                    {
+                        "name": "Spritz",
+                        "description": "Select-Campari-Aperol",
+                        "price": "€ 8.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Long Drinks",
+                        "description": "Base alcolica + bibita",
+                        "price": "€ 8.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Pestati, shakerati e classici",
+                        "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
+                        "price": "€ 10.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Patron de Oaxaca",
+                        "description": "Mezcal, ancho reyes, zenzero, limone, sale",
+                        "price": "€ 12.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Lady Purple Zoe",
+                        "description": "Vodka, Cointreau, violetta, limone, soda",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bloody Mario Rossi",
+                        "description": "Gin, succo di pomodoro, worchester, tabasco, limone, sale, pepe, succo di sedano",
+                        "price": "€ 13.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Sir Leaf",
+                        "description": "Gin pompelmo, sciroppo basilico, vermouth extra dry, limone",
+                        "price": "€ 12.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Mamacita",
+                        "description": "Tequila, vermouth rosso, frutto della passione, succo arancia, peperoncino piri piri, worchester",
+                        "price": "€ 12.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Zombie",
+                        "description": "Rum chiaro, rum scuro, cointreau, succo pompelmo, angostura, falernum, limone, frutti rossi",
+                        "price": "€ 13.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Kyoto Mon Amour",
+                        "description": "Vodka, limone, frutti rossi",
+                        "price": "€ 12.00",
+                        "available": true
+                    }
+                ]
+            },
+            "gin": {
+                "name": "Gin",
+                "icon": "🌿",
+                "items": [
+                    {
+                        "name": "East Hyogo Dry (Giappone)",
+                        "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Apenera (Italia)",
+                        "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
+                        "price": "€ 12.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Argentario (Italia)",
+                        "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
+                        "price": "€ 14.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bayab Dry (Sudafrica)",
+                        "description": "Il Bayab Classic Dry infonde il baobab del Ghana con bacche di ginepro, coriandolo, rosmarino, cannella e sale grosso per un'audace esplosione di freschi agrumi",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bayab Orange (Sudafrica)",
+                        "description": "Distillato con frutti di Marula, frutti di baobab, cannella, scorza d'arancia bruciata, coriandolo e sale marino",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Big Gino Dry (Italia)",
+                        "description": "Dry gin artigianale 100% italiano. Base alcolica di grano con ginepro, pomelo e bacche di pimento",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Big Gino Exotic (Italia)",
+                        "description": "Gin artigianale dal profilo esotico e tropicale. Sorso morbido con aromi di frutta tropicale e sentori afrodisiaci",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Cilento Wild (Italia)",
+                        "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Duroc Smoked Dry (Italia)",
+                        "description": "Gin affumicato artigianale italiano",
+                        "price": "€ 12.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Genever Otemba (Olanda)",
+                        "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
+                        "price": "€ 15.00",
+                        "available": true
+                    }
+                ]
+            },
+            "vini_calice": {
+                "name": "Vinello al Calice",
+                "icon": "🍷",
+                "items": [
+                    {
+                        "name": "Rosso - Dolcetto Govone (Piemonte)",
+                        "description": "",
+                        "price": "€ 5.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Rosso - Langhe Rosso Govone (Piemonte)",
+                        "description": "",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
+                        "description": "Annata: 2023, Vitigno: Pinot nero",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Rosso - Ribera del Duero Pradorey",
+                        "description": "Annata: 2023, Vitigno: Tempranillo",
+                        "price": "€ 7.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bianco - Langhe Bianco Govone (Piemonte)",
+                        "description": "",
+                        "price": "€ 5.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
+                        "description": "Annata: 2023, Vitigno: Traminer",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+                        "description": "Annata: 2023, Vitigni: Grenache, petit verdot, carignan",
+                        "price": "€ 7.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bolla - Blanquette les 4 Vents (Francia)",
+                        "description": "Brut nature, Vitigno: Mauzac",
+                        "price": "€ 8.00",
+                        "available": true
+                    }
+                ]
+            },
+            "vini_bottiglia": {
+                "name": "Vinello in Bottiglia",
+                "icon": "🍾",
+                "items": [
+                    {
+                        "name": "Rosso - Pinot Nero St Pauls (Alto Adige)",
+                        "description": "Pinot Nero 2023",
+                        "price": "€ 28.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Rosso - Ribera Del Duero Pradorey (Spagna)",
+                        "description": "Tempranillo 2023",
+                        "price": "€ 27.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Rosso - Château de Rieux Minervois (Francia)",
+                        "description": "Syrah, Grenache, Carignan",
+                        "price": "€ 32.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
+                        "description": "Traminer 2023",
+                        "price": "€ 27.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bianco - Sable Blanc Mas du Petit Pin (Francia)",
+                        "description": "Petit Verdot, Carignan, Grenache Blanc",
+                        "price": "€ 25.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Bianco - Viognier Domaine de Luc",
+                        "description": "Famille Fabre Francia 2023, gradazione 13.5%",
+                        "price": "€ 28.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Rosè - Grande Courtade (Francia)",
+                        "description": "Merlot, Sauvignon, Pinot Noir 2024",
+                        "price": "€ 30.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Orange - Louis Andrieu",
+                        "description": "Sauvignon Blanc 2022",
+                        "price": "€ 34.00",
+                        "available": true
+                    }
+                ]
+            },
+            "birre": {
+                "name": "Birrettas",
+                "icon": "🍺",
+                "items": [
+                    {
+                        "name": "Bionda - Pian della Mussa",
+                        "description": "",
+                        "price": "€ 5.00",
+                        "available": true
+                    },
+                    {
+                        "name": "IPA - Pian della Mussa",
+                        "description": "",
+                        "price": "€ 5.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Forst 1857 33 cl",
+                        "description": "",
+                        "price": "€ 4.00",
+                        "available": true
+                    }
+                ]
+            },
+            "amari": {
+                "name": "Amari & Vermouth",
+                "icon": "🥃",
+                "items": [
+                    {
+                        "name": "Pastis Richard",
+                        "description": "",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Pastis Pernod",
+                        "description": "",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Vermouth Rosso - Carlo Alberto",
+                        "description": "27 botaniche coltivate con metodi biologici",
+                        "price": "€ 5.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Vermouth Rosso - Dolin",
+                        "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
+                        "price": "€ 5.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Vermouth Rosso - Lillet Rouge",
+                        "description": "Base di vino rosso di Bordeaux con infusione di erbe, spezie e radici",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Vermouth Rosso - Farmacopea Popolare",
+                        "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
+                        "price": "€ 8.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Amaretto di Torino",
+                        "description": "",
+                        "price": "€ 6.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Fernet Branca",
+                        "description": "",
+                        "price": "€ 6.00",
+                        "available": true
+                    }
+                ]
+            },
+            "whisky_rum": {
+                "name": "Whisky & Rum",
+                "icon": "🥃",
+                "items": [
+                    {
+                        "name": "Talisker Sky 10 anni",
+                        "description": "Single malt",
+                        "price": "€ 12.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Black Label - Johnny Walker",
+                        "description": "12 anni Blended",
+                        "price": "€ 10.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Mars Kasei",
+                        "description": "Blended Giappone",
+                        "price": "€ 14.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Black Tears Spiced Rum",
+                        "description": "",
+                        "price": "€ 10.00",
+                        "available": true
+                    },
+                    {
+                        "name": "La Gloriette Vanille Rhum",
+                        "description": "Caribbean",
+                        "price": "€ 11.00",
+                        "available": true
+                    },
+                    {
+                        "name": "Havana Club 3 Años Añejo",
+                        "description": "",
+                        "price": "€ 9.00",
+                        "available": true
+                    }
+                ]
+            }
+        };
+
+        function loadMenu() {
+            const menuContent = document.getElementById('menuContent');
+            menuContent.innerHTML = '';
+            
+            Object.keys(menuData).forEach(categoryKey => {
+                const category = menuData[categoryKey];
+                
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'category';
+                
+                const categoryHeader = document.createElement('h2');
+                categoryHeader.innerHTML = `<span class="category-icon">${category.icon}</span> ${category.name}`;
+                categoryDiv.appendChild(categoryHeader);
+                
+                const itemsDiv = document.createElement('div');
+                itemsDiv.className = 'items';
+                
+                category.items.forEach(item => {
+                    if (item.available) {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'item';
+                        
+                        const itemHeader = document.createElement('div');
+                        itemHeader.className = 'item-header';
+                        
+                        const itemName = document.createElement('div');
+                        itemName.className = 'item-name';
+                        itemName.textContent = item.name;
+                        
+                        const itemPrice = document.createElement('div');
+                        itemPrice.className = 'item-price';
+                        itemPrice.textContent = item.price;
+                        
+                        itemHeader.appendChild(itemName);
+                        itemHeader.appendChild(itemPrice);
+                        itemDiv.appendChild(itemHeader);
+                        
+                        if (item.description) {
+                            const itemDescription = document.createElement('div');
+                            itemDescription.className = 'item-description';
+                            itemDescription.textContent = item.description;
+                            itemDiv.appendChild(itemDescription);
+                        }
+                        
+                        itemsDiv.appendChild(itemDiv);
+                    }
+                });
+                
+                categoryDiv.appendChild(itemsDiv);
+                menuContent.appendChild(categoryDiv);
+            });
+        }
+
+        function showAdminTab(tabName) {
+            // Hide all tabs and contents
+            document.querySelectorAll('.admin-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.admin-content').forEach(content => content.classList.remove('active'));
+            
+            // Show selected tab and content
+            event.target.classList.add('active');
+            document.getElementById(tabName + 'Content').classList.add('active');
+            
+            if (tabName === 'editor') {
+                loadMenuEditor();
+            } else if (tabName === 'tools') {
+                updateMenuStats();
+            }
+        }
+
+        function loadMenuEditor() {
+            const editorContainer = document.getElementById('menuEditor');
+            editorContainer.innerHTML = '';
+            
+            Object.keys(menuData).forEach(categoryKey => {
+                const category = menuData[categoryKey];
+                
+                const categoryEditor = document.createElement('div');
+                categoryEditor.className = 'category-editor';
+                
+                const categoryHeader = document.createElement('h4');
+                categoryHeader.innerHTML = `${category.icon} ${category.name}`;
+                categoryEditor.appendChild(categoryHeader);
+                
+                category.items.forEach((item, index) => {
+                    const itemEditor = document.createElement('div');
+                    itemEditor.className = 'item-editor';
+                    
+                    itemEditor.innerHTML = `
+                        <input type="text" value="${item.name}" onchange="updateItem('${categoryKey}', ${index}, 'name', this.value)" placeholder="Nome prodotto">
+                        <textarea onchange="updateItem('${categoryKey}', ${index}, 'description', this.value)" placeholder="Descrizione">${item.description}</textarea>
+                        <input type="text" value="${item.price}" onchange="updateItem('${categoryKey}', ${index}, 'price', this.value)" placeholder="€ 0.00">
+                        <div class="availability-toggle">
+                            <input type="checkbox" ${item.available ? 'checked' : ''} onchange="updateItem('${categoryKey}', ${index}, 'available', this.checked)">
+                            <label>Disponibile</label>
+                        </div>
+                        <button class="delete-btn" onclick="deleteItem('${categoryKey}', ${index})">🗑️</button>
+                    `;
+                    
+                    categoryEditor.appendChild(itemEditor);
+                });
+                
+                const addButton = document.createElement('button');
+                addButton.className = 'add-item-btn';
+                addButton.textContent = '+ Aggiungi Prodotto';
+                addButton.onclick = () => addItem(categoryKey);
+                categoryEditor.appendChild(addButton);
+                
+                editorContainer.appendChild(categoryEditor);
+            });
+        }
+
+        function updateItem(categoryKey, index, field, value) {
+            menuData[categoryKey].items[index][field] = value;
+        }
+
+        function deleteItem(categoryKey, index) {
+            if (confirm('Sei sicuro di voler eliminare questo prodotto?')) {
+                menuData[categoryKey].items.splice(index, 1);
+                loadMenuEditor();
+            }
+        }
+
+        function addItem(categoryKey) {
+            const newItem = {
+                name: 'Nuovo Prodotto',
+                description: '',
+                price: '€ 0.00',
+                available: true
+            };
+            
+            menuData[categoryKey].items.push(newItem);
+            loadMenuEditor();
+        }
+
+        function saveAllChanges() {
+            // Save to localStorage
+            localStorage.setItem('desabafoMenu', JSON.stringify(menuData));
+            
+            // Reload the menu display
+            loadMenu();
+            
+            // Update QR code
+            generateQR();
+            
+            alert('✅ Menu salvato con successo!');
+        }
+
+        function exportMenu() {
+            const dataStr = JSON.stringify(menuData, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+            
+            const exportFileDefaultName = 'menu-desabafo.json';
+            
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', exportFileDefaultName);
+            linkElement.click();
+        }
+
+        function importMenu() {
+            document.getElementById('importFile').click();
+        }
+
+        function handleImport(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        const importedData = JSON.parse(e.target.result);
+                        menuData = importedData;
+                        localStorage.setItem('desabafoMenu', JSON.stringify(menuData));
+                        loadMenu();
+                        loadMenuEditor();
+                        alert('✅ Menu importato con successo!');
+                    } catch (error) {
+                        alert('❌ Errore nell\'importazione del file. Controlla che sia un file JSON valido.');
+                    }
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function resetMenu() {
+            if (confirm('Sei sicuro di voler ripristinare il menu originale? Tutte le modifiche andranno perse!')) {
+                localStorage.removeItem('desabafoMenu');
+                location.reload();
+            }
+        }
+
+        function updateMenuStats() {
+            let totalItems = 0;
+            let availableItems = 0;
+            
+            Object.keys(menuData).forEach(categoryKey => {
+                const category = menuData[categoryKey];
+                totalItems += category.items.length;
+                availableItems += category.items.filter(item => item.available).length;
+            });
+            
+            document.getElementById('menuStats').innerHTML = `
+                <strong>Prodotti totali:</strong> ${totalItems}<br>
+                <strong>Prodotti disponibili:</strong> ${availableItems}<br>
+                <strong>Prodotti non disponibili:</strong> ${totalItems - availableItems}<br>
+                <strong>Categorie:</strong> ${Object.keys(menuData).length}
+            `;
+        }
+
+        function toggleAdmin() {
+            const panel = document.getElementById('adminPanel');
+            panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+            
+            if (panel.style.display === 'block') {
+                document.getElementById('currentUrl').textContent = window.location.href;
+                loadMenuEditor();
+                updateMenuStats();
+            }
+        }
+
+        function generateQR() {
+            const url = window.location.href;
+            const qrContainer = document.getElementById('qrCode');
+            
+            // Simple QR code generation using Google Charts API
+            const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
+            qrContainer.innerHTML = `<img src="${qrUrl}" alt="QR Code Menu" style="max-width: 200px;">`;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load saved menu data if exists
+            const savedMenu = localStorage.getItem('desabafoMenu');
+            if (savedMenu) {
+                menuData = JSON.parse(savedMenu);
+            }
+            
+            loadMenu();
+            generateQR();
+        });
+    </script>
+</body>
+</html>
