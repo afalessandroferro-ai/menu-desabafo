@@ -5,18 +5,13 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "public/img"
-public_folder: "/img"
-
 collections:
   - name: "menu"
     label: "Menu del Locale"
-    folder: ""
-    create: false
-    fields:
-      - label: "Menu Data"
+    files:
+      - file: "menu-data.json"
+        label: "Dati del Menu"
         name: "menu_data"
-        widget: "object"
         fields:
           - label: "Categories"
             name: "categories"
