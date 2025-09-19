@@ -253,15 +253,57 @@
         }
 
         @media print {
-            .admin-panel {
-                display: none !important;
-            }
             body {
                 background: white;
+                color: black;
+            }
+            .header, .qr-section, .admin-panel {
+                display: none !important;
+            }
+            .container {
+                width: 100%;
+                max-width: none;
+                padding: 0;
+            }
+            .categories {
+                display: block;
+                columns: 2;
+                column-gap: 40px;
             }
             .category {
-                break-inside: avoid;
+                background: none;
+                box-shadow: none;
+                border-left: none;
+                padding: 0;
+                break-inside: avoid-column;
                 page-break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            .category h2 {
+                color: var(--dark-brown);
+                font-size: 1.8em;
+                border-bottom: 2px solid var(--dark-brown);
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+            }
+            .item {
+                background: none;
+                border-left: none;
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+            .item-header {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            .item-name, .item-price {
+                font-size: 1.2em;
+                color: var(--dark-brown);
+            }
+            .item-description {
+                font-size: 0.9em;
+                color: #555;
             }
         }
 
@@ -281,7 +323,6 @@
     </style>
 </head>
 <body onclick="hideAdminToggle(event)">
-
     <div class="login-modal" id="loginModal">
         <div class="login-box">
             <h3>🔐 Accesso Admin</h3>
@@ -343,20 +384,17 @@
         let menuData = {};
         let adminTimer;
 
-        // Funzione per mostrare il modale di login admin
         function showLogin() {
             document.getElementById('loginModal').style.display = 'flex';
             document.getElementById('adminPassword').focus();
         }
 
-        // Funzione per chiudere il modale di login
         function closeLogin() {
             document.getElementById('loginModal').style.display = 'none';
             document.getElementById('adminPassword').value = '';
             document.getElementById('loginError').style.display = 'none';
         }
 
-        // Funzione per il controllo della password
         function checkPassword() {
             const password = document.getElementById('adminPassword').value;
             if (password === ADMIN_PASSWORD) {
@@ -370,13 +408,11 @@
             }
         }
 
-        // Funzione per il logout dall'area admin
         function adminLogout() {
             isAdminLoggedIn = false;
             document.getElementById('adminPanel').style.display = 'none';
         }
 
-        // Funzione per caricare i dati del menu dal file JSON
         function loadMenu() {
             fetch('menu-data.json')
                 .then(response => {
@@ -396,7 +432,6 @@
                 });
         }
 
-        // Funzione per renderizzare il menu sulla pagina
         function renderMenu() {
             const menuContent = document.getElementById('menuContent');
             menuContent.innerHTML = '';
@@ -442,7 +477,6 @@
             });
         }
 
-        // Funzione per generare il QR code
         function generateQR() {
             const qrCodeDiv = document.getElementById('qrCode');
             const url = window.location.href.split('?')[0];
@@ -457,10 +491,9 @@
             });
         }
 
-        // Funzione per attivare l'area admin con il tocco prolungato sul logo
         document.getElementById('adminLogoTrigger').addEventListener('touchstart', (e) => {
             e.preventDefault();
-            adminTimer = setTimeout(showLogin, 1000); // 1 secondo di pressione
+            adminTimer = setTimeout(showLogin, 1000);
         });
 
         document.getElementById('adminLogoTrigger').addEventListener('touchend', () => {
@@ -471,7 +504,6 @@
             clearTimeout(adminTimer);
         });
 
-        // Funzione per nascondere il pannello admin se si clicca fuori
         function hideAdminToggle(event) {
             const adminPanel = document.getElementById('adminPanel');
             const isClickInsidePanel = adminPanel.contains(event.target);
@@ -481,7 +513,6 @@
             }
         }
         
-        // Funzioni per il pannello admin (da implementare)
         function showAdminTab(tab) {
             document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.admin-content').forEach(c => c.classList.remove('active'));
@@ -489,14 +520,12 @@
             document.getElementById(tab + 'Content').classList.add('active');
         }
 
-        // Inizializza la pagina
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu();
             generateQR();
             document.getElementById('adminPanel').style.display = 'none';
         });
 
-        // Funzioni segnaposto per l'area admin
         function exportMenu() { console.log('Funzione Export Menu non implementata.'); }
         function importMenu() { console.log('Funzione Import Menu non implementata.'); }
         function handleImport(event) { console.log('Funzione Import gestita.'); }
