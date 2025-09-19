@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desabafo - Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,23 +15,23 @@
         }
 
         :root {
-            --primary-brown: #8B4513;
-            --light-brown: #D2691E;
-            --dark-brown: #654321;
-            --cream: #F5DEB3;
-            --text-dark: #2F1B14;
-            --accent-gold: #DAA520;
+            --primary-brown: #5D4037;
+            --light-brown: #8D6E63;
+            --dark-brown: #3E2723;
+            --cream: #F5EFE5;
+            --text-dark: #333;
+            --accent-gold: #D4AF37;
         }
 
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Cormorant Garamond', serif;
             background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
             color: var(--text-dark);
             min-height: 100vh;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -37,10 +40,10 @@
             text-align: center;
             margin-bottom: 40px;
             padding: 30px 20px;
-            background: var(--primary-brown);
+            background: var(--dark-brown);
             border-radius: 20px;
             color: var(--cream);
-            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
 
         .logo {
@@ -53,7 +56,7 @@
             align-items: center;
             justify-content: center;
             padding: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .logo img {
@@ -65,27 +68,6 @@
 
         .header h1, .header p {
             display: none;
-        }
-
-        .admin-toggle,
-        .admin-login {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--primary-brown);
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            z-index: 1000;
-        }
-
-        .admin-toggle {
-            display: none;
-            background: var(--accent-gold);
-            color: var(--text-dark);
         }
 
         .login-modal {
@@ -108,11 +90,13 @@
             text-align: center;
             max-width: 400px;
             width: 90%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
         .login-box h3 {
             color: var(--primary-brown);
             margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
         }
 
         .login-box input {
@@ -125,7 +109,7 @@
         }
 
         .login-btn, .cancel-btn {
-            background: var(--primary-brown);
+            background: var(--dark-brown);
             color: white;
             border: none;
             padding: 12px 30px;
@@ -133,6 +117,12 @@
             cursor: pointer;
             font-weight: bold;
             margin: 10px 5px;
+            font-family: 'Cormorant Garamond', serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: var(--light-brown);
         }
 
         .cancel-btn {
@@ -161,6 +151,7 @@
             border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
+            font-family: 'Cormorant Garamond', serif;
         }
 
         .admin-tab.active {
@@ -191,11 +182,12 @@
 
         .category h2 {
             color: var(--primary-brown);
-            font-size: 2em;
+            font-size: 2.2em;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
+            font-family: 'Playfair Display', serif;
         }
 
         .category-icon {
@@ -228,13 +220,14 @@
         }
 
         .item-name {
-            font-size: 1.3em;
+            font-size: 1.4em;
             font-weight: bold;
             color: var(--dark-brown);
+            font-family: 'Playfair Display', serif;
         }
 
         .item-price {
-            font-size: 1.4em;
+            font-size: 1.5em;
             font-weight: bold;
             color: var(--primary-brown);
         }
@@ -260,8 +253,6 @@
         }
 
         @media print {
-            .admin-toggle,
-            .qr-section,
             .admin-panel {
                 display: none !important;
             }
@@ -280,15 +271,16 @@
             }
             .item-header {
                 flex-direction: column;
-                align-items: start;
+                align-items: flex-start;
                 gap: 5px;
+            }
+            .item-price {
+                margin-top: 5px;
             }
         }
     </style>
 </head>
-<body>
-    <button class="admin-login" onclick="showLogin()">🔐 Admin</button>
-    <button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>
+<body onclick="hideAdminToggle(event)">
 
     <div class="login-modal" id="loginModal">
         <div class="login-box">
@@ -332,7 +324,7 @@
 
     <div class="container">
         <div class="header">
-            <div class="logo">
+            <div class="logo" id="adminLogoTrigger">
                 <img src="logobafo.png" alt="Desabafo Logo">
             </div>
         </div>
@@ -349,26 +341,28 @@
         let isAdminLoggedIn = false;
         const ADMIN_PASSWORD = "azzaBAFO2025!";
         let menuData = {};
+        let adminTimer;
 
+        // Funzione per mostrare il modale di login admin
         function showLogin() {
             document.getElementById('loginModal').style.display = 'flex';
             document.getElementById('adminPassword').focus();
         }
 
+        // Funzione per chiudere il modale di login
         function closeLogin() {
             document.getElementById('loginModal').style.display = 'none';
             document.getElementById('adminPassword').value = '';
             document.getElementById('loginError').style.display = 'none';
         }
 
+        // Funzione per il controllo della password
         function checkPassword() {
             const password = document.getElementById('adminPassword').value;
             if (password === ADMIN_PASSWORD) {
                 isAdminLoggedIn = true;
                 closeLogin();
-                document.querySelector('.admin-login').style.display = 'none';
-                document.querySelector('.admin-toggle').style.display = 'block';
-                toggleAdmin();
+                document.getElementById('adminPanel').style.display = 'block';
             } else {
                 document.getElementById('loginError').style.display = 'block';
                 document.getElementById('adminPassword').value = '';
@@ -376,13 +370,13 @@
             }
         }
 
+        // Funzione per il logout dall'area admin
         function adminLogout() {
             isAdminLoggedIn = false;
-            document.querySelector('.admin-login').style.display = 'block';
-            document.querySelector('.admin-toggle').style.display = 'none';
             document.getElementById('adminPanel').style.display = 'none';
         }
 
+        // Funzione per caricare i dati del menu dal file JSON
         function loadMenu() {
             fetch('menu-data.json')
                 .then(response => {
@@ -402,6 +396,7 @@
                 });
         }
 
+        // Funzione per renderizzare il menu sulla pagina
         function renderMenu() {
             const menuContent = document.getElementById('menuContent');
             menuContent.innerHTML = '';
@@ -447,6 +442,7 @@
             });
         }
 
+        // Funzione per generare il QR code
         function generateQR() {
             const qrCodeDiv = document.getElementById('qrCode');
             const url = window.location.href.split('?')[0];
@@ -455,26 +451,57 @@
                 text: url,
                 width: 128,
                 height: 128,
-                colorDark: "#654321",
-                colorLight: "#F5DEB3",
+                colorDark: "#3E2723",
+                colorLight: "#F5EFE5",
                 correctLevel: QRCode.CorrectLevel.H
             });
         }
 
-        function toggleAdmin() {
+        // Funzione per attivare l'area admin con il tocco prolungato sul logo
+        document.getElementById('adminLogoTrigger').addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            adminTimer = setTimeout(showLogin, 1000); // 1 secondo di pressione
+        });
+
+        document.getElementById('adminLogoTrigger').addEventListener('touchend', () => {
+            clearTimeout(adminTimer);
+        });
+
+        document.getElementById('adminLogoTrigger').addEventListener('touchmove', () => {
+            clearTimeout(adminTimer);
+        });
+
+        // Funzione per nascondere il pannello admin se si clicca fuori
+        function hideAdminToggle(event) {
             const adminPanel = document.getElementById('adminPanel');
-            if (adminPanel.style.display === 'block') {
+            const isClickInsidePanel = adminPanel.contains(event.target);
+            const isClickOnLogo = document.getElementById('adminLogoTrigger').contains(event.target);
+            if (isAdminLoggedIn && !isClickInsidePanel && !isClickOnLogo) {
                 adminPanel.style.display = 'none';
-            } else {
-                adminPanel.style.display = 'block';
-                // Puoi aggiungere qui la logica per caricare il pannello admin se necessario
             }
         }
+        
+        // Funzioni per il pannello admin (da implementare)
+        function showAdminTab(tab) {
+            document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.admin-content').forEach(c => c.classList.remove('active'));
+            document.querySelector(`.admin-tab[onclick="showAdminTab('${tab}')"]`).classList.add('active');
+            document.getElementById(tab + 'Content').classList.add('active');
+        }
 
+        // Inizializza la pagina
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu();
             generateQR();
+            document.getElementById('adminPanel').style.display = 'none';
         });
+
+        // Funzioni segnaposto per l'area admin
+        function exportMenu() { console.log('Funzione Export Menu non implementata.'); }
+        function importMenu() { console.log('Funzione Import Menu non implementata.'); }
+        function handleImport(event) { console.log('Funzione Import gestita.'); }
+        function saveAllChanges() { console.log('Funzione Salva Modifiche non implementata.'); }
+        function resetMenu() { console.log('Funzione Ripristina Menu Originale non implementata.'); }
     </script>
 </body>
 </html>
