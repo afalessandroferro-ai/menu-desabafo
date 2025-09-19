@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - name: "menu"
+    label: "Menu del Locale"
+    folder: ""
+    create: false
+    fields:
+      - label: "Menu Data"
+        name: "menu_data"
+        widget: "object"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - label: "Category Name"
+                name: "name"
+                widget: "string"
+              - label: "Category Icon"
+                name: "icon"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Description"
+                    name: "description"
+                    widget: "text"
+                  - label: "Price"
+                    name: "price"
+                    widget: "string"
+                  - label: "Available"
+                    name: "available"
+                    widget: "boolean"
