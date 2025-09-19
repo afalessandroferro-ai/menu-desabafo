@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --primary-brown: #8B4513;
             --light-brown: #D2691E;
@@ -19,20 +19,20 @@
             --text-dark: #2F1B14;
             --accent-gold: #DAA520;
         }
-        
+
         body {
             font-family: 'Georgia', serif;
             background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
             color: var(--text-dark);
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -42,7 +42,7 @@
             color: var(--cream);
             box-shadow: 0 10px 25px rgba(139, 69, 19, 0.3);
         }
-        
+
         .logo {
             width: 120px;
             height: 120px;
@@ -55,23 +55,23 @@
             padding: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        
+
         .logo svg {
             width: 100%;
             height: 100%;
         }
-        
+
         .header h1 {
             font-size: 3em;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        
+
         .header p {
             font-size: 1.2em;
             opacity: 0.9;
         }
-        
+
         .admin-toggle {
             position: fixed;
             top: 20px;
@@ -86,7 +86,7 @@
             z-index: 1000;
             display: none;
         }
-        
+
         .admin-login {
             position: fixed;
             top: 20px;
@@ -100,7 +100,7 @@
             font-weight: bold;
             z-index: 1000;
         }
-        
+
         .login-modal {
             position: fixed;
             top: 0;
@@ -113,7 +113,7 @@
             align-items: center;
             z-index: 10000;
         }
-        
+
         .login-box {
             background: white;
             padding: 30px;
@@ -122,12 +122,12 @@
             max-width: 400px;
             width: 90%;
         }
-        
+
         .login-box h3 {
             color: var(--primary-brown);
             margin-bottom: 20px;
         }
-        
+
         .login-box input {
             width: 100%;
             padding: 12px;
@@ -136,7 +136,7 @@
             border-radius: 8px;
             font-size: 16px;
         }
-        
+
         .login-btn {
             background: var(--primary-brown);
             color: white;
@@ -147,7 +147,7 @@
             font-weight: bold;
             margin: 10px 5px;
         }
-        
+
         .cancel-btn {
             background: #6c757d;
             color: white;
@@ -158,7 +158,7 @@
             font-weight: bold;
             margin: 10px 5px;
         }
-        
+
         .admin-panel {
             display: none;
             background: white;
@@ -167,13 +167,13 @@
             margin-bottom: 20px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
+
         .admin-tabs {
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
         }
-        
+
         .admin-tab {
             padding: 10px 15px;
             background: var(--cream);
@@ -182,27 +182,27 @@
             cursor: pointer;
             font-weight: bold;
         }
-        
+
         .admin-tab.active {
             background: var(--primary-brown);
             color: white;
         }
-        
+
         .admin-content {
             display: none;
         }
-        
+
         .admin-content.active {
             display: block;
         }
-        
+
         .category-editor {
             margin-bottom: 30px;
             padding: 20px;
             border: 2px solid var(--cream);
             border-radius: 10px;
         }
-        
+
         .category-editor h4 {
             color: var(--primary-brown);
             margin-bottom: 15px;
@@ -210,7 +210,7 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .item-editor {
             display: grid;
             grid-template-columns: 2fr 3fr 1fr 80px;
@@ -221,25 +221,25 @@
             border-radius: 8px;
             margin-bottom: 10px;
         }
-        
+
         .item-editor input, .item-editor textarea {
             padding: 8px;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-family: inherit;
         }
-        
+
         .item-editor textarea {
             resize: vertical;
             min-height: 60px;
         }
-        
+
         .availability-toggle {
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .delete-btn {
             background: #dc3545;
             color: white;
@@ -249,7 +249,7 @@
             cursor: pointer;
             font-size: 12px;
         }
-        
+
         .add-item-btn {
             background: var(--accent-gold);
             color: var(--text-dark);
@@ -260,7 +260,7 @@
             font-weight: bold;
             margin-top: 10px;
         }
-        
+
         .save-all-btn {
             background: #28a745;
             color: white;
@@ -272,13 +272,13 @@
             font-size: 16px;
             margin-top: 20px;
         }
-        
+
         .import-export {
             display: flex;
             gap: 10px;
             margin: 20px 0;
         }
-        
+
         .import-export button {
             padding: 10px 15px;
             border: none;
@@ -286,22 +286,22 @@
             cursor: pointer;
             font-weight: bold;
         }
-        
+
         .export-btn {
             background: var(--light-brown);
             color: white;
         }
-        
+
         .import-btn {
             background: var(--accent-gold);
             color: var(--text-dark);
         }
-        
+
         .categories {
             display: grid;
             gap: 30px;
         }
-        
+
         .category {
             background: white;
             padding: 25px;
@@ -309,7 +309,7 @@
             box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
             border-left: 5px solid var(--primary-brown);
         }
-        
+
         .category h2 {
             color: var(--primary-brown);
             font-size: 2em;
@@ -318,16 +318,16 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .category-icon {
             font-size: 1.2em;
         }
-        
+
         .items {
             display: grid;
             gap: 15px;
         }
-        
+
         .item {
             padding: 15px;
             border-radius: 10px;
@@ -335,39 +335,39 @@
             border-left: 3px solid var(--light-brown);
             transition: all 0.3s ease;
         }
-        
+
         .item:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
         }
-        
+
         .item-header {
             display: flex;
             justify-content: between;
             align-items: center;
             margin-bottom: 8px;
         }
-        
+
         .item-name {
             font-size: 1.3em;
             font-weight: bold;
             color: var(--dark-brown);
             flex: 1;
         }
-        
+
         .item-price {
             font-size: 1.4em;
             font-weight: bold;
             color: var(--primary-brown);
             margin-left: auto;
         }
-        
+
         .item-description {
             color: var(--text-dark);
             line-height: 1.4;
             margin-top: 5px;
         }
-        
+
         .qr-section {
             text-align: center;
             margin: 40px 0;
@@ -375,35 +375,35 @@
             background: white;
             border-radius: 10px;
         }
-        
+
         .qr-code {
             margin: 20px 0;
         }
-        
+
         @media print {
             .admin-toggle, .qr-section, .admin-panel {
                 display: none !important;
             }
-            
+
             body {
                 background: white;
             }
-            
+
             .category {
                 break-inside: avoid;
                 page-break-inside: avoid;
             }
         }
-        
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
             }
-            
+
             .container {
                 padding: 10px;
             }
-            
+
             .item-header {
                 flex-direction: column;
                 align-items: start;
@@ -413,9 +413,6 @@
     </style>
 </head>
 <body>
-    <!--<button class="admin-login" onclick="showLogin()">🔐 Admin</button>-->
-    <!--<button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>-->
-    
     <div class="login-modal" id="loginModal">
         <div class="login-box">
             <h3>🔐 Accesso Admin</h3>
@@ -477,14 +474,13 @@
         </div>
         
         <div class="categories" id="menuContent">
-            <!-- Menu content will be loaded here -->
-        </div>
+            </div>
     </div>
 <script>
     let isAdminLoggedIn = false;
     const ADMIN_PASSWORD = "azzaBAFO2025!";
     let menuData = {};
-<!--
+
     function showLogin() {
         document.getElementById('loginModal').style.display = 'flex';
         document.getElementById('adminPassword').focus();
@@ -518,37 +514,41 @@
         document.querySelector('.admin-toggle').style.display = 'none';
         document.getElementById('adminPanel').style.display = 'none';
     }
--->
+
     // Questa nuova funzione carica i dati del menu dal file JSON
     function loadMenu() {
-        // Usa `fetch` per leggere il contenuto del file `menu-data.json`
         fetch('menu-data.json')
             .then(response => {
-                // Se la risposta è positiva, converti il contenuto in JSON
                 if (!response.ok) {
                     throw new Error('File menu-data.json non trovato o errore di rete');
                 }
                 return response.json();
             })
             .then(data => {
-                // Assegna i dati caricati alla variabile menuData, puntando all'oggetto "menu_data"
-                menuData = data.menu_data;
-                // Esegui la funzione per visualizzare il menu sulla pagina
+                // Assegna i dati caricati all'array "categories"
+                menuData = data.menu_data.categories;
                 renderMenu();
             })
             .catch(error => {
                 console.error('Errore nel caricamento del menu:', error);
-                // Puoi anche aggiungere un messaggio di errore visibile all'utente
+                const menuContent = document.getElementById('menuContent');
+                menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Impossibile caricare il menu. Riprova più tardi.</p>';
             });
     }
-    
-    // Funzione per visualizzare il menu (questa probabilmente ce l'hai già, ma la includo per completezza)
+
+    // Funzione per visualizzare il menu
     function renderMenu() {
         const menuContent = document.getElementById('menuContent');
         menuContent.innerHTML = '';
         
-        Object.keys(menuData).forEach(categoryKey => {
-            const category = menuData[categoryKey];
+        // Itera direttamente sull'array menuData
+        if (!Array.isArray(menuData)) {
+            console.error("I dati del menu non sono in un formato valido (array).");
+            menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Errore nel formato dei dati del menu. Contattare l\'amministratore.</p>';
+            return;
+        }
+
+        menuData.forEach(category => {
             if (category && category.items) {
                 const categoryDiv = document.createElement('div');
                 categoryDiv.className = 'category';
@@ -592,7 +592,8 @@
                 menuContent.appendChild(categoryDiv);
             }
         });
-        updateMenuStats();
+        // Le funzioni di admin non sono incluse in questo script semplificato, quindi questa riga potrebbe dare errore.
+        // updateMenuStats();
     }
     
     // Funzione per gestire il pannello di amministrazione
@@ -618,12 +619,4 @@
     document.addEventListener('DOMContentLoaded', loadMenu);
 </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
