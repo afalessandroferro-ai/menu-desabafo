@@ -1,362 +1,366 @@
 {
-  "cocktails": {
-    "name": "Cocktails/Mocktails",
-    "icon": "🍹",
-    "items": [
-      {
-        "name": "Spritz",
-        "description": "Select-Campari-Aperol",
-        "price": "€ 8.00",
-        "available": true
-      },
-      {
-        "name": "Long Drinks",
-        "description": "Base alcolica + bibita",
-        "price": "€ 8.00",
-        "available": true
-      },
-      {
-        "name": "Pestati, shakerati e classici",
-        "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
-        "price": "€ 10.00",
-        "available": true
-      },
-      {
-        "name": "Patron de Oaxaca",
-        "description": "Mezcal, ancho reyes, zenzero, limone, sale",
-        "price": "€ 12.00",
-        "available": true
-      },
-      {
-        "name": "Lady Purple Zoe",
-        "description": "Vodka, Cointreau, violetta, limone, soda",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Bloody Mario Rossi",
-        "description": "Gin, succo di pomodoro, worchester, tabasco, limone, sale, pepe, succo di sedano",
-        "price": "€ 13.00",
-        "available": true
-      },
-      {
-        "name": "Sir Leaf",
-        "description": "Gin pompelmo, sciroppo basilico, vermouth extra dry, limone",
-        "price": "€ 12.00",
-        "available": true
-      },
-      {
-        "name": "Mamacita",
-        "description": "Tequila, vermouth rosso, frutto della passione, succo arancia, peperoncino piri piri, worchester",
-        "price": "€ 12.00",
-        "available": true
-      },
-      {
-        "name": "Zombie",
-        "description": "Rum chiaro, rum scuro, cointreau, succo pompelmo, angostura, falernum, limone, frutti rossi",
-        "price": "€ 13.00",
-        "available": true
-      },
-      {
-        "name": "Kyoto Mon Amour",
-        "description": "Vodka, limone, frutti rossi",
-        "price": "€ 12.00",
-        "available": true
-      }
-    ]
-  },
-  "gin": {
-    "name": "Gin",
-    "icon": "🌿",
-    "items": [
-      {
-        "name": "East Hyogo Dry (Giappone)",
-        "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Apenera (Italia)",
-        "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
-        "price": "€ 12.00",
-        "available": true
-      },
-      {
-        "name": "Argentario (Italia)",
-        "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
-        "price": "€ 14.00",
-        "available": true
-      },
-      {
-        "name": "Bayab Dry (Sudafrica)",
-        "description": "Il Bayab Classic Dry infonde il baobab del Ghana con bacche di ginepro, coriandolo, rosmarino, cannella e sale grosso per un'audace esplosione di freschi agrumi",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Bayab Orange (Sudafrica)",
-        "description": "Distillato con frutti di Marula, frutti di baobab, cannella, scorza d'arancia bruciata, coriandolo e sale marino",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Big Gino Dry (Italia)",
-        "description": "Dry gin artigianale 100% italiano. Base alcolica di grano con ginepro, pomelo e bacche di pimento",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Big Gino Exotic (Italia)",
-        "description": "Gin artigianale dal profilo esotico e tropicale. Sorso morbido con aromi di frutta tropicale e sentori afrodisiaci",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Cilento Wild (Italia)",
-        "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Duroc Smoked Dry (Italia)",
-        "description": "Gin affumicato artigianale italiano",
-        "price": "€ 12.00",
-        "available": true
-      },
-      {
-        "name": "Genever Otemba (Olanda)",
-        "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
-        "price": "€ 15.00",
-        "available": true
-      }
-    ]
-  },
-  "vini_calice": {
-    "name": "Vinello al Calice",
-    "icon": "🍷",
-    "items": [
-      {
-        "name": "Rosso - Dolcetto Govone (Piemonte)",
-        "description": "",
-        "price": "€ 5.00",
-        "available": true
-      },
-      {
-        "name": "Rosso - Langhe Rosso Govone (Piemonte)",
-        "description": "",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
-        "description": "Annata: 2023, Vitigno: Pinot nero",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Rosso - Ribera del Duero Pradorey",
-        "description": "Annata: 2023, Vitigno: Tempranillo",
-        "price": "€ 7.00",
-        "available": true
-      },
-      {
-        "name": "Bianco - Langhe Bianco Govone (Piemonte)",
-        "description": "",
-        "price": "€ 5.00",
-        "available": true
-      },
-      {
-        "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
-        "description": "Annata: 2023, Vitigno: Traminer",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
-        "description": "Annata: 2023, Vitigni: Grenache, petit verdot, carignan",
-        "price": "€ 7.00",
-        "available": true
-      },
-      {
-        "name": "Bolla - Blanquette les 4 Vents (Francia)",
-        "description": "Brut nature, Vitigno: Mauzac",
-        "price": "€ 8.00",
-        "available": true
-      }
-    ]
-  },
-  "vini_bottiglia": {
-    "name": "Vinello in Bottiglia",
-    "icon": "🍾",
-    "items": [
-      {
-        "name": "Rosso - Pinot Nero St Pauls (Alto Adige)",
-        "description": "Pinot Nero 2023",
-        "price": "€ 28.00",
-        "available": true
-      },
-      {
-        "name": "Rosso - Ribera Del Duero Pradorey (Spagna)",
-        "description": "Tempranillo 2023",
-        "price": "€ 27.00",
-        "available": true
-      },
-      {
-        "name": "Rosso - Château de Rieux Minervois (Francia)",
-        "description": "Syrah, Grenache, Carignan",
-        "price": "€ 32.00",
-        "available": true
-      },
-      {
-        "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
-        "description": "Traminer 2023",
-        "price": "€ 27.00",
-        "available": true
-      },
-      {
-        "name": "Bianco - Sable Blanc Mas du Petit Pin (Francia)",
-        "description": "Petit Verdot, Carignan, Grenache Blanc",
-        "price": "€ 25.00",
-        "available": true
-      },
-      {
-        "name": "Bianco - Viognier Domaine de Luc",
-        "description": "Famille Fabre Francia 2023, gradazione 13.5%",
-        "price": "€ 28.00",
-        "available": true
-      },
-      {
-        "name": "Rosè - Grande Courtade (Francia)",
-        "description": "Merlot, Sauvignon, Pinot Noir 2024",
-        "price": "€ 30.00",
-        "available": true
-      },
-      {
-        "name": "Orange - Louis Andrieu",
-        "description": "Sauvignon Blanc 2022",
-        "price": "€ 34.00",
-        "available": true
-      }
-    ]
-  },
-  "birre": {
-    "name": "Birrettas",
-    "icon": "🍺",
-    "items": [
-      {
-        "name": "Bionda - Pian della Mussa",
-        "description": "",
-        "price": "€ 5.00",
-        "available": true
-      },
-      {
-        "name": "IPA - Pian della Mussa",
-        "description": "",
-        "price": "€ 5.00",
-        "available": true
-      },
-      {
-        "name": "Forst 1857 33 cl",
-        "description": "",
-        "price": "€ 4.00",
-        "available": true
-      }
-    ]
-  },
-  "amari": {
-    "name": "Amari & Vermouth",
-    "icon": "🥃",
-    "items": [
-      {
-        "name": "Pastis Richard",
-        "description": "",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Pastis Pernod",
-        "description": "",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Vermouth Rosso - Carlo Alberto",
-        "description": "27 botaniche coltivate con metodi biologici",
-        "price": "€ 5.00",
-        "available": true
-      },
-      {
-        "name": "Vermouth Rosso - Dolin",
-        "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
-        "price": "€ 5.00",
-        "available": true
-      },
-      {
-        "name": "Vermouth Rosso - Lillet Rouge",
-        "description": "Base di vino rosso di Bordeaux con infusione di erbe, spezie e radici",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Vermouth Rosso - Farmacopea Popolare",
-        "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
-        "price": "€ 8.00",
-        "available": true
-      },
-      {
-        "name": "Amaretto di Torino",
-        "description": "",
-        "price": "€ 6.00",
-        "available": true
-      },
-      {
-        "name": "Fernet Branca",
-        "description": "",
-        "price": "€ 6.00",
-        "available": true
-      }
-    ]
-  },
-  "whisky_rum": {
-    "name": "Whisky & Rum",
-    "icon": "🥃",
-    "items": [
-      {
-        "name": "Talisker Sky 10 anni",
-        "description": "Single malt",
-        "price": "€ 12.00",
-        "available": true
-      },
-      {
-        "name": "Black Label - Johnny Walker",
-        "description": "12 anni Blended",
-        "price": "€ 10.00",
-        "available": true
-      },
-      {
-        "name": "Mars Kasei",
-        "description": "Blended Giappone",
-        "price": "€ 14.00",
-        "available": true
-      },
-      {
-        "name": "Black Tears Spiced Rum",
-        "description": "",
-        "price": "€ 10.00",
-        "available": true
-      },
-      {
-        "name": "La Gloriette Vanille Rhum",
-        "description": "Caribbean",
-        "price": "€ 11.00",
-        "available": true
-      },
-      {
-        "name": "Havana Club 3 Años Añejo",
-        "description": "",
-        "price": "€ 9.00",
-        "available": true
-      }
-    ]
+  "menu_data":
+  {
+    "cocktails": {
+      "name": "Cocktails/Mocktails",
+      "icon": "🍹",
+      "items": [
+        {
+          "name": "Spritz",
+          "description": "Select-Campari-Aperol",
+          "price": "€ 8.00",
+          "available": true
+        },
+        {
+          "name": "Long Drinks",
+          "description": "Base alcolica + bibita",
+          "price": "€ 8.00",
+          "available": true
+        },
+        {
+          "name": "Pestati, shakerati e classici",
+          "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
+          "price": "€ 10.00",
+          "available": true
+        },
+        {
+          "name": "Patron de Oaxaca",
+          "description": "Mezcal, ancho reyes, zenzero, limone, sale",
+          "price": "€ 12.00",
+          "available": true
+        },
+        {
+          "name": "Lady Purple Zoe",
+          "description": "Vodka, Cointreau, violetta, limone, soda",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Bloody Mario Rossi",
+          "description": "Gin, succo di pomodoro, worchester, tabasco, limone, sale, pepe, succo di sedano",
+          "price": "€ 13.00",
+          "available": true
+        },
+        {
+          "name": "Sir Leaf",
+          "description": "Gin pompelmo, sciroppo basilico, vermouth extra dry, limone",
+          "price": "€ 12.00",
+          "available": true
+        },
+        {
+          "name": "Mamacita",
+          "description": "Tequila, vermouth rosso, frutto della passione, succo arancia, peperoncino piri piri, worchester",
+          "price": "€ 12.00",
+          "available": true
+        },
+        {
+          "name": "Zombie",
+          "description": "Rum chiaro, rum scuro, cointreau, succo pompelmo, angostura, falernum, limone, frutti rossi",
+          "price": "€ 13.00",
+          "available": true
+        },
+        {
+          "name": "Kyoto Mon Amour",
+          "description": "Vodka, limone, frutti rossi",
+          "price": "€ 12.00",
+          "available": true
+        }
+      ]
+    },
+    "gin": {
+      "name": "Gin",
+      "icon": "🌿",
+      "items": [
+        {
+          "name": "East Hyogo Dry (Giappone)",
+          "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Apenera (Italia)",
+          "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
+          "price": "€ 12.00",
+          "available": true
+        },
+        {
+          "name": "Argentario (Italia)",
+          "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
+          "price": "€ 14.00",
+          "available": true
+        },
+        {
+          "name": "Bayab Dry (Sudafrica)",
+          "description": "Il Bayab Classic Dry infonde il baobab del Ghana con bacche di ginepro, coriandolo, rosmarino, cannella e sale grosso per un'audace esplosione di freschi agrumi",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Bayab Orange (Sudafrica)",
+          "description": "Distillato con frutti di Marula, frutti di baobab, cannella, scorza d'arancia bruciata, coriandolo e sale marino",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Big Gino Dry (Italia)",
+          "description": "Dry gin artigianale 100% italiano. Base alcolica di grano con ginepro, pomelo e bacche di pimento",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Big Gino Exotic (Italia)",
+          "description": "Gin artigianale dal profilo esotico e tropicale. Sorso morbido con aromi di frutta tropicale e sentori afrodisiaci",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Cilento Wild (Italia)",
+          "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Duroc Smoked Dry (Italia)",
+          "description": "Gin affumicato artigianale italiano",
+          "price": "€ 12.00",
+          "available": true
+        },
+        {
+          "name": "Genever Otemba (Olanda)",
+          "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
+          "price": "€ 15.00",
+          "available": true
+        }
+      ]
+    },
+    "vini_calice": {
+      "name": "Vinello al Calice",
+      "icon": "🍷",
+      "items": [
+        {
+          "name": "Rosso - Dolcetto Govone (Piemonte)",
+          "description": "",
+          "price": "€ 5.00",
+          "available": true
+        },
+        {
+          "name": "Rosso - Langhe Rosso Govone (Piemonte)",
+          "description": "",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
+          "description": "Annata: 2023, Vitigno: Pinot nero",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Rosso - Ribera del Duero Pradorey",
+          "description": "Annata: 2023, Vitigno: Tempranillo",
+          "price": "€ 7.00",
+          "available": true
+        },
+        {
+          "name": "Bianco - Langhe Bianco Govone (Piemonte)",
+          "description": "",
+          "price": "€ 5.00",
+          "available": true
+        },
+        {
+          "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
+          "description": "Annata: 2023, Vitigno: Traminer",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+          "description": "Annata: 2023, Vitigni: Grenache, petit verdot, carignan",
+          "price": "€ 7.00",
+          "available": true
+        },
+        {
+          "name": "Bolla - Blanquette les 4 Vents (Francia)",
+          "description": "Brut nature, Vitigno: Mauzac",
+          "price": "€ 8.00",
+          "available": true
+        }
+      ]
+    },
+    "vini_bottiglia": {
+      "name": "Vinello in Bottiglia",
+      "icon": "🍾",
+      "items": [
+        {
+          "name": "Rosso - Pinot Nero St Pauls (Alto Adige)",
+          "description": "Pinot Nero 2023",
+          "price": "€ 28.00",
+          "available": true
+        },
+        {
+          "name": "Rosso - Ribera Del Duero Pradorey (Spagna)",
+          "description": "Tempranillo 2023",
+          "price": "€ 27.00",
+          "available": true
+        },
+        {
+          "name": "Rosso - Château de Rieux Minervois (Francia)",
+          "description": "Syrah, Grenache, Carignan",
+          "price": "€ 32.00",
+          "available": true
+        },
+        {
+          "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
+          "description": "Traminer 2023",
+          "price": "€ 27.00",
+          "available": true
+        },
+        {
+          "name": "Bianco - Sable Blanc Mas du Petit Pin (Francia)",
+          "description": "Petit Verdot, Carignan, Grenache Blanc",
+          "price": "€ 25.00",
+          "available": true
+        },
+        {
+          "name": "Bianco - Viognier Domaine de Luc",
+          "description": "Famille Fabre Francia 2023, gradazione 13.5%",
+          "price": "€ 28.00",
+          "available": true
+        },
+        {
+          "name": "Rosè - Grande Courtade (Francia)",
+          "description": "Merlot, Sauvignon, Pinot Noir 2024",
+          "price": "€ 30.00",
+          "available": true
+        },
+        {
+          "name": "Orange - Louis Andrieu",
+          "description": "Sauvignon Blanc 2022",
+          "price": "€ 34.00",
+          "available": true
+        }
+      ]
+    },
+    "birre": {
+      "name": "Birrettas",
+      "icon": "🍺",
+      "items": [
+        {
+          "name": "Bionda - Pian della Mussa",
+          "description": "",
+          "price": "€ 5.00",
+          "available": true
+        },
+        {
+          "name": "IPA - Pian della Mussa",
+          "description": "",
+          "price": "€ 5.00",
+          "available": true
+        },
+        {
+          "name": "Forst 1857 33 cl",
+          "description": "",
+          "price": "€ 4.00",
+          "available": true
+        }
+      ]
+    },
+    "amari": {
+      "name": "Amari & Vermouth",
+      "icon": "🥃",
+      "items": [
+        {
+          "name": "Pastis Richard",
+          "description": "",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Pastis Pernod",
+          "description": "",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Vermouth Rosso - Carlo Alberto",
+          "description": "27 botaniche coltivate con metodi biologici",
+          "price": "€ 5.00",
+          "available": true
+        },
+        {
+          "name": "Vermouth Rosso - Dolin",
+          "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
+          "price": "€ 5.00",
+          "available": true
+        },
+        {
+          "name": "Vermouth Rosso - Lillet Rouge",
+          "description": "Base di vino rosso di Bordeaux con infusione di erbe, spezie e radici",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Vermouth Rosso - Farmacopea Popolare",
+          "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
+          "price": "€ 8.00",
+          "available": true
+        },
+        {
+          "name": "Amaretto di Torino",
+          "description": "",
+          "price": "€ 6.00",
+          "available": true
+        },
+        {
+          "name": "Fernet Branca",
+          "description": "",
+          "price": "€ 6.00",
+          "available": true
+        }
+      ]
+    },
+    "whisky_rum": {
+      "name": "Whisky & Rum",
+      "icon": "🥃",
+      "items": [
+        {
+          "name": "Talisker Sky 10 anni",
+          "description": "Single malt",
+          "price": "€ 12.00",
+          "available": true
+        },
+        {
+          "name": "Black Label - Johnny Walker",
+          "description": "12 anni Blended",
+          "price": "€ 10.00",
+          "available": true
+        },
+        {
+          "name": "Mars Kasei",
+          "description": "Blended Giappone",
+          "price": "€ 14.00",
+          "available": true
+        },
+        {
+          "name": "Black Tears Spiced Rum",
+          "description": "",
+          "price": "€ 10.00",
+          "available": true
+        },
+        {
+          "name": "La Gloriette Vanille Rhum",
+          "description": "Caribbean",
+          "price": "€ 11.00",
+          "available": true
+        },
+        {
+          "name": "Havana Club 3 Años Añejo",
+          "description": "",
+          "price": "€ 9.00",
+          "available": true
+        }
+      ]
+    }
   }
 }
+
