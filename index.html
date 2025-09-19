@@ -44,9 +44,9 @@
         }
 
         .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 20px;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
             background: var(--cream);
             border-radius: 15px;
             display: flex;
@@ -56,37 +56,18 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
-        .logo svg {
+        .logo img {
             width: 100%;
             height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
         }
 
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .admin-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--accent-gold);
-            color: var(--text-dark);
-            border: none;
-            padding: 10px 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            z-index: 1000;
+        .header h1, .header p {
             display: none;
         }
 
+        .admin-toggle,
         .admin-login {
             position: fixed;
             top: 20px;
@@ -101,13 +82,19 @@
             z-index: 1000;
         }
 
+        .admin-toggle {
+            display: none;
+            background: var(--accent-gold);
+            color: var(--text-dark);
+        }
+
         .login-modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             display: none;
             justify-content: center;
             align-items: center;
@@ -137,7 +124,7 @@
             font-size: 16px;
         }
 
-        .login-btn {
+        .login-btn, .cancel-btn {
             background: var(--primary-brown);
             color: white;
             border: none;
@@ -150,13 +137,6 @@
 
         .cancel-btn {
             background: #6c757d;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            margin: 10px 5px;
         }
 
         .admin-panel {
@@ -165,7 +145,7 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .admin-tabs {
@@ -194,107 +174,6 @@
 
         .admin-content.active {
             display: block;
-        }
-
-        .category-editor {
-            margin-bottom: 30px;
-            padding: 20px;
-            border: 2px solid var(--cream);
-            border-radius: 10px;
-        }
-
-        .category-editor h4 {
-            color: var(--primary-brown);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .item-editor {
-            display: grid;
-            grid-template-columns: 2fr 3fr 1fr 80px;
-            gap: 10px;
-            align-items: center;
-            padding: 10px;
-            background: var(--cream);
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .item-editor input, .item-editor textarea {
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-
-        .item-editor textarea {
-            resize: vertical;
-            min-height: 60px;
-        }
-
-        .availability-toggle {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .delete-btn {
-            background: #dc3545;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-
-        .add-item-btn {
-            background: var(--accent-gold);
-            color: var(--text-dark);
-            border: none;
-            padding: 10px 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .save-all-btn {
-            background: #28a745;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        .import-export {
-            display: flex;
-            gap: 10px;
-            margin: 20px 0;
-        }
-
-        .import-export button {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .export-btn {
-            background: var(--light-brown);
-            color: white;
-        }
-
-        .import-btn {
-            background: var(--accent-gold);
-            color: var(--text-dark);
         }
 
         .categories {
@@ -343,7 +222,7 @@
 
         .item-header {
             display: flex;
-            justify-content: between;
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 8px;
         }
@@ -352,14 +231,12 @@
             font-size: 1.3em;
             font-weight: bold;
             color: var(--dark-brown);
-            flex: 1;
         }
 
         .item-price {
             font-size: 1.4em;
             font-weight: bold;
             color: var(--primary-brown);
-            margin-left: auto;
         }
 
         .item-description {
@@ -374,21 +251,23 @@
             padding: 20px;
             background: white;
             border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .qr-code {
             margin: 20px 0;
+            display: inline-block;
         }
 
         @media print {
-            .admin-toggle, .qr-section, .admin-panel {
+            .admin-toggle,
+            .qr-section,
+            .admin-panel {
                 display: none !important;
             }
-
             body {
                 background: white;
             }
-
             .category {
                 break-inside: avoid;
                 page-break-inside: avoid;
@@ -396,14 +275,9 @@
         }
 
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-
             .container {
                 padding: 10px;
             }
-
             .item-header {
                 flex-direction: column;
                 align-items: start;
@@ -413,6 +287,9 @@
     </style>
 </head>
 <body>
+    <button class="admin-login" onclick="showLogin()">🔐 Admin</button>
+    <button class="admin-toggle" onclick="toggleAdmin()">⚙️ Admin</button>
+
     <div class="login-modal" id="loginModal">
         <div class="login-box">
             <h3>🔐 Accesso Admin</h3>
@@ -424,15 +301,13 @@
             <div id="loginError" style="color: red; margin-top: 10px; display: none;">Password non corretta!</div>
         </div>
     </div>
-    
+
     <div class="admin-panel" id="adminPanel">
         <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
-        
         <div class="admin-tabs">
             <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
             <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
         </div>
-        
         <div class="admin-content active" id="editorContent">
             <div class="import-export">
                 <button class="export-btn" onclick="exportMenu()">📤 Esporta Menu</button>
@@ -440,18 +315,14 @@
                 <button class="cancel-btn" onclick="adminLogout()">🚪 Logout</button>
                 <input type="file" id="importFile" accept=".json" style="display: none;" onchange="handleImport(event)">
             </div>
-            
             <div id="menuEditor"></div>
-            
             <button class="save-all-btn" onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
         </div>
-        
         <div class="admin-content" id="toolsContent">
             <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
             <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
             <button onclick="window.print()">🖨️ Stampa Menu</button>
             <button onclick="resetMenu()">🔄 Ripristina Menu Originale</button>
-            
             <div style="margin-top: 20px;">
                 <h4>📊 Statistiche Menu</h4>
                 <p id="menuStats"></p>
@@ -462,161 +333,148 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="logobafo.png" alt="Desabafo Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 15px;">
+                <img src="logobafo.png" alt="Desabafo Logo">
             </div>
-            <h1>DESABAFO</h1>
-            <p>Cocktail Bar</p>
         </div>
-        
         <div class="qr-section">
             <h3>Scansiona per il menu digitale</h3>
             <div class="qr-code" id="qrCode"></div>
         </div>
-        
         <div class="categories" id="menuContent">
             </div>
     </div>
-<script>
-    let isAdminLoggedIn = false;
-    const ADMIN_PASSWORD = "azzaBAFO2025!";
-    let menuData = {};
 
-    function showLogin() {
-        document.getElementById('loginModal').style.display = 'flex';
-        document.getElementById('adminPassword').focus();
-    }
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+        let isAdminLoggedIn = false;
+        const ADMIN_PASSWORD = "azzaBAFO2025!";
+        let menuData = {};
 
-    function closeLogin() {
-        document.getElementById('loginModal').style.display = 'none';
-        document.getElementById('adminPassword').value = '';
-        document.getElementById('loginError').style.display = 'none';
-    }
-
-    function checkPassword() {
-        const password = document.getElementById('adminPassword').value;
-
-        if (password === ADMIN_PASSWORD) {
-            isAdminLoggedIn = true;
-            closeLogin();
-            document.querySelector('.admin-login').style.display = 'none';
-            document.querySelector('.admin-toggle').style.display = 'block';
-            toggleAdmin();
-        } else {
-            document.getElementById('loginError').style.display = 'block';
-            document.getElementById('adminPassword').value = '';
+        function showLogin() {
+            document.getElementById('loginModal').style.display = 'flex';
             document.getElementById('adminPassword').focus();
         }
-    }
 
-    function adminLogout() {
-        isAdminLoggedIn = false;
-        document.querySelector('.admin-login').style.display = 'block';
-        document.querySelector('.admin-toggle').style.display = 'none';
-        document.getElementById('adminPanel').style.display = 'none';
-    }
-
-    // Questa nuova funzione carica i dati del menu dal file JSON
-    function loadMenu() {
-        fetch('menu-data.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('File menu-data.json non trovato o errore di rete');
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Assegna i dati caricati all'array "categories"
-                menuData = data.menu_data.categories;
-                renderMenu();
-            })
-            .catch(error => {
-                console.error('Errore nel caricamento del menu:', error);
-                const menuContent = document.getElementById('menuContent');
-                menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Impossibile caricare il menu. Riprova più tardi.</p>';
-            });
-    }
-
-    // Funzione per visualizzare il menu
-    function renderMenu() {
-        const menuContent = document.getElementById('menuContent');
-        menuContent.innerHTML = '';
-        
-        // Itera direttamente sull'array menuData
-        if (!Array.isArray(menuData)) {
-            console.error("I dati del menu non sono in un formato valido (array).");
-            menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Errore nel formato dei dati del menu. Contattare l\'amministratore.</p>';
-            return;
+        function closeLogin() {
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').style.display = 'none';
         }
 
-        menuData.forEach(category => {
-            if (category && category.items) {
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'category';
-                
-                const categoryHeader = document.createElement('h2');
-                categoryHeader.innerHTML = `<span class="category-icon">${category.icon}</span> ${category.name}`;
-                categoryDiv.appendChild(categoryHeader);
-                
-                const itemsDiv = document.createElement('div');
-                itemsDiv.className = 'items';
-                
-                category.items.filter(item => item.available).forEach(item => {
-                    const itemDiv = document.createElement('div');
-                    itemDiv.className = 'item';
-                    
-                    const itemHeader = document.createElement('div');
-                    itemHeader.className = 'item-header';
-                    
-                    const itemName = document.createElement('div');
-                    itemName.className = 'item-name';
-                    itemName.textContent = item.name;
-                    itemHeader.appendChild(itemName);
-                    
-                    const itemPrice = document.createElement('div');
-                    itemPrice.className = 'item-price';
-                    itemPrice.textContent = item.price;
-                    itemHeader.appendChild(itemPrice);
-                    
-                    itemDiv.appendChild(itemHeader);
-                    
-                    if (item.description) {
-                        const itemDescription = document.createElement('p');
-                        itemDescription.className = 'item-description';
-                        itemDescription.textContent = item.description;
-                        itemDiv.appendChild(itemDescription);
-                    }
-                    
-                    itemsDiv.appendChild(itemDiv);
-                });
-                categoryDiv.appendChild(itemsDiv);
-                menuContent.appendChild(categoryDiv);
+        function checkPassword() {
+            const password = document.getElementById('adminPassword').value;
+            if (password === ADMIN_PASSWORD) {
+                isAdminLoggedIn = true;
+                closeLogin();
+                document.querySelector('.admin-login').style.display = 'none';
+                document.querySelector('.admin-toggle').style.display = 'block';
+                toggleAdmin();
+            } else {
+                document.getElementById('loginError').style.display = 'block';
+                document.getElementById('adminPassword').value = '';
+                document.getElementById('adminPassword').focus();
             }
-        });
-        // Le funzioni di admin non sono incluse in questo script semplificato, quindi questa riga potrebbe dare errore.
-        // updateMenuStats();
-    }
-    
-    // Funzione per gestire il pannello di amministrazione
-    function toggleAdmin() {
-        const adminPanel = document.getElementById('adminPanel');
-        if (adminPanel.style.display === 'block') {
-            adminPanel.style.display = 'none';
-        } else {
-            adminPanel.style.display = 'block';
-            loadAdminPanel();
         }
-    }
-    
-    function loadAdminPanel() {
-        // (Il tuo codice per caricare il pannello admin va qui)
-    }
-    
-    function saveAllChanges() {
-        // (La tua nuova funzione saveAllChanges che non fa il reload va qui)
-    }
 
-    // Carica il menu all'avvio della pagina
-    document.addEventListener('DOMContentLoaded', loadMenu);
-</script>
+        function adminLogout() {
+            isAdminLoggedIn = false;
+            document.querySelector('.admin-login').style.display = 'block';
+            document.querySelector('.admin-toggle').style.display = 'none';
+            document.getElementById('adminPanel').style.display = 'none';
+        }
+
+        function loadMenu() {
+            fetch('menu-data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('File menu-data.json non trovato o errore di rete');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    menuData = data.menu_data.categories;
+                    renderMenu();
+                })
+                .catch(error => {
+                    console.error('Errore nel caricamento del menu:', error);
+                    const menuContent = document.getElementById('menuContent');
+                    menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Impossibile caricare il menu. Riprova più tardi.</p>';
+                });
+        }
+
+        function renderMenu() {
+            const menuContent = document.getElementById('menuContent');
+            menuContent.innerHTML = '';
+            if (!Array.isArray(menuData)) {
+                console.error("I dati del menu non sono in un formato valido (array).");
+                menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Errore nel formato dei dati del menu. Contattare l\'amministratore.</p>';
+                return;
+            }
+            menuData.forEach(category => {
+                if (category && category.items) {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'category';
+                    const categoryHeader = document.createElement('h2');
+                    categoryHeader.innerHTML = `<span class="category-icon">${category.icon}</span> ${category.name}`;
+                    categoryDiv.appendChild(categoryHeader);
+                    const itemsDiv = document.createElement('div');
+                    itemsDiv.className = 'items';
+                    category.items.filter(item => item.available).forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'item';
+                        const itemHeader = document.createElement('div');
+                        itemHeader.className = 'item-header';
+                        const itemName = document.createElement('div');
+                        itemName.className = 'item-name';
+                        itemName.textContent = item.name;
+                        itemHeader.appendChild(itemName);
+                        const itemPrice = document.createElement('div');
+                        itemPrice.className = 'item-price';
+                        itemPrice.textContent = item.price;
+                        itemHeader.appendChild(itemPrice);
+                        itemDiv.appendChild(itemHeader);
+                        if (item.description) {
+                            const itemDescription = document.createElement('p');
+                            itemDescription.className = 'item-description';
+                            itemDescription.textContent = item.description;
+                            itemDiv.appendChild(itemDescription);
+                        }
+                        itemsDiv.appendChild(itemDiv);
+                    });
+                    categoryDiv.appendChild(itemsDiv);
+                    menuContent.appendChild(categoryDiv);
+                }
+            });
+        }
+
+        function generateQR() {
+            const qrCodeDiv = document.getElementById('qrCode');
+            const url = window.location.href.split('?')[0];
+            qrCodeDiv.innerHTML = '';
+            new QRCode(qrCodeDiv, {
+                text: url,
+                width: 128,
+                height: 128,
+                colorDark: "#654321",
+                colorLight: "#F5DEB3",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        }
+
+        function toggleAdmin() {
+            const adminPanel = document.getElementById('adminPanel');
+            if (adminPanel.style.display === 'block') {
+                adminPanel.style.display = 'none';
+            } else {
+                adminPanel.style.display = 'block';
+                // Puoi aggiungere qui la logica per caricare il pannello admin se necessario
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadMenu();
+            generateQR();
+        });
+    </script>
 </body>
 </html>
