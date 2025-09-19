@@ -531,8 +531,8 @@
                 return response.json();
             })
             .then(data => {
-                // Assegna i dati caricati alla variabile menuData
-                menuData = data;
+                // Assegna i dati caricati alla variabile menuData, puntando all'oggetto "menu_data"
+                menuData = data.menu_data;
                 // Esegui la funzione per visualizzare il menu sulla pagina
                 renderMenu();
             })
@@ -620,6 +620,7 @@
 </body>
 
 </html>
+
 
 
 
