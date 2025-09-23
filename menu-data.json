@@ -51,12 +51,12 @@
             "name": "Mamacita",
             "description": "Tequila, vermouth rosso, frutto della passione, succo arancia, peperoncino piri piri, worchester",
             "price": "€ 12.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Zombie",
-            "description": "Rum chiaro, rum scuro, cointreau, succo pompelmo, angostura, falernum, limone, frutti rossi",
-            "price": "€ 13.00",
+            "description": "Rum chiaro, rum scuro, cointreau, succo pompelmo, angostura, falernum, limone, frutti gialli",
+            "price": "€ 12.00",
             "available": true
           },
           {
