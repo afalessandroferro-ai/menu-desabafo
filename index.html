@@ -1,234 +1,265 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desabafo - Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desabafo - Menu</title>
 
-  <!-- Font Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Font Google Aggiornato: Permanent Marker (per i titoli) e Roboto Slab (per il testo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    :root {
-      --primary-brown: #5D4037;
-      --light-brown: #8D6E63;
-      --dark-brown: #3E2723;
-      --cream: #F5EFE5;
-      --text-dark: #333;
-      --accent-gold: #D4AF37;
-    }
+        :root {
+            --primary-brown: #5D4037;
+            --light-brown: #8D6E63;
+            --dark-brown: #3E2723;
+            --cream: #F5EFE5;
+            --text-dark: #333;
+            --accent-gold: #D4AF37;
+        }
 
-    body {
-      font-family: 'Cormorant Garamond', serif;
-      background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
-      color: var(--text-dark);
-      min-height: 100vh;
-    }
+        body {
+            /* CAMBIO FONT: Usa Roboto Slab per il corpo (più leggibile) */
+            font-family: 'Roboto Slab', serif; 
+            background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
 
-    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
 
-    .header {
-      text-align: center;
-      margin-bottom: 40px;
-      padding: 30px 20px;
-      background: var(--dark-brown);
-      border-radius: 20px;
-      color: var(--cream);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: var(--dark-brown);
+            border-radius: 20px;
+            color: var(--cream);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
 
-    .logo {
-      width: 200px; height: 200px; margin: 0 auto;
-      background: var(--cream); border-radius: 15px;
-      display: flex; align-items: center; justify-content: center;
-      padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
+        .logo {
+            width: 200px; height: 200px; margin: 0 auto;
+            background: var(--cream); border-radius: 15px;
+            display: flex; align-items: center; justify-content: center;
+            padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
 
-    .logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 15px; }
+        .logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 15px; }
 
-    .header h1, .header p { display: none; }
+        .header h1, .header p { display: none; }
 
-    .login-modal {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.8); display: none;
-      justify-content: center; align-items: center; z-index: 10000;
-    }
+        .login-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); display: none;
+            justify-content: center; align-items: center; z-index: 10000;
+        }
 
-    .login-box {
-      background: white; padding: 30px; border-radius: 15px;
-      text-align: center; max-width: 400px; width: 90%;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
+        .login-box {
+            background: white; padding: 30px; border-radius: 15px;
+            text-align: center; max-width: 400px; width: 90%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
 
-    .admin-panel {
-      display: none; background: white; padding: 20px; border-radius: 10px;
-      margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+        .admin-panel {
+            display: none; background: white; padding: 20px; border-radius: 10px;
+            margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
 
-    .categories { display: grid; gap: 30px; }
+        .categories { display: grid; gap: 30px; }
 
-    .category {
-      background: white; padding: 25px; border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(139,69,19,0.1);
-      border-left: 5px solid var(--primary-brown);
-    }
+        .category {
+            background: white; padding: 25px; border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(139,69,19,0.1);
+            border-left: 5px solid var(--primary-brown);
+        }
 
-    .category h2 {
-      color: var(--primary-brown);
-      font-size: 2.2em; margin-bottom: 20px;
-      display: flex; align-items: center; gap: 10px;
-      font-family: 'Playfair Display', serif;
-    }
+        .category h2 {
+            color: var(--primary-brown);
+            font-size: 2.2em; margin-bottom: 20px;
+            display: flex; align-items: center; gap: 10px;
+            /* CAMBIO FONT: Usa Permanent Marker per un effetto corsivo/schizzo */
+            font-family: 'Permanent Marker', cursive;
+        }
 
-    .items { display: grid; gap: 15px; }
+        .items { display: grid; gap: 15px; }
 
-    .item {
-      padding: 15px; border-radius: 10px; background: var(--cream);
-      border-left: 3px solid var(--light-brown);
-      transition: all 0.3s ease;
-    }
+        .item {
+            padding: 15px; border-radius: 10px; background: var(--cream);
+            border-left: 3px solid var(--light-brown);
+            transition: all 0.3s ease;
+        }
 
-    .qr-section {
-      text-align: center; margin: 40px 0; padding: 20px;
-      background: white; border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+        .qr-section {
+            text-align: center; margin: 40px 0; padding: 20px;
+            background: white; border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
 
-    .qr-code { margin: 20px 0; display: inline-block; }
+        .qr-code { margin: 20px 0; display: inline-block; }
 
-    @media print {
-      .header, .qr-section, .admin-panel { display: none !important; }
-      .categories { display: block; columns: 2; column-gap: 40px; }
-      .category { break-inside: avoid-column; page-break-inside: avoid; }
-      .category, .item { background: none; box-shadow: none; border-left: none; }
-    }
+        @media print {
+            .header, .qr-section, .admin-panel { display: none !important; }
+            .categories { display: block; columns: 2; column-gap: 40px; }
+            .category { break-inside: avoid-column; page-break-inside: avoid; }
+            .category, .item { background: none; box-shadow: none; border-left: none; }
+        }
 
-    @media (max-width: 768px) {
-      .container { padding: 10px; }
-      .item-header { flex-direction: column; align-items: flex-start; gap: 5px; }
-    }
-  </style>
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            .item-header { flex-direction: column; align-items: flex-start; gap: 5px; }
+        }
+    </style>
 </head>
 <body onclick="hideAdminToggle(event)">
-  <div class="login-modal" id="loginModal">
-    <div class="login-box">
-      <h3>🔐 Accesso Admin</h3>
-      <p>Inserisci la password per gestire il menu</p>
-      <input type="password" id="adminPassword" placeholder="Password Admin" onkeypress="if(event.key==='Enter') checkPassword()">
-      <br>
-      <button onclick="checkPassword()">Accedi</button>
-      <button onclick="closeLogin()">Annulla</button>
-      <div id="loginError" style="color:red;margin-top:10px;display:none;">Password non corretta!</div>
+    <div class="login-modal" id="loginModal">
+        <div class="login-box">
+            <h3>🔐 Accesso Admin</h3>
+            <p>Inserisci la password per gestire il menu</p>
+            <input type="password" id="adminPassword" placeholder="Password Admin" onkeypress="if(event.key==='Enter') checkPassword()">
+            <br>
+            <button onclick="checkPassword()">Accedi</button>
+            <button onclick="closeLogin()">Annulla</button>
+            <div id="loginError" style="color:red;margin-top:10px;display:none;">Password non corretta!</div>
+        </div>
     </div>
-  </div>
 
-  <div class="admin-panel" id="adminPanel">
-    <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
-    <div class="admin-tabs">
-      <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
-      <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
+    <div class="admin-panel" id="adminPanel">
+        <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
+        <div class="admin-tabs">
+            <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
+            <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
+        </div>
+        <div class="admin-content active" id="editorContent">
+            <div class="import-export">
+                <button onclick="exportMenu()">📤 Esporta Menu</button>
+                <button onclick="importMenu()">📥 Importa Menu</button>
+                <button onclick="adminLogout()">🚪 Logout</button>
+                <input type="file" id="importFile" accept=".json" style="display:none;" onchange="handleImport(event)">
+            </div>
+            <div id="menuEditor"></div>
+            <button onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
+        </div>
+        <div class="admin-content" id="toolsContent">
+            <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
+            <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
+            <button onclick="window.print()">🖨️ Stampa Menu</button>
+            <button onclick="resetMenu()">🔄 Ripristina Menu Originale</button>
+            <div style="margin-top:20px;">
+                <h4>📊 Statistiche Menu</h4>
+                <p id="menuStats"></p>
+            </div>
+        </div>
     </div>
-    <div class="admin-content active" id="editorContent">
-      <div class="import-export">
-        <button onclick="exportMenu()">📤 Esporta Menu</button>
-        <button onclick="importMenu()">📥 Importa Menu</button>
-        <button onclick="adminLogout()">🚪 Logout</button>
-        <input type="file" id="importFile" accept=".json" style="display:none;" onchange="handleImport(event)">
-      </div>
-      <div id="menuEditor"></div>
-      <button onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo" id="adminLogoTrigger">
+                <img src="logobafo.png" alt="Desabafo Logo">
+            </div>
+        </div>
+        <div class="categories" id="menuContent"></div>
+        <div class="qr-section">
+            <h3>Scansiona per il menu digitale</h3>
+            <div class="qr-code" id="qrCode"></div>
+        </div>
     </div>
-    <div class="admin-content" id="toolsContent">
-      <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
-      <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
-      <button onclick="window.print()">🖨️ Stampa Menu</button>
-      <button onclick="resetMenu()">🔄 Ripristina Menu Originale</button>
-      <div style="margin-top:20px;">
-        <h4>📊 Statistiche Menu</h4>
-        <p id="menuStats"></p>
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
-    <div class="header">
-      <div class="logo" id="adminLogoTrigger">
-        <img src="logobafo.png" alt="Desabafo Logo">
-      </div>
-    </div>
-    <div class="categories" id="menuContent"></div>
-    <div class="qr-section">
-      <h3>Scansiona per il menu digitale</h3>
-      <div class="qr-code" id="qrCode"></div>
-    </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+        let isAdminLoggedIn = false;
+        const ADMIN_PASSWORD = "azzaBAFO2025!";
+        let menuData = {};
+        let adminTimer;
 
-  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-  <script>
-    let isAdminLoggedIn = false;
-    const ADMIN_PASSWORD = "azzaBAFO2025!";
-    let menuData = {};
-    let adminTimer;
+        function showLogin(){ document.getElementById('loginModal').style.display='flex'; document.getElementById('adminPassword').focus(); }
+        function closeLogin(){ document.getElementById('loginModal').style.display='none'; document.getElementById('adminPassword').value=''; document.getElementById('loginError').style.display='none'; }
+        function checkPassword(){ const p=document.getElementById('adminPassword').value; if(p===ADMIN_PASSWORD){ isAdminLoggedIn=true; closeLogin(); document.getElementById('adminPanel').style.display='block'; } else { document.getElementById('loginError').style.display='block'; document.getElementById('adminPassword').value=''; document.getElementById('adminPassword').focus(); } }
+        function adminLogout(){ isAdminLoggedIn=false; document.getElementById('adminPanel').style.display='none'; }
 
-    function showLogin(){ document.getElementById('loginModal').style.display='flex'; document.getElementById('adminPassword').focus(); }
-    function closeLogin(){ document.getElementById('loginModal').style.display='none'; document.getElementById('adminPassword').value=''; document.getElementById('loginError').style.display='none'; }
-    function checkPassword(){ const p=document.getElementById('adminPassword').value; if(p===ADMIN_PASSWORD){ isAdminLoggedIn=true; closeLogin(); document.getElementById('adminPanel').style.display='block'; } else { document.getElementById('loginError').style.display='block'; document.getElementById('adminPassword').value=''; document.getElementById('adminPassword').focus(); } }
-    function adminLogout(){ isAdminLoggedIn=false; document.getElementById('adminPanel').style.display='none'; }
-
-    function loadMenu(){
-      fetch('menu-data.json')
-      .then(r=>{ if(!r.ok) throw new Error('menu-data.json non trovato'); return r.json(); })
-      .then(d=>{ menuData=d.menu_data.categories; renderMenu(); })
-      .catch(e=>{ console.error(e); document.getElementById('menuContent').innerHTML='<p style="text-align:center;color:red;">Impossibile caricare il menu.</p>'; });
-    }
-
-    function renderMenu(){
-      const mc=document.getElementById('menuContent'); mc.innerHTML='';
-      if(!Array.isArray(menuData)){ mc.innerHTML='<p style="text-align:center;color:red;">Errore formato dati.</p>'; return; }
-      menuData.forEach(cat=>{
-        if(cat && cat.items){
-          const c=document.createElement('div'); c.className='category';
-          const h=document.createElement('h2'); h.innerHTML=`<span>${cat.icon}</span> ${cat.name}`; c.appendChild(h);
-          const items=document.createElement('div'); items.className='items';
-          cat.items.filter(i=>i.available).forEach(i=>{
-            const id=document.createElement('div'); id.className='item';
-            const ih=document.createElement('div'); ih.className='item-header';
-            const iname=document.createElement('div'); iname.className='item-name'; iname.textContent=i.name;
-            const iprice=document.createElement('div'); iprice.className='item-price'; iprice.textContent=i.price;
-            ih.appendChild(iname); ih.appendChild(iprice); id.appendChild(ih);
-            if(i.description){ const d=document.createElement('p'); d.className='item-description'; d.textContent=i.description; id.appendChild(d); }
-            items.appendChild(id);
-          });
-          c.appendChild(items); mc.appendChild(c);
+        function loadMenu(){
+            // Nota: La funzione fetch cerca 'menu-data.json'. Assicurati che questo file sia disponibile!
+            fetch('menu-data.json')
+            .then(r=>{ if(!r.ok) throw new Error('menu-data.json non trovato'); return r.json(); })
+            .then(d=>{ menuData=d.menu_data.categories; renderMenu(); })
+            .catch(e=>{ console.error(e); document.getElementById('menuContent').innerHTML='<p style="text-align:center;color:red;">Impossibile caricare il menu.</p>'; });
         }
-      });
-    }
 
-    function generateQR(){
-      const qr=document.getElementById('qrCode');
-      const url=window.location.href.split('?')[0];
-      qr.innerHTML='';
-      new QRCode(qr,{ text:url, width:128, height:128, colorDark:"#3E2723", colorLight:"#F5EFE5", correctLevel:QRCode.CorrectLevel.H });
-    }
+        function renderMenu(){
+            const mc=document.getElementById('menuContent'); mc.innerHTML='';
+            if(!Array.isArray(menuData)){ mc.innerHTML='<p style="text-align:center;color:red;">Errore formato dati.</p>'; return; }
+            menuData.forEach(cat=>{
+                if(cat && cat.items){
+                    const c=document.createElement('div'); c.className='category';
+                    const h=document.createElement('h2'); h.innerHTML=`<span>${cat.icon}</span> ${cat.name}`; c.appendChild(h);
+                    const items=document.createElement('div'); items.className='items';
+                    cat.items.filter(i=>i.available).forEach(i=>{
+                        const id=document.createElement('div'); id.className='item';
+                        const ih=document.createElement('div'); ih.className='item-header';
+                        // Aggiungo flexbox per allineare nome e prezzo
+                        ih.style.display = 'flex';
+                        ih.style.justifyContent = 'space-between';
+                        ih.style.alignItems = 'flex-start';
 
-    document.getElementById('adminLogoTrigger').addEventListener('touchstart', e=>{ e.preventDefault(); adminTimer=setTimeout(showLogin,1000); });
-    document.getElementById('adminLogoTrigger').addEventListener('touchend', ()=>clearTimeout(adminTimer));
-    document.getElementById('adminLogoTrigger').addEventListener('touchmove', ()=>clearTimeout(adminTimer));
+                        const iname=document.createElement('div'); iname.className='item-name'; iname.textContent=i.name;
+                        const iprice=document.createElement('div'); iprice.className='item-price'; iprice.textContent=i.price;
+                        
+                        // Stili per nome e prezzo (opzionali, per evidenziare)
+                        iname.style.fontWeight = '700';
+                        iprice.style.color = 'var(--primary-brown)';
+                        iprice.style.fontWeight = '700';
 
-    function hideAdminToggle(e){ const ap=document.getElementById('adminPanel'); if(isAdminLoggedIn && !ap.contains(e.target) && !document.getElementById('adminLogoTrigger').contains(e.target)){ ap.style.display='none'; } }
-    function showAdminTab(tab){ document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active')); document.querySelectorAll('.admin-content').forEach(c=>c.classList.remove('active')); document.querySelector(`.admin-tab[onclick="showAdminTab('${tab}')"]`).classList.add('active'); document.getElementById(tab+'Content').classList.add('active'); }
+                        ih.appendChild(iname); ih.appendChild(iprice); id.appendChild(ih);
+                        if(i.description){ 
+                            const d=document.createElement('p'); d.className='item-description'; d.textContent=i.description; 
+                            d.style.marginTop = '5px';
+                            d.style.fontSize = '0.9em';
+                            d.style.color = 'var(--text-dark)';
+                            id.appendChild(d); 
+                        }
+                        items.appendChild(id);
+                    });
+                    c.appendChild(items); mc.appendChild(c);
+                }
+            });
+        }
 
-    document.addEventListener('DOMContentLoaded', ()=>{ loadMenu(); generateQR(); document.getElementById('adminPanel').style.display='none'; });
+        function generateQR(){
+            const qr=document.getElementById('qrCode');
+            const url=window.location.href.split('?')[0];
+            qr.innerHTML='';
+            new QRCode(qr,{ text:url, width:128, height:128, colorDark:"#3E2723", colorLight:"#F5EFE5", correctLevel:QRCode.CorrectLevel.H });
+            document.getElementById('currentUrl').textContent = url;
+        }
 
-    function exportMenu(){ console.log('Export non implementato'); }
-    function importMenu(){ console.log('Import non implementato'); }
-    function handleImport(e){ console.log('Import gestito'); }
-    function saveAllChanges(){ console.log('Salva non implementato'); }
-    function resetMenu(){ console.log('Reset non implementato'); }
-  </script>
+        // Modifica: Aggiungo un evento click normale, oltre al touch, per facilitare l'accesso su desktop
+        document.getElementById('adminLogoTrigger').addEventListener('click', e => { e.preventDefault(); showLogin(); });
+
+        document.getElementById('adminLogoTrigger').addEventListener('touchstart', e=>{ e.preventDefault(); adminTimer=setTimeout(showLogin,1000); });
+        document.getElementById('adminLogoTrigger').addEventListener('touchend', ()=>clearTimeout(adminTimer));
+        document.getElementById('adminLogoTrigger').addEventListener('touchmove', ()=>clearTimeout(adminTimer));
+
+        function hideAdminToggle(e){ const ap=document.getElementById('adminPanel'); if(isAdminLoggedIn && !ap.contains(e.target) && !document.getElementById('adminLogoTrigger').contains(e.target)){ ap.style.display='none'; } }
+        
+        function showAdminTab(tab){ 
+            document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active')); 
+            document.querySelectorAll('.admin-content').forEach(c=>c.classList.remove('active')); 
+            document.querySelector(`.admin-tab[onclick="showAdminTab('${tab}')"]`).classList.add('active'); 
+            document.getElementById(tab+'Content').classList.add('active'); 
+        }
+
+        document.addEventListener('DOMContentLoaded', ()=>{ loadMenu(); generateQR(); document.getElementById('adminPanel').style.display='none'; });
+
+        // Funzioni non implementate (per ora)
+        function exportMenu(){ console.log('Export non implementato'); }
+        function importMenu(){ console.log('Import non implementato'); }
+        function handleImport(e){ console.log('Import gestito'); }
+        function saveAllChanges(){ console.log('Salva non implementato'); }
+        function resetMenu(){ console.log('Reset non implementato'); }
+    </script>
 </body>
 </html>
