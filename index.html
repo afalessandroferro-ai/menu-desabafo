@@ -1,920 +1,625 @@
 <!DOCTYPE html>
-
 <html lang="it">
-
 <head>
-
-    <!-- Configurazione base e metadati per la responsività -->
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Desabafo - Menu</title>
-
-    <!-- Importazione dei font Google (Cormorant Garamond e Playfair Display) -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-    <style>
-
-        /* Reset CSS per margini e padding */
-
-        * {
-
-            margin: 0;
-
-            padding: 0;
-
-            box-sizing: border-box;
-
-        }
-
-
-
-        /* Definizione delle variabili di colore */
-
-        :root {
-
-            --primary-brown: #5D4037;
-
-            --light-brown: #8D6E63;
-
-            --dark-brown: #3E2723;
-
-            --cream: #F5EFE5;
-
-            --text-dark: #333;
-
-            --accent-gold: #D4AF37;
-
-        }
-
-
-
-        /* Stile del corpo e sfondo */
-
-        body {
-
-            font-family: 'Cormorant Garamond', serif;
-
-            background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
-
-            color: var(--text-dark);
-
-            min-height: 100vh;
-
-        }
-
-
-
-        /* Contenitore principale a larghezza limitata e centrato */
-
-        .container {
-
-            max-width: 1000px;
-
-            margin: 0 auto;
-
-            padding: 20px;
-
-        }
-
-
-
-        /* Stili per l'intestazione/banner superiore */
-
-        .header {
-
-            text-align: center;
-
-            margin-bottom: 40px;
-
-            padding: 30px 20px;
-
-            background: var(--dark-brown);
-
-            border-radius: 20px;
-
-            color: var(--cream);
-
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-
-        }
-
-
-
-        /* Stili per il logo centrale */
-
-        .logo {
-
-            width: 200px;
-
-            height: 200px;
-
-            margin: 0 auto;
-
-            background: var(--cream);
-
-            border-radius: 15px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            padding: 15px;
-
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
-        }
-
-
-
-        .logo img {
-
-            width: 100%;
-
-            height: 100%;
-
-            object-fit: contain;
-
-            border-radius: 15px;
-
-        }
-
-
-
-        /* Nasconde titoli e paragrafi nell'header (solo logo visibile) */
-
-        .header h1, .header p {
-
-            display: none;
-
-        }
-
-
-
-        /* Stili per la finestra modale di accesso Admin */
-
-        .login-modal {
-
-            position: fixed;
-
-            top: 0;
-
-            left: 0;
-
-            width: 100%;
-
-            height: 100%;
-
-            background: rgba(0, 0, 0, 0.8);
-
-            display: none; /* Inizialmente nascosto */
-
-            justify-content: center;
-
-            align-items: center;
-
-            z-index: 10000;
-
-        }
-
-
-
-        /* Contenitore interno della modale */
-
-        .login-box {
-
-            background: white;
-
-            padding: 30px;
-
-            border-radius: 15px;
-
-            text-align: center;
-
-            max-width: 400px;
-
-            width: 90%;
-
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-
-        }
-
-
-
-        /* Pannello di amministrazione (nascosto per default) */
-
-        .admin-panel {
-
-            display: none;
-
-            background: white;
-
-            padding: 20px;
-
-            border-radius: 10px;
-
-            margin-bottom: 20px;
-
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
-        }
-
-
-
-        /* Stili per il layout del menu (griglia con gap) */
-
-        .categories {
-
-            display: grid;
-
-            gap: 30px;
-
-        }
-
-
-
-        /* Stili per ogni singola categoria */
-
-        .category {
-
-            background: white;
-
-            padding: 25px;
-
-            border-radius: 15px;
-
-            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
-
-            border-left: 5px solid var(--primary-brown);
-
-        }
-
-
-
-        /* Stili per il titolo della categoria */
-
-        .category h2 {
-
-            color: var(--primary-brown);
-
-            font-size: 2.2em;
-
-            margin-bottom: 20px;
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 10px;
-
-            font-family: 'Playfair Display', serif;
-
-        }
-
-
-
-        /* Contenitore per gli elementi del menu all'interno di una categoria */
-
-        .items {
-
-            display: grid;
-
-            gap: 15px;
-
-        }
-
-
-
-        /* Stili per ogni singolo elemento/piatto del menu */
-
-        .item {
-
-            padding: 15px;
-
-            border-radius: 10px;
-
-            background: var(--cream);
-
-            border-left: 3px solid var(--light-brown);
-
-            transition: all 0.3s ease;
-
-        }
-
-
-
-        /* Sezione del QR Code - Stili per posizionarlo al centro */
-
-        .qr-section {
-
-            text-align: center;
-
-            margin: 40px 0;
-
-            padding: 20px;
-
-            background: white;
-
-            border-radius: 10px;
-
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
-        }
-
-
-
-        /* Contenitore per il QR Code generato */
-
-        .qr-code {
-
-            margin: 20px 0;
-
-            display: inline-block;
-
-        }
-
-
-
-        /* Stili per la stampa del menu (@media print) */
-
-        @media print {
-
-            /* Nasconde elementi non necessari per la stampa (header, qr, admin) */
-
-            .header, .qr-section, .admin-panel {
-
-                display: none !important;
-
-            }
-
-            /* Gestisce il layout in colonne per la stampa */
-
-            .categories {
-
-                display: block;
-
-                columns: 2;
-
-                column-gap: 40px;
-
-            }
-
-            /* Assicura che le categorie non si interrompano a metà pagina */
-
-            .category {
-
-                break-inside: avoid-column;
-
-                page-break-inside: avoid;
-
-            }
-
-            /* Rimuove ombre e colori di sfondo per risparmiare inchiostro */
-
-            .category, .item {
-
-                background: none;
-
-                box-shadow: none;
-
-                border-left: none;
-
-            }
-
-        }
-
-
-
-        /* Media Query per schermi piccoli (responsive design) */
-
-        @media (max-width: 768px) {
-
-            .container {
-
-                padding: 10px;
-
-            }
-
-            /* Allinea nome e prezzo verticalmente su mobile */
-
-            .item-header {
-
-                flex-direction: column;
-
-                align-items: flex-start;
-
-                gap: 5px;
-
-            }
-
-        }
-
-    </style>
-
+    <!-- Configurazione base e metadati per la responsività -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desabafo - Menu</title>
+    <!-- Importazione dei font Google (Cormorant Garamond e Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS per margini e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definizione delle variabili di colore */
+        :root {
+            --primary-brown: #5D4037;
+            --light-brown: #8D6E63;
+            --dark-brown: #3E2723;
+            --cream: #F5EFE5;
+            --text-dark: #333;
+            --accent-gold: #D4AF37;
+        }
+
+        /* Stile del corpo e sfondo */
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+        /* Contenitore principale a larghezza limitata e centrato */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Stili per l'intestazione/banner superiore */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: var(--dark-brown);
+            border-radius: 20px;
+            color: var(--cream);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Stili per il logo centrale */
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: var(--cream);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            /* Rende il logo interattivo */
+            cursor: pointer; 
+            user-select: none;
+            transition: transform 0.1s ease;
+        }
+
+        .logo:active {
+            transform: scale(0.98);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        /* Nasconde titoli e paragrafi nell'header (solo logo visibile) */
+        .header h1, .header p {
+            display: none;
+        }
+
+        /* Stili per la finestra modale di accesso Admin */
+        .login-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none; /* Inizialmente nascosto */
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        /* Contenitore interno della modale */
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        .login-box input {
+            padding: 10px;
+            margin: 15px 0;
+            width: calc(100% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        
+        .login-btn, .cancel-btn, .export-btn, .import-btn, .save-all-btn {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1em;
+            transition: background-color 0.2s;
+        }
+        
+        .login-btn, .save-all-btn {
+            background-color: var(--primary-brown);
+            color: var(--cream);
+        }
+        
+        .login-btn:hover, .save-all-btn:hover {
+            background-color: var(--dark-brown);
+        }
+        
+        .cancel-btn, .export-btn, .import-btn {
+            background-color: #ccc;
+            color: var(--text-dark);
+        }
+        
+        .cancel-btn:hover, .export-btn:hover, .import-btn:hover {
+            background-color: #aaa;
+        }
+
+        /* Pannello di amministrazione (nascosto per default) */
+        .admin-panel {
+            display: none;
+            background: var(--cream);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .admin-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--light-brown);
+        }
+        
+        .admin-tab {
+            padding: 10px 15px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: var(--text-dark);
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .admin-tab.active {
+            border-bottom: 3px solid var(--primary-brown);
+            font-weight: bold;
+            color: var(--primary-brown);
+        }
+        
+        .admin-content {
+            display: none;
+            padding-top: 15px;
+        }
+        
+        .admin-content.active {
+            display: block;
+        }
+        
+        .import-export button {
+            margin: 5px 10px 15px 0;
+        }
+        
+
+        /* Stili per il layout del menu (griglia con gap) */
+        .categories {
+            display: grid;
+            gap: 30px;
+        }
+
+        /* Stili per ogni singola categoria */
+        .category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+            border-left: 5px solid var(--primary-brown);
+        }
+
+        /* Stili per il titolo della categoria */
+        .category h2 {
+            color: var(--primary-brown);
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Contenitore per gli elementi del menu all'interno di una categoria */
+        .items {
+            display: grid;
+            gap: 15px;
+        }
+
+        /* Stili per ogni singolo elemento/piatto del menu */
+        .item {
+            padding: 15px;
+            border-radius: 10px;
+            background: var(--cream);
+            border-left: 3px solid var(--light-brown);
+            transition: all 0.3s ease;
+        }
+        
+        .item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--dark-brown);
+            margin-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .item-description {
+            font-style: italic;
+            font-size: 1em;
+            color: var(--text-dark);
+            line-height: 1.4;
+        }
+        
+        .item-price {
+            font-weight: bold;
+            color: var(--primary-brown);
+        }
+
+
+        /* Sezione del QR Code - Stili per posizionarlo al centro */
+        .qr-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contenitore per il QR Code generato */
+        .qr-code {
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        /* Stili per la stampa del menu (@media print) */
+        @media print {
+            /* Nasconde elementi non necessari per la stampa (header, qr, admin) */
+            .header, .qr-section, .admin-panel {
+                display: none !important;
+            }
+            /* Gestisce il layout in colonne per la stampa */
+            .categories {
+                display: block;
+                columns: 2;
+                column-gap: 40px;
+            }
+            /* Assicura che le categorie non si interrompano a metà pagina */
+            .category {
+                break-inside: avoid-column;
+                page-break-inside: avoid;
+            }
+            /* Rimuove ombre e colori di sfondo per risparmiare inchiostro */
+            .category, .item {
+                background: none;
+                box-shadow: none;
+                border-left: none;
+            }
+        }
+
+        /* Media Query per schermi piccoli (responsive design) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            /* Allinea nome e prezzo verticalmente su mobile */
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .item-price {
+                margin-top: 5px;
+            }
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
-
 <body onclick="hideAdminToggle(event)">
-
-    <!-- MODALE DI ACCESSO ADMIN (inizialmente display: none) -->
-
-    <div class="login-modal" id="loginModal">
-
-        <div class="login-box">
-
-            <h3>🔐 Accesso Admin</h3>
-
-            <p>Inserisci la password per gestire il menu</p>
-
-            <input type="password" id="adminPassword" placeholder="Password Admin" onkeypress="if(event.key==='Enter') checkPassword()">
-
-            <br>
-
-            <button class="login-btn" onclick="checkPassword()">Accedi</button>
-
-            <button class="cancel-btn" onclick="closeLogin()">Annulla</button>
-
-            <div id="loginError" style="color: red; margin-top: 10px; display: none;">Password non corretta!</div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- PANNELLO DI AMMINISTRAZIONE (inizialmente display: none) -->
-
-    <div class="admin-panel" id="adminPanel">
-
-        <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
-
-        <!-- Tab di navigazione del pannello Admin -->
-
-        <div class="admin-tabs">
-
-            <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
-
-            <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
-
-        </div>
-
-        <!-- Contenuto della tab Modifica Menu -->
-
-        <div class="admin-content active" id="editorContent">
-
-            <div class="import-export">
-
-                <button class="export-btn" onclick="exportMenu()">📤 Esporta Menu</button>
-
-                <button class="import-btn" onclick="importMenu()">📥 Importa Menu</button>
-
-                <button class="cancel-btn" onclick="adminLogout()">🚪 Logout</button>
-
-                <input type="file" id="importFile" accept=".json" style="display: none;" onchange="handleImport(event)">
-
-            </div>
-
-            <div id="menuEditor"></div>
-
-            <button class="save-all-btn" onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
-
-        </div>
-
-        <!-- Contenuto della tab Strumenti -->
-
-        <div class="admin-content" id="toolsContent">
-
-            <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
-
-            <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
-
-            <button onclick="window.print()">🖨️ Stampa Menu</button>
-
-            <button onclick="resetMenu()">🔄 Ripristina Menu Originale</button>
-
-            <div style="margin-top: 20px;">
-
-                <h4>📊 Statistiche Menu</h4>
-
-                <p id="menuStats"></p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="container">
-
-        <!-- SEZIONE SUPERIORE CON IL LOGO -->
-
-        <div class="header">
-
-            <!-- Il logo funge da trigger per l'accesso admin (pressione prolungata) -->
-
-            <div class="logo" id="adminLogoTrigger">
-
-                <img src="logobafo.png" alt="Desabafo Logo">
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SEZIONE PRINCIPALE DEL MENU (caricata dal JSON) -->
-
-        <div class="categories" id="menuContent">
-
-            <!-- Il contenuto del menu verrà inserito qui dal JavaScript -->
-
-        </div>
-
-
-
-        <!-- SEZIONE DEL QR CODE (POSIZIONATA IN FONDO, DOPO IL MENU) -->
-
-        <div class="qr-section">
-
-            <h3>Scansiona per il menu digitale</h3>
-
-            <div class="qr-code" id="qrCode">
-
-                <!-- Il QR code verrà generato qui dal JavaScript -->
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- Libreria per la generazione del QR Code -->
-
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-
-    <script>
-
-        // Variabili di stato globali e costante per la password
-
-        let isAdminLoggedIn = false;
-
-        const ADMIN_PASSWORD = "azzaBAFO2025!";
-
-        let menuData = {};
-
-        let adminTimer; // Timer usato per la pressione prolungata del logo
-
-
-
-        // Mostra la modale di login
-
-        function showLogin() {
-
-            document.getElementById('loginModal').style.display = 'flex';
-
-            document.getElementById('adminPassword').focus();
-
-        }
-
-
-
-        // Nasconde la modale di login e resetta i campi
-
-        function closeLogin() {
-
-            document.getElementById('loginModal').style.display = 'none';
-
-            document.getElementById('adminPassword').value = '';
-
-            document.getElementById('loginError').style.display = 'none';
-
-        }
-
-
-
-        // Controlla la password inserita
-
-        function checkPassword() {
-
-            const password = document.getElementById('adminPassword').value;
-
-            if (password === ADMIN_PASSWORD) {
-
-                isAdminLoggedIn = true;
-
-                closeLogin();
-
-                // Mostra il pannello Admin se la password è corretta
-
-                document.getElementById('adminPanel').style.display = 'block';
-
-            } else {
-
-                // Mostra messaggio di errore
-
-                document.getElementById('loginError').style.display = 'block';
-
-                document.getElementById('adminPassword').value = '';
-
-                document.getElementById('adminPassword').focus();
-
-            }
-
-        }
-
-
-
-        // Effettua il logout admin
-
-        function adminLogout() {
-
-            isAdminLoggedIn = false;
-
-            document.getElementById('adminPanel').style.display = 'none';
-
-        }
-
-
-
-        // Carica i dati del menu dal file JSON (menu-data.json)
-
-        function loadMenu() {
-
-            fetch('menu-data.json')
-
-                .then(response => {
-
-                    if (!response.ok) {
-
-                        throw new Error('File menu-data.json non trovato o errore di rete');
-
-                    }
-
-                    return response.json();
-
-                })
-
-                .then(data => {
-
-                    menuData = data.menu_data.categories;
-
-                    renderMenu(); // Chiama la funzione per disegnare il menu
-
-                })
-
-                .catch(error => {
-
-                    console.error('Errore nel caricamento del menu:', error);
-
-                    const menuContent = document.getElementById('menuContent');
-
-                    menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Impossibile caricare il menu. Riprova più tardi.</p>';
-
-                });
-
-        }
-
-
-
-        // Disegna il menu sul DOM leggendo i dati caricati
-
-        function renderMenu() {
-
-            const menuContent = document.getElementById('menuContent');
-
-            menuContent.innerHTML = '';
-
-            if (!Array.isArray(menuData)) {
-
-                console.error("I dati del menu non sono in un formato valido (array).");
-
-                menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Errore nel formato dei dati del menu. Contattare l\'amministratore.</p>';
-
-                return;
-
-            }
-
-            menuData.forEach(category => {
-
-                if (category && category.items) {
-
-                    // Crea il div per la categoria
-
-                    const categoryDiv = document.createElement('div');
-
-                    categoryDiv.className = 'category';
-
-                    const categoryHeader = document.createElement('h2');
-
-                    categoryHeader.innerHTML = `<span class="category-icon">${category.icon}</span> ${category.name}`;
-
-                    categoryDiv.appendChild(categoryHeader);
-
-                    const itemsDiv = document.createElement('div');
-
-                    itemsDiv.className = 'items';
-
-                    // Filtra solo gli elementi disponibili e crea i div per i piatti
-
-                    category.items.filter(item => item.available).forEach(item => {
-
-                        const itemDiv = document.createElement('div');
-
-                        itemDiv.className = 'item';
-
-                        const itemHeader = document.createElement('div');
-
-                        itemHeader.className = 'item-header';
-
-                        const itemName = document.createElement('div');
-
-                        itemName.className = 'item-name';
-
-                        itemName.textContent = item.name;
-
-                        itemHeader.appendChild(itemName);
-
-                        const itemPrice = document.createElement('div');
-
-                        itemPrice.className = 'item-price';
-
-                        itemPrice.textContent = item.price;
-
-                        itemHeader.appendChild(itemPrice);
-
-                        itemDiv.appendChild(itemHeader);
-
-                        if (item.description) {
-
-                            const itemDescription = document.createElement('p');
-
-                            itemDescription.className = 'item-description';
-
-                            itemDescription.textContent = item.description;
-
-                            itemDiv.appendChild(itemDescription);
-
-                        }
-
-                        itemsDiv.appendChild(itemDiv);
-
-                    });
-
-                    categoryDiv.appendChild(itemsDiv);
-
-                    menuContent.appendChild(categoryDiv);
-
-                }
-
-            });
-
-        }
-
-
-
-        // Genera il QR Code utilizzando l'URL corrente del sito
-
-        function generateQR() {
-
-            const qrCodeDiv = document.getElementById('qrCode');
-
-            // Ottiene l'URL pulito (senza parametri)
-
-            const url = window.location.href.split('?')[0];
-
-            qrCodeDiv.innerHTML = ''; // Pulisce il contenitore
-
-            // Inizializza il QR Code con le opzioni di colore
-
-            new QRCode(qrCodeDiv, {
-
-                text: url,
-
-                width: 128,
-
-                height: 128,
-
-                colorDark: "#3E2723",
-
-                colorLight: "#F5EFE5",
-
-                correctLevel: QRCode.CorrectLevel.H
-
-            });
-
-        }
-
-
-
-        // Event listener per la pressione prolungata (touch) sul logo per l'accesso admin
-
-        document.getElementById('adminLogoTrigger').addEventListener('touchstart', (e) => {
-
-            e.preventDefault();
-
-            adminTimer = setTimeout(showLogin, 1000); // 1 secondo
-
-        });
-
-
-
-        // Cancella il timer se il tocco finisce
-
-        document.getElementById('adminLogoTrigger').addEventListener('touchend', () => {
-
-            clearTimeout(adminTimer);
-
-        });
-
-
-
-        // Cancella il timer se si sposta il dito
-
-        document.getElementById('adminLogoTrigger').addEventListener('touchmove', () => {
-
-            clearTimeout(adminTimer);
-
-        });
-
-
-
-        // Funzione per nascondere il pannello admin se si clicca fuori (per sicurezza)
-
-        function hideAdminToggle(event) {
-
-            const adminPanel = document.getElementById('adminPanel');
-
-            const isClickInsidePanel = adminPanel.contains(event.target);
-
-            const isClickOnLogo = document.getElementById('adminLogoTrigger').contains(event.target);
-
-            if (isAdminLoggedIn && !isClickInsidePanel && !isClickOnLogo) {
-
-                adminPanel.style.display = 'none';
-
-            }
-
-        }
-
-        
-
-        // Funzione per cambiare la tab nel pannello admin
-
-        function showAdminTab(tab) {
-
-            document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
-
-            document.querySelectorAll('.admin-content').forEach(c => c.classList.remove('active'));
-
-            document.querySelector(`.admin-tab[onclick="showAdminTab('${tab}')"]`).classList.add('active');
-
-            document.getElementById(tab + 'Content').classList.add('active');
-
-        }
-
-
-
-        // Esegue le funzioni principali all'avvio della pagina
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-            loadMenu();
-
-            generateQR();
-
-            document.getElementById('adminPanel').style.display = 'none';
-
-        });
-
-
-
-        // Placeholder per le funzioni Admin non ancora implementate
-
-        function exportMenu() { console.log('Funzione Export Menu non implementata.'); }
-
-        function importMenu() { console.log('Funzione Import Menu non implementata.'); }
-
-        function handleImport(event) { console.log('Funzione Import gestita.'); }
-
-        function saveAllChanges() { console.log('Funzione Salva Modifiche non implementata.'); }
-
-        function resetMenu() { console.log('Funzione Ripristina Menu Originale non implementata.'); }
-
-    </script>
-
+    <!-- MODALE DI ACCESSO ADMIN (inizialmente display: none) -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-box">
+            <h3>🔐 Accesso Admin</h3>
+            <p>Inserisci la password per gestire il menu</p>
+            <input type="password" id="adminPassword" placeholder="Password Admin" onkeypress="if(event.key==='Enter') checkPassword()">
+            <br>
+            <button class="login-btn" onclick="checkPassword()">Accedi</button>
+            <button class="cancel-btn" onclick="closeLogin()">Annulla</button>
+            <div id="loginError" style="color: red; margin-top: 10px; display: none;">Password non corretta!</div>
+        </div>
+    </div>
+
+    <!-- PANNELLO DI AMMINISTRAZIONE (inizialmente display: none) -->
+    <div class="admin-panel" id="adminPanel">
+        <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
+        <!-- Tab di navigazione del pannello Admin -->
+        <div class="admin-tabs">
+            <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
+            <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
+        </div>
+        <!-- Contenuto della tab Modifica Menu -->
+        <div class="admin-content active" id="editorContent">
+            <div class="import-export">
+                <button class="export-btn" onclick="exportMenu()">📤 Esporta Menu</button>
+                <button class="import-btn" onclick="importMenu()">📥 Importa Menu</button>
+                <button class="cancel-btn" onclick="adminLogout()">🚪 Logout</button>
+                <input type="file" id="importFile" accept=".json" style="display: none;" onchange="handleImport(event)">
+            </div>
+            <div id="menuEditor"></div>
+            <button class="save-all-btn" onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
+        </div>
+        <!-- Contenuto della tab Strumenti -->
+        <div class="admin-content" id="toolsContent">
+            <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
+            <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
+            <button onclick="window.print()">🖨️ Stampa Menu</button>
+            <button onclick="resetMenu()">🔄 Ripristina Menu Originale</button>
+            <div style="margin-top: 20px;">
+                <h4>📊 Statistiche Menu</h4>
+                <p id="menuStats"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- SEZIONE SUPERIORE CON IL LOGO -->
+        <div class="header">
+            <!-- Il logo funge da trigger per l'accesso admin (pressione prolungata) -->
+            <div class="logo" id="adminLogoTrigger">
+                <img src="logobafo.png" alt="Desabafo Logo">
+            </div>
+        </div>
+
+        <!-- SEZIONE PRINCIPALE DEL MENU (caricata dal JSON) -->
+        <div class="categories" id="menuContent">
+            <!-- Il contenuto del menu verrà inserito qui dal JavaScript -->
+        </div>
+
+        <!-- SEZIONE DEL QR CODE (POSIZIONATA IN FONDO, DOPO IL MENU) -->
+        <div class="qr-section">
+            <h3>Scansiona per il menu digitale</h3>
+            <div class="qr-code" id="qrCode">
+                <!-- Il QR code verrà generato qui dal JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Libreria per la generazione del QR Code -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+        // Variabili di stato globali e costante per la password
+        let isAdminLoggedIn = false;
+        const ADMIN_PASSWORD = "azzaBAFO2025!";
+        let menuData = {};
+        let currentLang = 'it'; // Lingua predefinita
+        let adminTimer; // Timer usato per la pressione prolungata del logo
+
+        // Mostra la modale di login
+        function showLogin() {
+            document.getElementById('loginModal').style.display = 'flex';
+            document.getElementById('adminPassword').focus();
+        }
+
+        // Nasconde la modale di login e resetta i campi
+        function closeLogin() {
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').style.display = 'none';
+        }
+
+        // Controlla la password inserita
+        function checkPassword() {
+            const password = document.getElementById('adminPassword').value;
+            if (password === ADMIN_PASSWORD) {
+                isAdminLoggedIn = true;
+                closeLogin();
+                // Mostra il pannello Admin se la password è corretta
+                document.getElementById('adminPanel').style.display = 'block';
+                // Aggiorna l'URL del pannello admin
+                document.getElementById('currentUrl').textContent = window.location.href.split('?')[0];
+            } else {
+                // Mostra messaggio di errore
+                document.getElementById('loginError').style.display = 'block';
+                document.getElementById('adminPassword').value = '';
+                document.getElementById('adminPassword').focus();
+            }
+        }
+
+        // Effettua il logout admin
+        function adminLogout() {
+            isAdminLoggedIn = false;
+            document.getElementById('adminPanel').style.display = 'none';
+        }
+
+        // Carica i dati del menu dal file JSON (menu-data.json)
+        function loadMenu() {
+            fetch('menu-data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('File menu-data.json non trovato o errore di rete');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Controlla se i dati sono incapsulati in 'menu_data'
+                    if (data.menu_data && Array.isArray(data.menu_data.categories)) {
+                        menuData = data.menu_data.categories;
+                        currentLang = data.menu_data.current_lang || 'it'; // Imposta la lingua
+                    } else if (Array.isArray(data)) {
+                        // Supporto per JSON di solo array (fallback)
+                        menuData = data;
+                    } else {
+                         throw new Error('Formato JSON del menu non riconosciuto.');
+                    }
+                    
+                    renderMenu(); // Chiama la funzione per disegnare il menu
+                })
+                .catch(error => {
+                    console.error('Errore nel caricamento del menu:', error);
+                    const menuContent = document.getElementById('menuContent');
+                    menuContent.innerHTML = '<p class="error-message" style="text-align:center; color:red;">Impossibile caricare il menu. Riprova più tardi.</p>';
+                });
+        }
+
+        // Funzione per estrarre il testo nella lingua corrente (gestisce sia stringhe che oggetti {it: "...", en: "..."})
+        function getText(content) {
+            if (typeof content === 'string') {
+                return content;
+            }
+            if (content && content[currentLang]) {
+                return content[currentLang];
+            }
+            // Fallback: se la lingua non è disponibile, usa 'it' o la prima chiave trovata
+            if (content && Object.keys(content).length > 0) {
+                return content[Object.keys(content)[0]];
+            }
+            return 'N/A';
+        }
+
+        // Disegna il menu sul DOM leggendo i dati caricati
+        function renderMenu() {
+            const menuContent = document.getElementById('menuContent');
+            menuContent.innerHTML = '';
+            
+            if (!Array.isArray(menuData) || menuData.length === 0) {
+                menuContent.innerHTML = '<p class="error-message" style="text-align:center;">Il menu è vuoto o i dati non sono validi.</p>';
+                return;
+            }
+            
+            menuData.forEach(category => {
+                if (category && category.items) {
+                    // Crea il div per la categoria
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'category';
+                    
+                    const categoryHeader = document.createElement('h2');
+                    // Usa getText per il nome della categoria
+                    const categoryName = getText(category.name); 
+                    categoryHeader.innerHTML = `<span class="category-icon">${category.icon || ''}</span> ${categoryName}`;
+                    categoryDiv.appendChild(categoryHeader);
+                    
+                    const itemsDiv = document.createElement('div');
+                    itemsDiv.className = 'items';
+                    
+                    // Filtra solo gli elementi disponibili e crea i div per i piatti
+                    category.items.filter(item => item.available).forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'item';
+                        
+                        const itemHeader = document.createElement('div');
+                        itemHeader.className = 'item-header';
+                        
+                        const itemName = document.createElement('div');
+                        itemName.className = 'item-name';
+                        itemName.textContent = getText(item.name); // Usa getText
+                        itemHeader.appendChild(itemName);
+                        
+                        const itemPrice = document.createElement('div');
+                        itemPrice.className = 'item-price';
+                        itemPrice.textContent = item.price.toFixed(2) + ' €'; // Formatta il prezzo
+                        itemHeader.appendChild(itemPrice);
+                        
+                        itemDiv.appendChild(itemHeader);
+                        
+                        if (item.description) {
+                            const itemDescription = document.createElement('p');
+                            itemDescription.className = 'item-description';
+                            itemDescription.textContent = getText(item.description); // Usa getText
+                            itemDiv.appendChild(itemDescription);
+                        }
+                        itemsDiv.appendChild(itemDiv);
+                    });
+                    
+                    categoryDiv.appendChild(itemsDiv);
+                    menuContent.appendChild(categoryDiv);
+                }
+            });
+        }
+
+        // Genera il QR Code utilizzando l'URL corrente del sito
+        function generateQR() {
+            const qrCodeDiv = document.getElementById('qrCode');
+            // Ottiene l'URL pulito (senza parametri)
+            const url = window.location.href.split('?')[0];
+            qrCodeDiv.innerHTML = ''; // Pulisce il contenitore
+            
+            // Inizializza il QR Code con le opzioni di colore
+            if (typeof QRCode !== 'undefined') {
+                 new QRCode(qrCodeDiv, { 
+                    text: url, 
+                    width: 128, 
+                    height: 128, 
+                    colorDark: "#3E2723", 
+                    colorLight: "#F5EFE5", 
+                    correctLevel: QRCode.CorrectLevel.H 
+                 }); 
+            } else {
+                 qrCodeDiv.innerHTML = '<p style="color:red;">Libreria QR Code non caricata.</p>';
+            }
+           
+        }
+
+        // Event listener per la pressione prolungata (touch) sul logo per l'accesso admin
+        document.getElementById('adminLogoTrigger').addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            adminTimer = setTimeout(showLogin, 1000); // 1 secondo
+        });
+
+        // Cancella il timer se il tocco finisce
+        document.getElementById('adminLogoTrigger').addEventListener('touchend', () => {
+            clearTimeout(adminTimer);
+        });
+
+        // Cancella il timer se si sposta il dito
+        document.getElementById('adminLogoTrigger').addEventListener('touchmove', () => {
+            clearTimeout(adminTimer);
+        });
+
+        // Funzione per nascondere il pannello admin se si clicca fuori (per sicurezza)
+        function hideAdminToggle(event) {
+            const adminPanel = document.getElementById('adminPanel');
+            const isClickInsidePanel = adminPanel.contains(event.target);
+            const isClickOnLogo = document.getElementById('adminLogoTrigger').contains(event.target);
+            if (isAdminLoggedIn && adminPanel.style.display === 'block' && !isClickInsidePanel && !isClickOnLogo) {
+                adminPanel.style.display = 'none';
+            }
+        }
+        
+        // Funzione per cambiare la tab nel pannello admin
+        function showAdminTab(tab) {
+            document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.admin-content').forEach(c => c.classList.remove('active'));
+            document.querySelector(`.admin-tab[onclick="showAdminTab('${tab}')"]`).classList.add('active');
+            document.getElementById(tab + 'Content').classList.add('active');
+        }
+
+        // Esegue le funzioni principali all'avvio della pagina
+        document.addEventListener('DOMContentLoaded', () => {
+            loadMenu();
+            generateQR();
+            // Assicura che il pannello admin sia nascosto all'inizio
+            document.getElementById('adminPanel').style.display = 'none'; 
+        });
+
+        // Placeholder per le funzioni Admin non ancora implementate
+        function exportMenu() { console.log('Funzione Export Menu non implementata.'); }
+        function importMenu() { console.log('Funzione Import Menu non implementata.'); }
+        function handleImport(event) { console.log('Funzione Import gestita.'); }
+        function saveAllChanges() { console.log('Funzione Salva Modifiche non implementata.'); }
+        function resetMenu() { console.log('Funzione Ripristina Menu Originale non implementata.'); }
+    </script>
 </body>
-
 </html>
-
