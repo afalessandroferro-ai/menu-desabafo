@@ -27,7 +27,7 @@
             "available": true,
             "name": "Sangria Desabafo",
             "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
-            "price": "5,00"
+            "price": "€ 5,00"
           },
           {
             "name": "Patron de Oaxaca",
@@ -75,13 +75,13 @@
             "available": true,
             "name": "Carmagnola Groove (Disponibile Analcolico)",
             "description": "Tequila, Passoa, Ancho Reyes, Succon peperone, Limone, Sale",
-            "price": "12,00"
+            "price": "€ 12,00"
           },
           {
             "available": true,
             "name": "Afro Baobab (disponibile analcolico)",
             "description": "Gin, Amaretto, purè mango, Succo arancia, limone, angostura",
-            "price": "12,00"
+            "price": "€ 12,00"
           }
         ]
       },
@@ -153,55 +153,55 @@
             "available": true,
             "description": "\nIl Yellow Gin racconta “the spirit of Garda lake”. Con erbe e spezie del lago di Garda cresce un Gin estivo e moderno. La parte citrica viene dal limone della limonaia “La Garbera” del lago di Garda.",
             "name": "Zu Plun Yellow (Italia)",
-            "price": "15.00"
+            "price": "€ 15.00"
           },
           {
             "available": true,
             "name": "Yoshi Nama Mikan (Germania) ",
             "description": "arance rosse, pompelmi e limoni freschi. In perfetto equilibrio con ginepro, semi di coriandolo e tre classici botanici.\n",
-            "price": "13.00"
+            "price": "€ 13.00"
           },
           {
             "available": true,
             "description": "\nViene ottenuto con 13 botaniche biologiche o selvatiche, come ginepro, genziana, zafferano, mirtilli rossi, prugnole, melograno, scorza di limone e pompelmo.\n",
-            "price": "13.00",
+            "price": "€ 13.00",
             "name": "Yoshi Nama Little Tokyo (Germania)"
           },
           {
             "available": true,
             "description": "bacche di ginepro toscano, basilico ligure, bucce di limoni siciliani e aneto irlandese",
             "name": "Upperhand (Irlanda)",
-            "price": "13.00"
+            "price": "€ 13.00"
           },
           {
             "available": true,
             "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
             "name": "Ungava (Canada)",
-            "price": "12.00"
+            "price": "€ 12.00"
           },
           {
             "available": true,
             "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
             "name": "Ukiyo yuzu (Giappone)",
-            "price": "14.00"
+            "price": "€ 14.00"
           },
           {
             "available": true,
             "description": "Viene realizzato a partire da botaniche italiane come ginepro, basilico, rosmarino e ulivo",
             "name": "Seri Pervas dry (Italia)",
-            "price": "12.00"
+            "price": "€ 12.00"
           },
           {
             "available": true,
             "description": "ginepro, pepe del Sichuan, mano del Buddha, menta cinese, angelica cinese, semi di coriandolo, liquirizia cinese, mandorle cinesi, cardamomo, cassi\n",
             "name": "Peddlers (Cina) ",
-            "price": "12.00"
+            "price": "€ 12.00"
           },
           {
             "available": true,
             "description": "Monginbello è un gin siciliano ottenuto dall’infusione in alcol di grano di diverse botaniche tra cui bacche di ginepro, fiori e agrumi. Al naso offre fresche e intense note di ginepro e agrumi.\n",
             "name": "Monginbello (Italia)",
-            "price": "11.00"
+            "price": "€ 11.00"
           }
         ]
       },
@@ -339,12 +339,12 @@
             "available": false,
             "name": "Bavaria Gluten free 33cl",
             "description": "",
-            "price": "5.00"
+            "price": "€ 5.00"
           },
           {
             "available": true,
             "name": "Forst 0.0 33 cl",
-            "price": "5.00"
+            "price": "€ 5.00"
           }
         ]
       },
@@ -444,13 +444,13 @@
           {
             "available": true,
             "name": "Acqua Nat/Gas San Bernardo",
-            "price": "2.00"
+            "price": "€ 2.00"
           },
           {
             "available": true,
             "name": "Coca cola, Tonica Tomas henry, Ginger beer, Lemon Soda",
             "description": "Bottiglietta ",
-            "price": "5.00"
+            "price": "€ 5.00"
           }
         ],
         "icon": "🥤"
@@ -462,7 +462,7 @@
             "available": true,
             "name": "Taglierozzo",
             "description": "Selezione Affettati e Formaggi del Territorio (consigliato 2 pax)",
-            "price": "20"
+            "price": "€ 20"
           }
         ],
         "icon": "🥜"
