@@ -24,46 +24,64 @@
             "available": true
           },
           {
+            "available": true,
+            "name": "Sangria Desabafo",
+            "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
+            "price": "5,00"
+          },
+          {
             "name": "Patron de Oaxaca",
-            "description": "Mezcal, ancho reyes, zenzero, limone, sale",
+            "description": "Mezcal, ancho reyes, zenzero, limone, sale nero ",
             "price": "€ 12.00",
             "available": true
           },
           {
-            "name": "Lady Purple Zoe",
-            "description": "Vodka, Cointreau, violetta, limone, soda",
-            "price": "€ 11.00",
-            "available": true
-          },
-          {
-            "name": "Bloody Mario Rossi",
-            "description": "Gin, succo di pomodoro, worchester, tabasco, limone, sale, pepe, succo di sedano",
-            "price": "€ 13.00",
-            "available": true
-          },
-          {
-            "name": "Sir Leaf",
+            "name": "Sir Leaf (disponibile analcolico)",
             "description": "Gin pompelmo, sciroppo basilico, vermouth extra dry, limone",
             "price": "€ 12.00",
             "available": true
           },
           {
-            "name": "Mamacita",
-            "description": "Tequila, vermouth rosso, frutto della passione, succo arancia, peperoncino piri piri, worchester",
-            "price": "€ 12.00",
+            "name": "Madame Violet (disponibile Analcolico)",
+            "description": "Vodka, Cointreau, violetta, limone, soda",
+            "price": "€ 11.00",
             "available": true
           },
           {
-            "name": "Zombie",
-            "description": "Rum chiaro, rum scuro, cointreau, succo pompelmo, angostura, falernum, limone, frutti rossi",
+            "name": "Bloody Mario Rossi (Disponibile analcolico)",
+            "description": "Mezcal, succo di pomodoro ciliegino, worchester, tabasco, limone, sale, pepe, succo di sedano, pozione Simo",
             "price": "€ 13.00",
             "available": true
           },
           {
-            "name": "Kyoto Mon Amour",
-            "description": "Vodka, limone, frutti rossi",
+            "name": "Mamacita Campesina",
+            "description": "Tequila, vermouth rosso, frutto della passione, succo arancia, peperoncino piri piri, worchester",
+            "price": "€ 12.00",
+            "available": false
+          },
+          {
+            "name": "Calavèra Catrina",
+            "description": "Rum chiaro, rum scuro, cointreau, Amaretto succo pompelmo, angostura, , Limone, Mango",
             "price": "€ 12.00",
             "available": true
+          },
+          {
+            "name": "Kyoto Mon Amour (disponibile analcolico)",
+            "description": "Vodka, Liquore fiori di sambuco, purè frutti rossi, pompelmo ",
+            "price": "€ 12.00",
+            "available": true
+          },
+          {
+            "available": true,
+            "name": "Carmagnola Groove (Disponibile Analcolico)",
+            "description": "Tequila, Passoa, Ancho Reyes, Succon peperone, Limone, Sale",
+            "price": "12,00"
+          },
+          {
+            "available": true,
+            "name": "Afro Baobab (disponibile analcolico)",
+            "description": "Gin, Amaretto, purè mango, Succo arancia, limone, angostura",
+            "price": "12,00"
           }
         ]
       },
@@ -84,7 +102,7 @@
             "available": true
           },
           {
-            "name": "Argentario (Italia)",
+            "name": "Argintario (Italia)",
             "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
             "price": "€ 14.00",
             "available": true
@@ -130,6 +148,60 @@
             "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
             "price": "€ 15.00",
             "available": true
+          },
+          {
+            "available": true,
+            "description": "\nIl Yellow Gin racconta “the spirit of Garda lake”. Con erbe e spezie del lago di Garda cresce un Gin estivo e moderno. La parte citrica viene dal limone della limonaia “La Garbera” del lago di Garda.",
+            "name": "Zu Plun Yellow (Italia)",
+            "price": "15.00"
+          },
+          {
+            "available": true,
+            "name": "Yoshi Nama Mikan (Germania) ",
+            "description": "arance rosse, pompelmi e limoni freschi. In perfetto equilibrio con ginepro, semi di coriandolo e tre classici botanici.\n",
+            "price": "13.00"
+          },
+          {
+            "available": true,
+            "description": "\nViene ottenuto con 13 botaniche biologiche o selvatiche, come ginepro, genziana, zafferano, mirtilli rossi, prugnole, melograno, scorza di limone e pompelmo.\n",
+            "price": "13.00",
+            "name": "Yoshi Nama Little Tokyo (Germania)"
+          },
+          {
+            "available": true,
+            "description": "bacche di ginepro toscano, basilico ligure, bucce di limoni siciliani e aneto irlandese",
+            "name": "Upperhand (Irlanda)",
+            "price": "13.00"
+          },
+          {
+            "available": true,
+            "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
+            "name": "Ungava (Canada)",
+            "price": "12.00"
+          },
+          {
+            "available": true,
+            "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
+            "name": "Ukiyo yuzu (Giappone)",
+            "price": "14.00"
+          },
+          {
+            "available": true,
+            "description": "Viene realizzato a partire da botaniche italiane come ginepro, basilico, rosmarino e ulivo",
+            "name": "Seri Pervas dry (Italia)",
+            "price": "12.00"
+          },
+          {
+            "available": true,
+            "description": "ginepro, pepe del Sichuan, mano del Buddha, menta cinese, angelica cinese, semi di coriandolo, liquirizia cinese, mandorle cinesi, cardamomo, cassi\n",
+            "name": "Peddlers (Cina) ",
+            "price": "12.00"
+          },
+          {
+            "available": true,
+            "description": "Monginbello è un gin siciliano ottenuto dall’infusione in alcol di grano di diverse botaniche tra cui bacche di ginepro, fiori e agrumi. Al naso offre fresche e intense note di ginepro e agrumi.\n",
+            "name": "Monginbello (Italia)",
+            "price": "11.00"
           }
         ]
       },
@@ -254,7 +326,7 @@
           {
             "name": "IPA - Pian della Mussa",
             "description": "",
-            "price": "€ 5.00",
+            "price": "€ 6.00",
             "available": true
           },
           {
@@ -265,15 +337,20 @@
           },
           {
             "available": false,
-            "name": "Anciolas ",
-            "description": "cantabricos",
-            "price": "€ 1.00"
+            "name": "Bavaria Gluten free 33cl",
+            "description": "",
+            "price": "5.00"
+          },
+          {
+            "available": true,
+            "name": "Forst 0.0 33 cl",
+            "price": "5.00"
           }
         ]
       },
       {
         "name": "Amari & Vermouth",
-        "icon": "🥃",
+        "icon": "🍸",
         "items": [
           {
             "name": "Pastis Richard",
@@ -312,15 +389,9 @@
             "available": true
           },
           {
-            "name": "Amaretto di Torino",
+            "name": "Fernet Branca, Amaro del Capo, Cynar, San Simone",
             "description": "",
-            "price": "€ 6.00",
-            "available": true
-          },
-          {
-            "name": "Fernet Branca",
-            "description": "",
-            "price": "€ 6.00",
+            "price": "€ 5.00",
             "available": true
           }
         ]
@@ -338,19 +409,19 @@
           {
             "name": "Black Label - Johnny Walker",
             "description": "12 anni Blended",
-            "price": "€ 10.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Mars Kasei",
             "description": "Blended Giappone",
-            "price": "€ 14.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Black Tears Spiced Rum",
             "description": "",
-            "price": "€ 10.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -362,10 +433,39 @@
           {
             "name": "Havana Club 3 Años Añejo",
             "description": "",
-            "price": "€ 9.00",
+            "price": "€ 10.00",
             "available": true
           }
         ]
+      },
+      {
+        "name": "Bibite",
+        "items": [
+          {
+            "available": true,
+            "name": "Acqua Nat/Gas San Bernardo",
+            "price": "2.00"
+          },
+          {
+            "available": true,
+            "name": "Coca cola, Tonica Tomas henry, Ginger beer, Lemon Soda",
+            "description": "Bottiglietta ",
+            "price": "5.00"
+          }
+        ],
+        "icon": "🥤"
+      },
+      {
+        "name": "Da Stuzzicare",
+        "items": [
+          {
+            "available": true,
+            "name": "Taglierozzo",
+            "description": "Selezione Affettati e Formaggi del Territorio (consigliato 2 pax)",
+            "price": "20"
+          }
+        ],
+        "icon": "🥜"
       }
     ]
   }
