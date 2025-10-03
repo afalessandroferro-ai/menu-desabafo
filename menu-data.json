@@ -350,7 +350,7 @@
       },
       {
         "name": "Amari & Vermouth",
-        "icon": "🥃",
+        "icon": "🍸",
         "items": [
           {
             "name": "Pastis Richard",
@@ -452,7 +452,8 @@
             "description": "Bottiglietta ",
             "price": "5.00"
           }
-        ]
+        ],
+        "icon": "🥤"
       },
       {
         "name": "Da Stuzzicare",
@@ -463,7 +464,8 @@
             "description": "Selezione Affettati e Formaggi del Territorio (consigliato 2 pax)",
             "price": "20"
           }
-        ]
+        ],
+        "icon": "🥜"
       }
     ]
   }
