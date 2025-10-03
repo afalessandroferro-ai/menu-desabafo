@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <!-- Configurazione base e metadati per la responsività -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desabafo - Menu</title>
+    <!-- Importazione dei font Google (Cormorant Garamond e Playfair Display) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
+        /* Reset CSS per margini e padding */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Definizione delle variabili di colore */
         :root {
             --primary-brown: #5D4037;
             --light-brown: #8D6E63;
@@ -23,6 +27,7 @@
             --accent-gold: #D4AF37;
         }
 
+        /* Stile del corpo e sfondo */
         body {
             font-family: 'Cormorant Garamond', serif;
             background: linear-gradient(135deg, var(--cream) 0%, #E6D7C3 100%);
@@ -30,12 +35,14 @@
             min-height: 100vh;
         }
 
+        /* Contenitore principale a larghezza limitata e centrato */
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
 
+        /* Stili per l'intestazione/banner superiore */
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -46,6 +53,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
 
+        /* Stili per il logo centrale */
         .logo {
             width: 200px;
             height: 200px;
@@ -66,10 +74,12 @@
             border-radius: 15px;
         }
 
+        /* Nasconde titoli e paragrafi nell'header (solo logo visibile) */
         .header h1, .header p {
             display: none;
         }
 
+        /* Stili per la finestra modale di accesso Admin */
         .login-modal {
             position: fixed;
             top: 0;
@@ -77,12 +87,13 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.8);
-            display: none;
+            display: none; /* Inizialmente nascosto */
             justify-content: center;
             align-items: center;
             z-index: 10000;
         }
 
+        /* Contenitore interno della modale */
         .login-box {
             background: white;
             padding: 30px;
@@ -93,42 +104,7 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
-        .login-box h3 {
-            color: var(--primary-brown);
-            margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .login-box input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 2px solid var(--cream);
-            border-radius: 8px;
-            font-size: 16px;
-        }
-
-        .login-btn, .cancel-btn {
-            background: var(--dark-brown);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            margin: 10px 5px;
-            font-family: 'Cormorant Garamond', serif;
-            transition: background-color 0.3s ease;
-        }
-
-        .login-btn:hover {
-            background: var(--light-brown);
-        }
-
-        .cancel-btn {
-            background: #6c757d;
-        }
-
+        /* Pannello di amministrazione (nascosto per default) */
         .admin-panel {
             display: none;
             background: white;
@@ -138,40 +114,13 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .admin-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .admin-tab {
-            padding: 10px 15px;
-            background: var(--cream);
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            font-family: 'Cormorant Garamond', serif;
-        }
-
-        .admin-tab.active {
-            background: var(--primary-brown);
-            color: white;
-        }
-
-        .admin-content {
-            display: none;
-        }
-
-        .admin-content.active {
-            display: block;
-        }
-
+        /* Stili per il layout del menu (griglia con gap) */
         .categories {
             display: grid;
             gap: 30px;
         }
 
+        /* Stili per ogni singola categoria */
         .category {
             background: white;
             padding: 25px;
@@ -180,6 +129,7 @@
             border-left: 5px solid var(--primary-brown);
         }
 
+        /* Stili per il titolo della categoria */
         .category h2 {
             color: var(--primary-brown);
             font-size: 2.2em;
@@ -190,15 +140,13 @@
             font-family: 'Playfair Display', serif;
         }
 
-        .category-icon {
-            font-size: 1.2em;
-        }
-
+        /* Contenitore per gli elementi del menu all'interno di una categoria */
         .items {
             display: grid;
             gap: 15px;
         }
 
+        /* Stili per ogni singolo elemento/piatto del menu */
         .item {
             padding: 15px;
             border-radius: 10px;
@@ -207,37 +155,7 @@
             transition: all 0.3s ease;
         }
 
-        .item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-
-        .item-name {
-            font-size: 1.4em;
-            font-weight: bold;
-            color: var(--dark-brown);
-            font-family: 'Playfair Display', serif;
-        }
-
-        .item-price {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: var(--primary-brown);
-        }
-
-        .item-description {
-            color: var(--text-dark);
-            line-height: 1.4;
-            margin-top: 5px;
-        }
-
+        /* Sezione del QR Code - Stili per posizionarlo al centro */
         .qr-section {
             text-align: center;
             margin: 40px 0;
@@ -247,82 +165,53 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
+        /* Contenitore per il QR Code generato */
         .qr-code {
             margin: 20px 0;
             display: inline-block;
         }
 
+        /* Stili per la stampa del menu (@media print) */
         @media print {
-            body {
-                background: white;
-                color: black;
-            }
+            /* Nasconde elementi non necessari per la stampa (header, qr, admin) */
             .header, .qr-section, .admin-panel {
                 display: none !important;
             }
-            .container {
-                width: 100%;
-                max-width: none;
-                padding: 0;
-            }
+            /* Gestisce il layout in colonne per la stampa */
             .categories {
                 display: block;
                 columns: 2;
                 column-gap: 40px;
             }
+            /* Assicura che le categorie non si interrompano a metà pagina */
             .category {
+                break-inside: avoid-column;
+                page-break-inside: avoid;
+            }
+            /* Rimuove ombre e colori di sfondo per risparmiare inchiostro */
+            .category, .item {
                 background: none;
                 box-shadow: none;
                 border-left: none;
-                padding: 0;
-                break-inside: avoid-column;
-                page-break-inside: avoid;
-                margin-bottom: 20px;
-            }
-            .category h2 {
-                color: var(--dark-brown);
-                font-size: 1.8em;
-                border-bottom: 2px solid var(--dark-brown);
-                padding-bottom: 5px;
-                margin-bottom: 15px;
-            }
-            .item {
-                background: none;
-                border-left: none;
-                padding: 10px 0;
-                margin-bottom: 10px;
-            }
-            .item-header {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-end;
-            }
-            .item-name, .item-price {
-                font-size: 1.2em;
-                color: var(--dark-brown);
-            }
-            .item-description {
-                font-size: 0.9em;
-                color: #555;
             }
         }
 
+        /* Media Query per schermi piccoli (responsive design) */
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
             }
+            /* Allinea nome e prezzo verticalmente su mobile */
             .item-header {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 5px;
             }
-            .item-price {
-                margin-top: 5px;
-            }
         }
     </style>
 </head>
 <body onclick="hideAdminToggle(event)">
+    <!-- MODALE DI ACCESSO ADMIN (inizialmente display: none) -->
     <div class="login-modal" id="loginModal">
         <div class="login-box">
             <h3>🔐 Accesso Admin</h3>
@@ -335,12 +224,15 @@
         </div>
     </div>
 
+    <!-- PANNELLO DI AMMINISTRAZIONE (inizialmente display: none) -->
     <div class="admin-panel" id="adminPanel">
         <h3>🛠️ Pannello Admin - Gestione Menu Desabafo</h3>
+        <!-- Tab di navigazione del pannello Admin -->
         <div class="admin-tabs">
             <button class="admin-tab active" onclick="showAdminTab('editor')">📝 Modifica Menu</button>
             <button class="admin-tab" onclick="showAdminTab('tools')">🔧 Strumenti</button>
         </div>
+        <!-- Contenuto della tab Modifica Menu -->
         <div class="admin-content active" id="editorContent">
             <div class="import-export">
                 <button class="export-btn" onclick="exportMenu()">📤 Esporta Menu</button>
@@ -351,6 +243,7 @@
             <div id="menuEditor"></div>
             <button class="save-all-btn" onclick="saveAllChanges()">💾 Salva Tutte le Modifiche</button>
         </div>
+        <!-- Contenuto della tab Strumenti -->
         <div class="admin-content" id="toolsContent">
             <p><strong>QR Code URL:</strong> <span id="currentUrl"></span></p>
             <button onclick="generateQR()">🔄 Aggiorna QR Code</button>
@@ -366,56 +259,71 @@
     <div class="container">
         <!-- SEZIONE SUPERIORE CON IL LOGO -->
         <div class="header">
+            <!-- Il logo funge da trigger per l'accesso admin (pressione prolungata) -->
             <div class="logo" id="adminLogoTrigger">
                 <img src="logobafo.png" alt="Desabafo Logo">
             </div>
         </div>
-        <!-- SEZIONE DEL MENU CON LE CATEGORIE E GLI ARTICOLI -->
+
+        <!-- SEZIONE PRINCIPALE DEL MENU (caricata dal JSON) -->
         <div class="categories" id="menuContent">
-            </div>
-        <!-- SEZIONE DEL QR CODE SPOSTATA IN FONDO AL CONTENUTO DEL MENU -->
+            <!-- Il contenuto del menu verrà inserito qui dal JavaScript -->
+        </div>
+
+        <!-- SEZIONE DEL QR CODE (POSIZIONATA IN FONDO, DOPO IL MENU) -->
         <div class="qr-section">
             <h3>Scansiona per il menu digitale</h3>
-            <div class="qr-code" id="qrCode"></div>
+            <div class="qr-code" id="qrCode">
+                <!-- Il QR code verrà generato qui dal JavaScript -->
+            </div>
         </div>
     </div>
 
+    <!-- Libreria per la generazione del QR Code -->
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <script>
+        // Variabili di stato globali e costante per la password
         let isAdminLoggedIn = false;
         const ADMIN_PASSWORD = "azzaBAFO2025!";
         let menuData = {};
-        let adminTimer;
+        let adminTimer; // Timer usato per la pressione prolungata del logo
 
+        // Mostra la modale di login
         function showLogin() {
             document.getElementById('loginModal').style.display = 'flex';
             document.getElementById('adminPassword').focus();
         }
 
+        // Nasconde la modale di login e resetta i campi
         function closeLogin() {
             document.getElementById('loginModal').style.display = 'none';
             document.getElementById('adminPassword').value = '';
             document.getElementById('loginError').style.display = 'none';
         }
 
+        // Controlla la password inserita
         function checkPassword() {
             const password = document.getElementById('adminPassword').value;
             if (password === ADMIN_PASSWORD) {
                 isAdminLoggedIn = true;
                 closeLogin();
+                // Mostra il pannello Admin se la password è corretta
                 document.getElementById('adminPanel').style.display = 'block';
             } else {
+                // Mostra messaggio di errore
                 document.getElementById('loginError').style.display = 'block';
                 document.getElementById('adminPassword').value = '';
                 document.getElementById('adminPassword').focus();
             }
         }
 
+        // Effettua il logout admin
         function adminLogout() {
             isAdminLoggedIn = false;
             document.getElementById('adminPanel').style.display = 'none';
         }
 
+        // Carica i dati del menu dal file JSON (menu-data.json)
         function loadMenu() {
             fetch('menu-data.json')
                 .then(response => {
@@ -426,7 +334,7 @@
                 })
                 .then(data => {
                     menuData = data.menu_data.categories;
-                    renderMenu();
+                    renderMenu(); // Chiama la funzione per disegnare il menu
                 })
                 .catch(error => {
                     console.error('Errore nel caricamento del menu:', error);
@@ -435,6 +343,7 @@
                 });
         }
 
+        // Disegna il menu sul DOM leggendo i dati caricati
         function renderMenu() {
             const menuContent = document.getElementById('menuContent');
             menuContent.innerHTML = '';
@@ -445,6 +354,7 @@
             }
             menuData.forEach(category => {
                 if (category && category.items) {
+                    // Crea il div per la categoria
                     const categoryDiv = document.createElement('div');
                     categoryDiv.className = 'category';
                     const categoryHeader = document.createElement('h2');
@@ -452,6 +362,7 @@
                     categoryDiv.appendChild(categoryHeader);
                     const itemsDiv = document.createElement('div');
                     itemsDiv.className = 'items';
+                    // Filtra solo gli elementi disponibili e crea i div per i piatti
                     category.items.filter(item => item.available).forEach(item => {
                         const itemDiv = document.createElement('div');
                         itemDiv.className = 'item';
@@ -480,10 +391,13 @@
             });
         }
 
+        // Genera il QR Code utilizzando l'URL corrente del sito
         function generateQR() {
             const qrCodeDiv = document.getElementById('qrCode');
+            // Ottiene l'URL pulito (senza parametri)
             const url = window.location.href.split('?')[0];
-            qrCodeDiv.innerHTML = '';
+            qrCodeDiv.innerHTML = ''; // Pulisce il contenitore
+            // Inizializza il QR Code con le opzioni di colore
             new QRCode(qrCodeDiv, {
                 text: url,
                 width: 128,
@@ -494,19 +408,23 @@
             });
         }
 
+        // Event listener per la pressione prolungata (touch) sul logo per l'accesso admin
         document.getElementById('adminLogoTrigger').addEventListener('touchstart', (e) => {
             e.preventDefault();
-            adminTimer = setTimeout(showLogin, 1000);
+            adminTimer = setTimeout(showLogin, 1000); // 1 secondo
         });
 
+        // Cancella il timer se il tocco finisce
         document.getElementById('adminLogoTrigger').addEventListener('touchend', () => {
             clearTimeout(adminTimer);
         });
 
+        // Cancella il timer se si sposta il dito
         document.getElementById('adminLogoTrigger').addEventListener('touchmove', () => {
             clearTimeout(adminTimer);
         });
 
+        // Funzione per nascondere il pannello admin se si clicca fuori (per sicurezza)
         function hideAdminToggle(event) {
             const adminPanel = document.getElementById('adminPanel');
             const isClickInsidePanel = adminPanel.contains(event.target);
@@ -516,6 +434,7 @@
             }
         }
         
+        // Funzione per cambiare la tab nel pannello admin
         function showAdminTab(tab) {
             document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.admin-content').forEach(c => c.classList.remove('active'));
@@ -523,12 +442,14 @@
             document.getElementById(tab + 'Content').classList.add('active');
         }
 
+        // Esegue le funzioni principali all'avvio della pagina
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu();
             generateQR();
             document.getElementById('adminPanel').style.display = 'none';
         });
 
+        // Placeholder per le funzioni Admin non ancora implementate
         function exportMenu() { console.log('Funzione Export Menu non implementata.'); }
         function importMenu() { console.log('Funzione Import Menu non implementata.'); }
         function handleImport(event) { console.log('Funzione Import gestita.'); }
