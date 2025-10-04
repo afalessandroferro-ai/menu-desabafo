@@ -391,7 +391,7 @@
           {
             "name": "Fernet Branca, Amaro del Capo, Cynar, San Simone",
             "description": "",
-            "price": "€ 5.00",
+            "price": "€ 4.00",
             "available": true
           }
         ]
@@ -463,6 +463,12 @@
             "name": "Taglierozzo",
             "description": "Selezione Affettati e Formaggi del Territorio (consigliato 2 pax)",
             "price": "€ 20.00"
+          },
+          {
+            "available": true,
+            "name": "Taglierino",
+            "description": "Selezione Affettati e formaggi del territorio (consigliato 1 pax)",
+            "price": "€10.00"
           }
         ],
         "icon": "🥪"
