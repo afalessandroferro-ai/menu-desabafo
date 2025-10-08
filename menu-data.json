@@ -31,13 +31,13 @@
           },
           {
             "name": "Patron de Oaxaca",
-            "description": "Mezcal, ancho reyes, zenzero, limone, sale nero ",
+            "description": "Mezcal, Ancho Reyes, Sciroppo di  zenzero, limone e sale nero ",
             "price": "€ 12.00",
             "available": true
           },
           {
-            "name": "Sir Leaf (disponibile analcolico)",
-            "description": "Gin pompelmo, sciroppo basilico, vermouth extra dry, limone",
+            "name": "VapoRub (disponibile analcolico)",
+            "description": "Gin, Vermouth extra dry, Succo sedano, succo mela verde, sciroppo basilico, gocce assenzio, limone",
             "price": "€ 12.00",
             "available": true
           },
@@ -48,8 +48,8 @@
             "available": true
           },
           {
-            "name": "Bloody Mario Rossi (Disponibile analcolico)",
-            "description": "Mezcal, succo di pomodoro ciliegino, worchester, tabasco, limone, sale, pepe, succo di sedano, pozione Simo",
+            "name": "Bloody Mario Bros (Disponibile analcolico)",
+            "description": "Mezcal, succo di pomodoro ciliegino, limone, sale, pepe,succo di sedano, pozione Desabafo",
             "price": "€ 13.00",
             "available": true
           },
@@ -61,26 +61,26 @@
           },
           {
             "name": "Calavèra Catrina",
-            "description": "Rum chiaro, rum scuro, cointreau, Amaretto succo pompelmo, angostura, , Limone, Mango",
+            "description": "Rum chiaro, Rum scuro, Cointreau, Amaretto, Succo pompelmo, Pure di Mango, angostura, Limone, ",
             "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Kyoto Mon Amour (disponibile analcolico)",
-            "description": "Vodka, Liquore fiori di sambuco, purè frutti rossi, pompelmo ",
+            "description": "Vodka, Liquore fiori di sambuco, Purè di frutti rossi, succo di pompelmo ",
             "price": "€ 12.00",
             "available": true
           },
           {
             "available": true,
             "name": "Carmagnola Groove (Disponibile Analcolico)",
-            "description": "Tequila, Passoa, Ancho Reyes, Succon peperone, Limone, Sale",
+            "description": "Tequila, Passoa, Ancho Reyes, Succo di peperone, Limone, Sale",
             "price": "€ 12,00"
           },
           {
             "available": true,
             "name": "Afro Baobab (disponibile analcolico)",
-            "description": "Gin, Amaretto, purè mango, Succo arancia, limone, angostura",
+            "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
           }
         ]
@@ -234,7 +234,7 @@
             "available": true
           },
           {
-            "name": "Bianco - Langhe Bianco Govone (Piemonte)",
+            "name": "Bianco - Ribolla Gialla Ferma  (Friuli Venezia Giulia)",
             "description": "",
             "price": "€ 5.00",
             "available": true
@@ -367,13 +367,13 @@
           {
             "name": "Vermouth Rosso - Carlo Alberto",
             "description": "27 botaniche coltivate con metodi biologici",
-            "price": "€ 5.00",
+            "price": "€ 6.00",
             "available": true
           },
           {
             "name": "Vermouth Rosso - Dolin",
             "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
-            "price": "€ 5.00",
+            "price": "€ 6.00",
             "available": true
           },
           {
@@ -393,6 +393,18 @@
             "description": "",
             "price": "€ 4.00",
             "available": true
+          },
+          {
+            "available": true,
+            "name": "Vermouth Rosso- La Quintinye",
+            "description": "Realizzato da una selezione di 28 piante e spezie insieme a una miscela di vini bianchi e Pineau des Charentes Rouges, La Quintinye Rouge rilascia un bouquet di aromi complesso e sontuoso.\n",
+            "price": " €7,00 "
+          },
+          {
+            "available": true,
+            "name": "Vermouth Rosso di Torino- Superiore-",
+            "description": "Questo prodotto nasce dal desiderio di unire in modo armonioso il vino e il frenetico mondo degli spirits. Ispirandomi alle ricette dei Vermouth dei primi del Novecento italiano, mi sono lasciato condurre in questo viaggio dal nostro vitigno più importante, il Ruchè di Castagnole Monferrato DOCG. Dopo averlo fatto maturare per due anni, l’ho aromatizzato con le mie erbe e le mie spezie, cercando di unie la saggezza popolare con il gusto moderno. Nasce così il Vermouth di Torino Superiore Nonis Februariis, dal profumo intenso di Tanaceto e Artemisia, Salvia Scalarea e Timo Cedrato, Arancio, Cannella. Un aperitivo originale in perfetto stile piemontese.",
+            "price": "€6.00"
           }
         ]
       },
@@ -461,13 +473,13 @@
           {
             "available": true,
             "name": "Taglierozzo",
-            "description": "Selezione Affettati e Formaggi del Territorio (consigliato 2 pax)",
+            "description": "Selezione Affettati e Formaggi del Territorio Accompagnati a Focaccia bianca  (consigliato 2 pax) ",
             "price": "€ 20.00"
           },
           {
             "available": true,
             "name": "Taglierino",
-            "description": "Selezione Affettati e formaggi del territorio (consigliato 1 pax)",
+            "description": "Selezione Affettati e formaggi del territorio Accompagnati a focaccia bianca (consigliato 1 pax)",
             "price": "€10.00"
           }
         ],
