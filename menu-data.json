@@ -82,6 +82,12 @@
             "name": "Afro Baobab (disponibile analcolico)",
             "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
+          },
+          {
+            "available": true,
+            "name": "Mocktails analcolici anche d'autore ",
+            "price": "€8.00",
+            "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
           }
         ]
       },
@@ -290,11 +296,11 @@
           {
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Francia)",
             "description": "Petit Verdot, Carignan, Grenache Blanc",
-            "price": "€ 25.00",
+            "price": "€ 28.00",
             "available": true
           },
           {
-            "name": "Bianco - Viognier Domaine de Luc",
+            "name": "Bianco - Viognier Domaine de Luc-instant rare ",
             "description": "Famille Fabre Francia 2023, gradazione 13.5%",
             "price": "€ 28.00",
             "available": true
@@ -306,10 +312,27 @@
             "available": true
           },
           {
+            "available": true,
+            "name": "Bianco-Instant Bulle-Pet Nat-Famille Fabre (Francia)",
+            "description": "",
+            "price": "€ 32.00"
+          },
+          {
             "name": "Orange - Louis Andrieu",
             "description": "Sauvignon Blanc 2022",
             "price": "€ 34.00",
             "available": true
+          },
+          {
+            "available": true,
+            "name": "Bolla-Prosecco-Canella (Treviso Doc)",
+            "price": "€25.00"
+          },
+          {
+            "available": true,
+            "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia)",
+            "description": "-Metodo Classico\n-Brut Nature\n-Vitigno:Mauzac\n-Affinamento: 30 mesi",
+            "price": "€ 34,00"
           }
         ]
       },
@@ -389,12 +412,6 @@
             "available": true
           },
           {
-            "name": "Fernet Branca, Amaro del Capo, Cynar, San Simone",
-            "description": "",
-            "price": "€ 4.00",
-            "available": true
-          },
-          {
             "available": true,
             "name": "Vermouth Rosso- La Quintinye",
             "description": "Realizzato da una selezione di 28 piante e spezie insieme a una miscela di vini bianchi e Pineau des Charentes Rouges, La Quintinye Rouge rilascia un bouquet di aromi complesso e sontuoso.\n",
@@ -405,6 +422,12 @@
             "name": "Vermouth Rosso di Torino- Superiore-",
             "description": "Questo prodotto nasce dal desiderio di unire in modo armonioso il vino e il frenetico mondo degli spirits. Ispirandomi alle ricette dei Vermouth dei primi del Novecento italiano, mi sono lasciato condurre in questo viaggio dal nostro vitigno più importante, il Ruchè di Castagnole Monferrato DOCG. Dopo averlo fatto maturare per due anni, l’ho aromatizzato con le mie erbe e le mie spezie, cercando di unie la saggezza popolare con il gusto moderno. Nasce così il Vermouth di Torino Superiore Nonis Februariis, dal profumo intenso di Tanaceto e Artemisia, Salvia Scalarea e Timo Cedrato, Arancio, Cannella. Un aperitivo originale in perfetto stile piemontese.",
             "price": "€6.00"
+          },
+          {
+            "name": "Fernet Branca, Amaro del Capo, Montenegro, Amaroc, San Simone",
+            "description": "",
+            "price": "€ 4.00",
+            "available": true
           }
         ]
       },
@@ -481,6 +504,23 @@
             "name": "Taglierino",
             "description": "Selezione Affettati e formaggi del territorio Accompagnati a focaccia bianca (consigliato 1 pax)",
             "price": "€10.00"
+          },
+          {
+            "available": true,
+            "name": "Piatto Veggie",
+            "description": "Hummus di ceci con Pomodoro accompagnato da verdure di stagione crude",
+            "price": "€ 8.00"
+          },
+          {
+            "available": true,
+            "name": "Acciughe al verde",
+            "price": "€ 6.00"
+          },
+          {
+            "available": true,
+            "name": "Tomino cuore caldo",
+            "description": "Tomino piemontese leggermente sciolto, avvolto in sottili fette di lardo e guarnito con un filo di miele e noci",
+            "price": "€ 6.00 a Unità"
           }
         ],
         "icon": "🥪"
