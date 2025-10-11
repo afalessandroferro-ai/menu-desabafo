@@ -82,6 +82,12 @@
             "name": "Afro Baobab (disponibile analcolico)",
             "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
+          },
+          {
+            "available": true,
+            "name": "Mocktails analcolici anche d'autore ",
+            "price": "€8.00",
+            "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
           }
         ]
       },
@@ -319,14 +325,14 @@
           },
           {
             "available": true,
-            "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia)",
-            "description": "",
-            "price": "€ 34,00"
+            "name": "Bolla-Prosecco-Canella (Treviso Doc)",
+            "price": "€25.00"
           },
           {
             "available": true,
-            "name": "Bolla-Prosecco-Canella (Treviso Doc)",
-            "price": "€25.00"
+            "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia)",
+            "description": "-Metodo Classico\n-Brut Nature\n-Vitigno:Mauzac\n-Affinamento: 30 mesi",
+            "price": "€ 34,00"
           }
         ]
       },
@@ -512,8 +518,8 @@
           },
           {
             "available": true,
-            "name": "Tometta al foul",
-            "description": "Toma piemontese leggermente sciolta e avvolta in sottili fette di lardo, il tutto guardito da noci e miele",
+            "name": "Tomino cuore caldo",
+            "description": "Tomino piemontese leggermente sciolto, avvolto in sottili fette di lardo e guarnito con un filo di miele e noci",
             "price": "€ 6.00 a Unità"
           }
         ],
