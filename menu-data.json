@@ -262,6 +262,16 @@
             "description": "Brut nature, Vitigno: Mauzac",
             "price": "€ 8.00",
             "available": true
+          },
+          {
+            "available": true,
+            "name": "Bolla-Prosecco-Canella",
+            "price": "€ 5.00"
+          },
+          {
+            "available": true,
+            "name": "Bolla-Moscato di Castigliole di Asti-Antica Cantina di Calosso",
+            "price": "€ 5.00"
           }
         ]
       },
@@ -318,15 +328,15 @@
             "price": "€ 32.00"
           },
           {
+            "available": true,
+            "name": "Bolla-Prosecco-Canella (Treviso Doc)",
+            "price": "€25.00"
+          },
+          {
             "name": "Orange - Louis Andrieu",
             "description": "Sauvignon Blanc 2022",
             "price": "€ 34.00",
             "available": true
-          },
-          {
-            "available": true,
-            "name": "Bolla-Prosecco-Canella (Treviso Doc)",
-            "price": "€25.00"
           },
           {
             "available": true,
