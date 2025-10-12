@@ -105,7 +105,7 @@
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
             "price": "€ 12.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Argintario (Italia)",
@@ -186,7 +186,7 @@
             "price": "€ 12.00"
           },
           {
-            "available": true,
+            "available": false,
             "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
             "name": "Ukiyo yuzu (Giappone)",
             "price": "€ 14.00"
