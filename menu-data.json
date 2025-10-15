@@ -280,110 +280,112 @@
         "icon": "🍾",
         "items": [
           {
-            "name": "Rosso - Pinot Nero St Pauls (Alto Adige)",
+            "name": "Rosso - Pinot Nero- St Pauls (Alto Adige)",
             "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
             "price": "€ 28.00",
             "available": true
           },
           {
-            "name": "Rosso - Ribera Del Duero Pradorey (Spagna)",
+            "name": "Rosso - Ribera Del Duero - Pradorey (Spagna)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Tempranillo\nAnnata: 2023\nZona Di Produzione: Castilla y Leon",
             "price": "€ 27.00",
             "available": true
           },
           {
-            "name": "Rosso - Château de Rieux Minervois (Francia)",
+            "name": "Rosso - Château de Rieux- Minervois (Francia)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Syrah, Cinsault\nAnnata: 2021\nZona Di Produzione: Occitania",
             "price": "€ 32.00",
             "available": true
           },
           {
-            "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
+            "name": "Bianco - Gewürztraminer- St Pauls (Alto Adige)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Traminer\nAnnata: 2024\nZona Di Produzione: Alto Adige",
             "price": "€ 27.00",
             "available": true
           },
           {
-            "name": "Bianco - Sable Blanc Mas du Petit Pin (Francia)",
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "Bianco - Sable Blanc- Mas du Petit Pin (Francia)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 28.00",
             "available": true
           },
           {
-            "name": "Bianco - Viognier Domaine de Luc-instant rare ",
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "Bianco - Viognier- Domaine de Luc-instant rare ",
+            "description": "Gradazione Alcolica: 13,5%\nVitigno: Viogner\nAnnata: 2023\nZona Di Produzione: Occitania",
             "price": "€ 28.00",
             "available": true
           },
           {
             "name": "Rosè - Grande Courtade (Francia)",
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "description": "Gradazione Alcolica: 12,5%\nVitigno: Merlot, Sauvignon; Pinot Noir\nAnnata: 2024\nZona Di Produzione: Occitania",
             "price": "€ 30.00",
             "available": true
           },
           {
             "available": true,
             "name": "Bianco-Instant Bulle-Pet Nat-Famille Fabre (Francia)",
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "description": "Gradazione Alcolica: 10,5%\nVitigno: Sauvignon, Colombard\nAnnata: 2024\nZona Di Produzione: Occitania",
             "price": "€ 32.00"
           },
           {
             "available": true,
             "name": "Bolla-Prosecco-Canella (Treviso Doc)",
-            "price": "€25.00"
+            "price": "€25.00",
+            "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
           },
           {
             "name": "Orange - Louis Andrieu",
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Sauvignon blanc\nAnnata: 2022\nZona Di Produzione: Occitania",
             "price": "€ 34.00",
             "available": true
           },
           {
             "available": true,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia)",
-            "description": "-Metodo Classico\n-Brut Nature\n-Vitigno:Mauzac\n-Affinamento: 30 mesi",
-            "price": "€ 34,00"
+            "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
+            "price": "€34,00"
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
-            "name": "aaa",
-            "price": "12"
+            "description": "Gradazione Alcolica: 13%\nVitigno: Barbera\nAnnata: 2023\nZona Di Produzione: Neive",
+            "name": "Rosso-Barbera D'Alba- Mara- Dante Rivetti- (Piemonte)",
+            "price": "€25,00"
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
-            "name": "11",
-            "price": "111"
+            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
+            "name": "Bolla- Alta Langa- Ivan- Dante Rivetti (Piemonte)",
+            "price": "€33,00"
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
-            "name": "111",
-            "price": "11"
+            "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
+            "name": "Rosso- Cannonau- Su'Anima- Su'Entu- (Sardegna)",
+            "price": "€27,00"
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
-            "name": "11",
-            "price": "1"
+            "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
+            "name": "Bianco- Vermentino- Su'Imari- Su'Entu (Sardegna)",
+            "price": "€27.00"
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
-            "name": "1",
-            "price": "111"
+            "description": "Gradazione Alcolica: 14,5%\nVitigno: Bovale\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
+            "name": "Rosso- Bovale- Su'Diterra- Su'Entu- (Sardegna)",
+            "price": "€27,00"
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
-            "name": "111",
-            "price": "111"
+            "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
+            "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
+            "price": "€32,00"
           },
           {
             "available": true,
-            "name": "1111",
-            "price": "111"
+            "name": "Rosso- Barbaresco- Produttori del Barbaresco- (Piemonte)",
+            "price": "€50,00",
+            "description": "Gradazione Alcolica: 14,5%\nVitigno: Nebbiolo\nAnnata: 2021\nAffinamento: 20 mesi in botti di Rovere\nZona Di Produzione: Langhe"
           }
         ]
       },
