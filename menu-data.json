@@ -281,50 +281,50 @@
         "items": [
           {
             "name": "Rosso - Pinot Nero St Pauls (Alto Adige)",
-            "description": "Pinot Nero 2023",
+            "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
             "price": "€ 28.00",
             "available": true
           },
           {
             "name": "Rosso - Ribera Del Duero Pradorey (Spagna)",
-            "description": "Tempranillo 2023",
+            "description": "Gradazione Alcolica: 14%\nVitigno: Tempranillo\nAnnata: 2023\nZona Di Produzione: Castilla y Leon",
             "price": "€ 27.00",
             "available": true
           },
           {
             "name": "Rosso - Château de Rieux Minervois (Francia)",
-            "description": "Syrah, Grenache, Carignan",
+            "description": "Gradazione Alcolica: 14%\nVitigno: Syrah, Cinsault\nAnnata: 2021\nZona Di Produzione: Occitania",
             "price": "€ 32.00",
             "available": true
           },
           {
             "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
-            "description": "Traminer 2023",
+            "description": "Gradazione Alcolica: 14%\nVitigno: Traminer\nAnnata: 2024\nZona Di Produzione: Alto Adige",
             "price": "€ 27.00",
             "available": true
           },
           {
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Francia)",
-            "description": "Petit Verdot, Carignan, Grenache Blanc",
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
             "price": "€ 28.00",
             "available": true
           },
           {
             "name": "Bianco - Viognier Domaine de Luc-instant rare ",
-            "description": "Famille Fabre Francia 2023, gradazione 13.5%",
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
             "price": "€ 28.00",
             "available": true
           },
           {
             "name": "Rosè - Grande Courtade (Francia)",
-            "description": "Merlot, Sauvignon, Pinot Noir 2024",
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
             "price": "€ 30.00",
             "available": true
           },
           {
             "available": true,
             "name": "Bianco-Instant Bulle-Pet Nat-Famille Fabre (Francia)",
-            "description": "",
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
             "price": "€ 32.00"
           },
           {
@@ -334,7 +334,7 @@
           },
           {
             "name": "Orange - Louis Andrieu",
-            "description": "Sauvignon Blanc 2022",
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
             "price": "€ 34.00",
             "available": true
           },
@@ -343,6 +343,47 @@
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia)",
             "description": "-Metodo Classico\n-Brut Nature\n-Vitigno:Mauzac\n-Affinamento: 30 mesi",
             "price": "€ 34,00"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "aaa",
+            "price": "12"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "11",
+            "price": "111"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "111",
+            "price": "11"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "11",
+            "price": "1"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "1",
+            "price": "111"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica\nVitigno:\nAnnata:\nZona Di Produzione:",
+            "name": "111",
+            "price": "111"
+          },
+          {
+            "available": true,
+            "name": "1111",
+            "price": "111"
           }
         ]
       },
