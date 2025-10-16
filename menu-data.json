@@ -550,32 +550,38 @@
           {
             "available": true,
             "name": "Taglierino",
-            "description": "Selezione Affettati e formaggi del territorio Accompagnati a focaccia bianca (consigliato 1 pax)",
+            "description": "Selezione di affettati e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda (consigliato 1 pax)",
             "price": "€10.00"
           },
           {
             "available": true,
-            "name": "Taglierozzo",
-            "description": "Selezione Affettati e Formaggi del Territorio Accompagnati a Focaccia bianca  (consigliato 2 pax) ",
-            "price": "€ 20.00"
+            "name": "Taglierozzo Desabafo",
+            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, hummus di ceci ai pomodori, crudités,  acciughine al verde fatte da noi e focaccina bianca calda. Da veri golosoni goderecci (consigliato 2/3 pax) ",
+            "price": "€ 25.00"
           },
           {
             "available": true,
             "name": "Piatto Veggie",
-            "description": "Hummus di ceci al pomodoro accompagnato da cruditès di verdure di stagione",
+            "description": "Hummus di ceci al pomodoro preparato da noi, accompagnato da crudités.\nPer chi ama limonare duro.",
             "price": "€ 8.00"
           },
           {
             "available": true,
-            "name": "Acciughe al verde",
-            "price": "€ 6.00",
-            "description": "Acciughine dell'adriatico in bagnetto di olio extravergine di oliva, prezzemolo e aglio fresco"
+            "name": "Anciove al verd",
+            "price": "€ 8.00",
+            "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
           },
           {
             "available": true,
-            "name": "Tomino cuore caldo",
-            "description": "Tomino piemontese leggermente sciolto, avvolto in sottili fette di speck affumicato con legno di faggio e guarnito con un filo di miele e noci, accompagnato da crostone",
-            "price": "€ 6.00 a Unità"
+            "name": "Tumìn fòl",
+            "description": "Tomino piemontese scaldato \"incamiciato\", avvolto in sottili fette di speck affumicato con legno di faggio, su lettino di rucola. Guarnito con un filo di miele di castagno e noci, accompagnato da crostone integrale caldo.\nTroppo??",
+            "price": "1 x €8 / 2 x €15"
+          },
+          {
+            "available": true,
+            "name": "Vitel tonnè",
+            "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
+            "price": "€ 8.00"
           }
         ],
         "icon": "🥪"
