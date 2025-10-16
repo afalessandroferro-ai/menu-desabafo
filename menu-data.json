@@ -550,7 +550,7 @@
           {
             "available": true,
             "name": "Taglierino",
-            "description": "Selezione di affettati e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda (consigliato 1 pax)",
+            "description": "Selezione di affettati (cotto affumicato alle erbe, lardo di Arnad dop, filetto di pancetta coppata, mortadella di cinghiale, salame Finocchiona IGP) e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda (consigliato 1 pax)",
             "price": "€10.00"
           },
           {
@@ -581,6 +581,12 @@
             "available": true,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
+            "price": "€ 8.00"
+          },
+          {
+            "available": true,
+            "name": "Filete Cochino",
+            "description": "Carpaccio di maiale magrissimo, servito a fettine sottili con intingolo d'olio extra vergine di oliva alle erbe aromatiche, melograno e miele, su lettino di valeriana. Accompagnato da taralli.\nTroppo buono. Troppo. Troppo.",
             "price": "€ 8.00"
           }
         ],
