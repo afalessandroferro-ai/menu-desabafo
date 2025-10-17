@@ -36,15 +36,15 @@
             "available": true
           },
           {
-            "name": "VapoRub (disponibile analcolico 8€)",
-            "description": "Gin, Vermouth extra dry, Succo sedano, succo mela verde, sciroppo basilico, gocce assenzio",
-            "price": "€ 12.00",
-            "available": true
-          },
-          {
             "name": "Madame Violet (disponibile Analcolico 8€)",
             "description": "Vodka, Cointreau, violetta, limone, soda",
             "price": "€ 11.00",
+            "available": true
+          },
+          {
+            "name": "VapoRub (disponibile analcolico 8€)",
+            "description": "Gin, Vermouth extra dry, Succo sedano, succo mela verde, sciroppo basilico, gocce assenzio",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -237,7 +237,7 @@
             "name": "Rosso- Cannonau- Su'Anima- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Rosso - Ribera del Duero Pradorey",
@@ -255,7 +255,7 @@
             "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
@@ -305,13 +305,13 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Rosso- Cannonau- Su'Anima- Su'Entu- (Sardegna)",
             "price": "€22,00"
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 14,5%\nVitigno: Bovale\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Rosso- Bovale- Su'Diterra- Su'Entu- (Sardegna)",
             "price": "€23,00"
@@ -323,13 +323,13 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
             "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
             "price": "€30,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Rosso- Barbaresco- Produttori del Barbaresco- (Piemonte)",
             "price": "€45,00",
             "description": "Gradazione Alcolica: 14,5%\nVitigno: Nebbiolo\nAnnata: 2021\nAffinamento: 20 mesi in botti di Rovere\nZona Di Produzione: Langhe"
@@ -359,7 +359,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Bianco- Vermentino- Su'Imari- Su'Entu (Sardegna)",
             "price": "€22.00"
