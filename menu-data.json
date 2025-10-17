@@ -73,14 +73,14 @@
           },
           {
             "available": true,
-            "name": "Carmagnola Groove (Disponibile Analcolico 8€)",
-            "description": "Tequila, Passoa, Ancho Reyes, Succo di peperone, Limone, Sale",
+            "name": "Afro Baobab (disponibile analcolico 8€)",
+            "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
           },
           {
             "available": true,
-            "name": "Afro Baobab (disponibile analcolico 8€)",
-            "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
+            "name": "Carmagnola Groove (Disponibile Analcolico 8€)",
+            "description": "Tequila, Passoa, Ancho Reyes, Succo di peperone, Limone, Sale",
             "price": "€ 12,00"
           },
           {
@@ -270,21 +270,31 @@
             "available": true
           },
           {
-            "available": true,
-            "name": "Bolla-Prosecco-Canella",
-            "price": "€ 5.00",
-            "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
-          },
-          {
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
             "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
             "price": "€ 8,00",
             "available": true
           },
           {
+            "available": true,
+            "name": "Bolla-Prosecco-Canella",
+            "price": "€ 5.00",
+            "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
+          },
+          {
             "available": false,
             "name": "Bolla-Moscato di Castigliole di Asti-Antica Cantina di Calosso",
             "price": "€ 5.00"
+          },
+          {
+            "available": true,
+            "name": "Rosso-Chianti-poggio alla sala (Toscana)",
+            "price": "€6,00"
+          },
+          {
+            "available": true,
+            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
+            "price": "€6,00"
           }
         ]
       },
