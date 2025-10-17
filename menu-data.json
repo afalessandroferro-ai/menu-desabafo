@@ -579,8 +579,14 @@
           },
           {
             "available": true,
+            "name": "Vitel tonnè",
+            "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
+            "price": "€ 8.00"
+          },
+          {
+            "available": true,
             "name": "Anciove al verd",
-            "price": "€ 8.00",
+            "price": "€ 6.00",
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
           },
           {
@@ -590,13 +596,7 @@
             "price": "1 x €8 / 2 x €15"
           },
           {
-            "available": true,
-            "name": "Vitel tonnè",
-            "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
-            "price": "€ 8.00"
-          },
-          {
-            "available": true,
+            "available": false,
             "name": "Filete Cochino",
             "description": "Carpaccio di maiale magrissimo, servito a fettine sottili con intingolo d'olio extra vergine di oliva alle erbe aromatiche, melograno e miele, su lettino di valeriana. Accompagnato da taralli.\nTroppo buono. Troppo. Troppo.",
             "price": "€ 8.00"
