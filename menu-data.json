@@ -98,7 +98,7 @@
           {
             "name": "East Hyogo Dry (Giappone)",
             "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -110,7 +110,7 @@
           {
             "name": "Argintario (Italia)",
             "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
-            "price": "€ 14.00",
+            "price": "€ 13.00",
             "available": true
           },
           {
@@ -152,14 +152,14 @@
           {
             "name": "Genever Otemba (Olanda)",
             "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
-            "price": "€ 15.00",
+            "price": "€ 14.00",
             "available": true
           },
           {
             "available": true,
             "description": "\nIl Yellow Gin racconta “the spirit of Garda lake”. Con erbe e spezie del lago di Garda cresce un Gin estivo e moderno. La parte citrica viene dal limone della limonaia “La Garbera” del lago di Garda.",
             "name": "Zu Plun Yellow (Italia)",
-            "price": "€ 15.00"
+            "price": "€ 14.00"
           },
           {
             "available": true,
@@ -189,7 +189,7 @@
             "available": false,
             "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
             "name": "Ukiyo yuzu (Giappone)",
-            "price": "€ 14.00"
+            "price": "€ 13.00"
           },
           {
             "available": true,
@@ -207,7 +207,7 @@
             "available": true,
             "description": "Monginbello è un gin siciliano ottenuto dall’infusione in alcol di grano di diverse botaniche tra cui bacche di ginepro, fiori e agrumi. Al naso offre fresche e intense note di ginepro e agrumi.\n",
             "name": "Monginbello (Italia)",
-            "price": "€ 11.00"
+            "price": "€ 12.00"
           },
           {
             "available": true,
@@ -219,7 +219,31 @@
             "available": true,
             "description": "Tra le botaniche sono presenti ginepro, coriandolo, limone, arancia, angelica, cassia, liquirizia, cannella, giaggiolo e noce moscata.",
             "name": "Old English gin (Inghilterra)",
-            "price": "12,00"
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "name": "Condesa (Messico)",
+            "description": "Ginepro, palo santo, salvia, gelsomino, fiori di sambuco, lavanda, mirra e agrumi sono alcune delle 12 botaniche coltivate e selezionate a mano dalle Master Distiller.",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "name": "Tip toe (Portogallo)",
+            "description": "Gin Tiptoe Tropical è un gin che nasce dall’infusione in alcol di 5 botaniche selezionate: ginepro, menta, coriandolo, mango e papaya. Una volta essere filtrato per 3 volte, si ottiene un gin perfetto per chi ama i gusti esotici e fruttati.",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "name": "Xoriguer (Spagna)",
+            "description": "Gin Xoriguer Mahon viene distillato artigianalmente con metodo One Shot. L’alcol di base, in cui viene infusa una sola botanica (le bacche di ginepro dei Pirenei), viene dal vino. ",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "name": "Clandestino (Italia)",
+            "description": "ginepro in primo piano, seguito dalla piccantezza del coriandolo, il tutto bilanciato dall’angelica che lega ed esalta le note balsamiche, citriche e floreali di cardamomo e calamo aromatico. La sua complessità aromatica viene esaltata da freschi e pungenti sentori agrumati",
+            "price": "€13,00"
           }
         ]
       },
@@ -237,7 +261,7 @@
             "name": "Rosso- Cannonau- Su'Anima- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
-            "available": false
+            "available": true
           },
           {
             "available": true,
@@ -260,7 +284,7 @@
             "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
@@ -315,13 +339,13 @@
             "available": true
           },
           {
-            "available": false,
+            "available": true,
             "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Rosso- Cannonau- Su'Anima- Su'Entu- (Sardegna)",
             "price": "€22,00"
           },
           {
-            "available": false,
+            "available": true,
             "description": "Gradazione Alcolica: 14,5%\nVitigno: Bovale\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Rosso- Bovale- Su'Diterra- Su'Entu- (Sardegna)",
             "price": "€23,00"
@@ -333,13 +357,13 @@
             "available": true
           },
           {
-            "available": false,
+            "available": true,
             "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
             "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
             "price": "€30,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Rosso- Barbaresco- Produttori del Barbaresco- (Piemonte)",
             "price": "€45,00",
             "description": "Gradazione Alcolica: 14,5%\nVitigno: Nebbiolo\nAnnata: 2021\nAffinamento: 20 mesi in botti di Rovere\nZona Di Produzione: Langhe"
@@ -369,7 +393,7 @@
             "available": true
           },
           {
-            "available": false,
+            "available": true,
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Bianco- Vermentino- Su'Imari- Su'Entu (Sardegna)",
             "price": "€22.00"
@@ -409,6 +433,12 @@
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
             "price": "€30,00"
+          },
+          {
+            "available": true,
+            "name": "Rosso-Chianti-Poggio alla Sala-Colli Senesi (Toscana)",
+            "price": "23,00",
+            "description": "Gradazione Alcolica: 13 \nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione: Colli Senesi"
           }
         ]
       },
