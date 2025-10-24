@@ -82,12 +82,6 @@
             "name": "Mocktails analcolici anche d'autore ",
             "price": "€8.00",
             "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
-          },
-          {
-            "available": true,
-            "name": "Sangria Desabafo",
-            "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
-            "price": "€ 5,00"
           }
         ]
       },
@@ -251,6 +245,12 @@
         "name": "Vinello al Calice",
         "icon": "🍷",
         "items": [
+          {
+            "available": true,
+            "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
+            "name": "Sangria Desabafo",
+            "price": "€5,00"
+          },
           {
             "name": "Rosso-Barbera D'Alba- Mara- Dante Rivetti- (Piemonte)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Barbera\nAnnata: 2023\nZona Di Produzione: Neive",
