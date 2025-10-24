@@ -37,7 +37,7 @@
           },
           {
             "name": "VapoRub (disponibile analcolico 8€)",
-            "description": "Gin, Vermouth extra dry, Succo sedano, succo mela verde, sciroppo basilico, gocce assenzio",
+            "description": "Gin, Vermouth extra dry, Succo sedano, succo mela verde, limone,sciroppo basilico, gocce assenzio",
             "price": "€ 12.00",
             "available": true
           },
@@ -55,7 +55,7 @@
           },
           {
             "name": "Calavèra Catrina",
-            "description": "Rum chiaro, Rum scuro, Cointreau, Amaretto, Succo pompelmo, Pure di Mango, angostura, Limone, ",
+            "description": "Rum gold, black rum barbados, Demerara rum, Falernum, sciroppo cannella, lime, pompelmo, mango, granatina, angostura",
             "price": "€ 12.00",
             "available": true
           },
@@ -357,13 +357,13 @@
             "available": true
           },
           {
-            "available": false,
+            "available": true,
             "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
             "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
             "price": "€30,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Rosso- Barbaresco- Produttori del Barbaresco- (Piemonte)",
             "price": "€45,00",
             "description": "Gradazione Alcolica: 14,5%\nVitigno: Nebbiolo\nAnnata: 2021\nAffinamento: 20 mesi in botti di Rovere\nZona Di Produzione: Langhe"
@@ -465,7 +465,7 @@
             "available": true
           },
           {
-            "available": false,
+            "available": true,
             "name": "Bavaria Gluten free 33cl",
             "description": "",
             "price": "€ 5.00"
@@ -524,7 +524,7 @@
             "price": " €7,00 "
           },
           {
-            "available": true,
+            "available": false,
             "name": "Vermouth Rosso di Torino- Superiore-",
             "description": "Ruchè di Castagnole Monferrato DOCG. Tanaceto Artemisia, Salvia Scalarea, Timo Cedrato, Arancio, Cannella. ",
             "price": "€6.00"
@@ -569,7 +569,7 @@
             "name": "La Gloriette Vanille Rhum",
             "description": "Caribbean",
             "price": "€ 11.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Havana Club 3 Años Añejo",
