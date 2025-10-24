@@ -18,15 +18,15 @@
             "available": true
           },
           {
-            "name": "Pestati, shakerati e classici",
-            "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
-            "price": "€ 10.00",
-            "available": true
-          },
-          {
             "name": "Patron de Oaxaca",
             "description": "Mezcal, Ancho Reyes, Sciroppo di  zenzero, limone e sale nero ",
             "price": "€ 12.00",
+            "available": true
+          },
+          {
+            "name": "Pestati, shakerati e classici",
+            "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
+            "price": "€ 10.00",
             "available": true
           },
           {
@@ -290,7 +290,7 @@
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 6.00",
-            "available": false
+            "available": true
           },
           {
             "available": true,
@@ -384,7 +384,7 @@
             "name": "Bianco - Sable Blanc- Mas du Petit Pin (Francia) BIO",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 23.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Bianco - Viognier- Domaine de Luc-instant rare  BIO",
