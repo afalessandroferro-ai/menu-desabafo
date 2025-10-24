@@ -67,6 +67,12 @@
           },
           {
             "available": true,
+            "name": "Mocktails analcolici anche d'autore ",
+            "price": "€8.00",
+            "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
+          },
+          {
+            "available": true,
             "name": "Afro Baobab (disponibile analcolico 8€)",
             "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
@@ -76,12 +82,6 @@
             "name": "Carmagnola Groove (Disponibile Analcolico 8€)",
             "description": "Tequila, Passoa, Ancho Reyes, Succo di peperone, Limone, Sale",
             "price": "€ 12,00"
-          },
-          {
-            "available": true,
-            "name": "Mocktails analcolici anche d'autore ",
-            "price": "€8.00",
-            "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
           }
         ]
       },
@@ -290,18 +290,18 @@
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 6.00",
-            "available": true
+            "available": false
+          },
+          {
+            "available": true,
+            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
+            "price": "€6,00"
           },
           {
             "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Traminer\nAnnata: 2024\nZona Di Produzione: Alto Adige",
             "price": "€ 7.00",
             "available": true
-          },
-          {
-            "available": true,
-            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
-            "price": "€6,00"
           },
           {
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
@@ -357,13 +357,13 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
             "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
             "price": "€30,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Rosso- Barbaresco- Produttori del Barbaresco- (Piemonte)",
             "price": "€45,00",
             "description": "Gradazione Alcolica: 14,5%\nVitigno: Nebbiolo\nAnnata: 2021\nAffinamento: 20 mesi in botti di Rovere\nZona Di Produzione: Langhe"
@@ -384,7 +384,7 @@
             "name": "Bianco - Sable Blanc- Mas du Petit Pin (Francia) BIO",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 23.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Bianco - Viognier- Domaine de Luc-instant rare  BIO",
