@@ -24,12 +24,6 @@
             "available": true
           },
           {
-            "available": true,
-            "name": "Sangria Desabafo",
-            "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
-            "price": "€ 5,00"
-          },
-          {
             "name": "Patron de Oaxaca",
             "description": "Mezcal, Ancho Reyes, Sciroppo di  zenzero, limone e sale nero ",
             "price": "€ 12.00",
@@ -88,6 +82,12 @@
             "name": "Mocktails analcolici anche d'autore ",
             "price": "€8.00",
             "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
+          },
+          {
+            "available": true,
+            "name": "Sangria Desabafo",
+            "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
+            "price": "€ 5,00"
           }
         ]
       },
@@ -105,7 +105,7 @@
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
             "price": "€ 12.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Argintario (Italia)",
@@ -116,31 +116,31 @@
           {
             "name": "Bayab Orange (Sudafrica)",
             "description": "Distillato con frutti di Marula, frutti di baobab, cannella, scorza d'arancia bruciata, coriandolo e sale marino",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Bayab Dry (Sudafrica)",
             "description": "Il Bayab Classic Dry infonde il baobab del Ghana con bacche di ginepro, coriandolo, rosmarino, cannella e sale grosso per un'audace esplosione di freschi agrumi",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Big Gino Dry (Italia)",
             "description": "Dry gin artigianale 100% italiano. Base alcolica di grano con ginepro, pomelo e bacche di pimento",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Big Gino Exotic (Italia)",
             "description": "Gin artigianale dal profilo esotico e tropicale. Sorso morbido con aromi di frutta tropicale e sentori afrodisiaci",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
             "name": "Cilento Wild (Italia)",
             "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
