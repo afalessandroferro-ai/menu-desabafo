@@ -6,15 +6,21 @@
         "icon": "🍹",
         "items": [
           {
+            "name": "Long Drinks",
+            "description": "Base alcolica + bibita",
+            "price": "€ 8.00",
+            "available": true
+          },
+          {
             "name": "Spritz",
             "description": "Select-Campari-Aperol",
             "price": "€ 8.00",
             "available": true
           },
           {
-            "name": "Long Drinks",
-            "description": "Base alcolica + bibita",
-            "price": "€ 8.00",
+            "name": "Madame Violet (disponibile Analcolico 8€)",
+            "description": "Vodka, Cointreau, violetta, limone, soda",
+            "price": "€ 11.00",
             "available": true
           },
           {
@@ -27,12 +33,6 @@
             "name": "Pestati, shakerati e classici",
             "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
             "price": "€ 10.00",
-            "available": true
-          },
-          {
-            "name": "Madame Violet (disponibile Analcolico 8€)",
-            "description": "Vodka, Cointreau, violetta, limone, soda",
-            "price": "€ 11.00",
             "available": true
           },
           {
@@ -180,7 +180,7 @@
             "price": "€ 12.00"
           },
           {
-            "available": false,
+            "available": true,
             "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
             "name": "Ukiyo yuzu (Giappone)",
             "price": "€ 13.00"
