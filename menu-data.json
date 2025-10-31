@@ -18,15 +18,15 @@
             "available": true
           },
           {
-            "name": "Madame Violet (disponibile Analcolico 8€)",
-            "description": "Vodka, Cointreau, violetta, limone, soda",
-            "price": "€ 11.00",
-            "available": true
-          },
-          {
             "name": "Patron de Oaxaca",
             "description": "Mezcal, Ancho Reyes, Sciroppo di  zenzero, limone e sale nero ",
             "price": "€ 12.00",
+            "available": true
+          },
+          {
+            "name": "Madame Violet (disponibile Analcolico 8€)",
+            "description": "Vodka, Cointreau, violetta, limone, soda",
+            "price": "€ 11.00",
             "available": true
           },
           {
@@ -246,7 +246,7 @@
         "icon": "🍷",
         "items": [
           {
-            "available": true,
+            "available": false,
             "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
             "name": "Sangria Desabafo",
             "price": "€5,00"
