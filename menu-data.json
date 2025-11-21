@@ -631,12 +631,6 @@
           },
           {
             "available": true,
-            "name": "Carpacho Rosa",
-            "description": "Carpaccio di filetto rosa di maiale in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno. Da paura ",
-            "price": "€ 8.00"
-          },
-          {
-            "available": true,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
@@ -646,6 +640,12 @@
             "name": "Focaccina calda con patè di lardo",
             "description": "Eh niente, è così...ma il pate è preparato con lardo pancettato, olive, noci ed erbette aromatiche profumatissime. Bon.",
             "price": "€8,00"
+          },
+          {
+            "available": true,
+            "name": "Carpacho Rosa",
+            "description": "Carpaccio di filetto rosa di maiale in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno. Da paura ",
+            "price": "€ 8.00"
           }
         ],
         "icon": "🥪"
