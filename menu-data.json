@@ -74,7 +74,7 @@
           {
             "available": true,
             "name": "Afro Baobab (disponibile analcolico 8€)",
-            "description": "Rum, Amaretto, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
+            "description": "Rum, Falernum, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
           },
           {
@@ -247,8 +247,8 @@
         "items": [
           {
             "available": false,
-            "description": "Vino Rosso Farinel Piemonte, succo arancia al naturale, Cannella, Pesche e Mele, Cointreau",
-            "name": "Sangria Desabafo",
+            "description": "Vino rosso Langhe, spezie varie e zucchero",
+            "name": "Vin Brulè",
             "price": "€5,00"
           },
           {
@@ -298,9 +298,9 @@
             "price": "€6,00"
           },
           {
-            "name": "Bianco - Gewürztraminer St Pauls (Alto Adige)",
-            "description": "Gradazione Alcolica: 14%\nVitigno: Traminer\nAnnata: 2024\nZona Di Produzione: Alto Adige",
-            "price": "€ 7.00",
+            "name": "Bianco - Ribolla gialla ferma (friuli)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Ribolla gialla\nAnnata: 2024\nZona Di Produzione: Friuli Venezia Giulia",
+            "price": "€ 6.00",
             "available": true
           },
           {
@@ -524,7 +524,7 @@
             "price": " €7,00 "
           },
           {
-            "available": false,
+            "available": true,
             "name": "Vermouth Rosso di Torino- Superiore-",
             "description": "Ruchè di Castagnole Monferrato DOCG. Tanaceto Artemisia, Salvia Scalarea, Timo Cedrato, Arancio, Cannella. ",
             "price": "€6.00"
@@ -602,20 +602,20 @@
           {
             "available": true,
             "name": "Taglierino",
-            "description": "Selezione di affettati (cotto affumicato alle erbe, lardo di Arnad dop, filetto di pancetta coppata, mortadella di cinghiale, salame Finocchiona IGP) e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda (consigliato 1 pax)",
+            "description": "Selezione di affettati (cotto gran brace affumicato alle erbe, pancetta coppata filettata, Mortadella di cinghiale, salame Finocchiona IGP e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda e taralli (consigliato 1 pax)",
             "price": "€10.00"
           },
           {
             "available": true,
             "name": "Taglierozzo Desabafo",
-            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, hummus di ceci ai pomodori, crudités,  acciughine al verde fatte da noi e focaccina bianca calda. Da veri golosoni goderecci (consigliato 2/3 pax) ",
+            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, patè di lardo pancettato con olive e noci, hummus di ceci a scelta, crudites, acciughine al verde e focaccina bianca calda. Per veri golosoni goderecci (consigliato 2/3 pax) ",
             "price": "€ 25.00"
           },
           {
             "available": true,
             "name": "Piatto Veggie",
-            "description": "Hummus di ceci al pomodoro preparato da noi, accompagnato da crudités.\nPer chi ama limonare duro.",
-            "price": "€ 8.00"
+            "description": "Hummus di ceci pazzesco, in tre varianti a scelta(pomodori/spinaci/barbabietole) o tris ciapatut.\nPer chi ama limonare duro.",
+            "price": "€ 8.00/ 12.00"
           },
           {
             "available": true,
@@ -627,12 +627,12 @@
             "available": true,
             "name": "Tumìn fòl",
             "description": "Tomino piemontese scaldato \"incamiciato\", avvolto in sottili fette di speck affumicato con legno di faggio, su lettino di rucola. Guarnito con un filo di miele di castagno e noci, accompagnato da crostone integrale caldo.\nTroppo??",
-            "price": "1 x €8 / 2 x €15"
+            "price": "€8,00"
           },
           {
-            "available": false,
-            "name": "Filete Cochino",
-            "description": "Carpaccio di maiale magrissimo, servito a fettine sottili con intingolo d'olio extra vergine di oliva alle erbe aromatiche, melograno e miele, su lettino di valeriana. Accompagnato da taralli.\nTroppo buono. Troppo. Troppo.",
+            "available": true,
+            "name": "Carpacho Rosa",
+            "description": "Carpaccio di filetto rosa di maiale in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno. Da paura ",
             "price": "€ 8.00"
           },
           {
@@ -640,6 +640,12 @@
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
+          },
+          {
+            "available": true,
+            "name": "Focaccina calda con patè di lardo",
+            "description": "Eh niente, è così...ma il pate è preparato con lardo pancettato, olive, noci ed erbette aromatiche profumatissime. Bon.",
+            "price": "€8,00"
           }
         ],
         "icon": "🥪"
