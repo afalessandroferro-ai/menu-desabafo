@@ -76,6 +76,12 @@
             "name": "Carmagnola Groove (Disponibile Analcolico 8€)",
             "description": "Tequila, Passoa, Ancho Reyes, Succo di peperone, Limone, Sale",
             "price": "€ 12,00"
+          },
+          {
+            "available": true,
+            "description": "Bourbon Whiskey, Liquore caffè, caffè, caramello salato",
+            "price": "€12.00",
+            "name": "Moka Makako"
           }
         ]
       },
