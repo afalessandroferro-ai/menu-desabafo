@@ -67,12 +67,6 @@
           },
           {
             "available": true,
-            "name": "Mocktails analcolici anche d'autore ",
-            "price": "€8.00",
-            "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
-          },
-          {
-            "available": true,
             "name": "Afro Baobab (disponibile analcolico 8€)",
             "description": "Rum, Falernum, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
@@ -89,12 +83,6 @@
         "name": "Gin",
         "icon": "🌿",
         "items": [
-          {
-            "name": "East Hyogo Dry (Giappone)",
-            "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
-            "price": "€ 12.00",
-            "available": true
-          },
           {
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
@@ -147,6 +135,12 @@
             "name": "Genever Otemba (Olanda)",
             "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
             "price": "€ 14.00",
+            "available": true
+          },
+          {
+            "name": "East Hyogo Dry (Giappone)",
+            "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -222,7 +216,7 @@
             "price": "€12,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Tip toe (Portogallo)",
             "description": "Gin Tiptoe Tropical è un gin che nasce dall’infusione in alcol di 5 botaniche selezionate: ginepro, menta, coriandolo, mango e papaya. Una volta essere filtrato per 3 volte, si ottiene un gin perfetto per chi ama i gusti esotici e fruttati.",
             "price": "€12,00"
@@ -258,6 +252,12 @@
             "available": true
           },
           {
+            "available": true,
+            "name": "Rosso-Nebbiolo-Produttori del Barbaresco (Piemonte)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Nebbiolo\nAnnata: 2024\nZona Di Produzione: Barbaresco (Langhe)",
+            "price": "€ 7.00"
+          },
+          {
             "name": "Rosso- Cannonau- Su'Anima- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
@@ -275,27 +275,10 @@
             "available": true
           },
           {
-            "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
-            "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
-            "price": "€ 7.00",
-            "available": true
-          },
-          {
             "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
             "available": true
-          },
-          {
-            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00",
-            "available": true
-          },
-          {
-            "available": true,
-            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
-            "price": "€6,00"
           },
           {
             "name": "Bianco - Ribolla gialla ferma (friuli)",
@@ -304,16 +287,45 @@
             "available": true
           },
           {
-            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
-            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
-            "price": "€ 8,00",
-            "available": true
+            "available": true,
+            "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
+            "price": "€ 6.00"
           },
           {
             "available": true,
             "name": "Bolla-Prosecco-Canella",
             "price": "€ 5.00",
             "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
+          },
+          {
+            "available": true,
+            "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
+            "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
+            "price": "€ 8.00"
+          },
+          {
+            "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
+            "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
+            "price": "€ 7.00",
+            "available": true
+          },
+          {
+            "available": false,
+            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
+            "price": "€6,00"
+          },
+          {
+            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
+            "price": "€ 6.00",
+            "available": true
+          },
+          {
+            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
+            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
+            "price": "€ 8,00",
+            "available": false
           },
           {
             "available": false,
@@ -331,6 +343,18 @@
             "description": "Gradazione Alcolica: 13%\nVitigno: Barbera\nAnnata: 2023\nZona Di Produzione: Neive",
             "name": "Rosso-Barbera D'Alba- Mara- Dante Rivetti- (Piemonte)",
             "price": "€20,00"
+          },
+          {
+            "available": true,
+            "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
+            "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
+            "price": "€30,00"
+          },
+          {
+            "available": true,
+            "name": "Rosso-Chianti-Poggio alla Sala-Colli Senesi (Toscana)",
+            "price": "23,00",
+            "description": "Gradazione Alcolica: 13 \nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione: Colli Senesi"
           },
           {
             "name": "Rosso - Pinot Nero- St Pauls (Alto Adige)",
@@ -355,12 +379,6 @@
             "description": "Gradazione Alcolica: 14%\nVitigno: Tempranillo\nAnnata: 2023\nZona Di Produzione: Castilla y Leon",
             "price": "€ 25.00",
             "available": true
-          },
-          {
-            "available": true,
-            "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
-            "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
-            "price": "€30,00"
           },
           {
             "available": true,
@@ -399,10 +417,16 @@
             "price": "€22.00"
           },
           {
+            "available": true,
+            "name": "Rosè - Sable Gris- Mas du Petit Pin (Francia) BIO",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2024\nZona Di Produzione: Camargue",
+            "price": "€ 26.00"
+          },
+          {
             "name": "Rosè - Grande Courtade (Francia) BIO",
             "description": "Gradazione Alcolica: 12,5%\nVitigno: Merlot, Sauvignon; Pinot Noir\nAnnata: 2024\nZona Di Produzione: Occitania",
             "price": "€ 26.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Orange - Louis Andrieu BIO",
@@ -436,9 +460,9 @@
           },
           {
             "available": true,
-            "name": "Rosso-Chianti-Poggio alla Sala-Colli Senesi (Toscana)",
-            "price": "23,00",
-            "description": "Gradazione Alcolica: 13 \nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione: Colli Senesi"
+            "name": "Bolla-Cremant de Limoux-Les 4 vents (Francia) BIO",
+            "description": "Gradazione alcolica: 12%\nMetodo Classico\nExtra brut\nVitigno: Chenin, Chardonnay, Pinot Noir\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
+            "price": "€32,00"
           }
         ]
       },
@@ -525,7 +549,7 @@
           },
           {
             "available": true,
-            "name": "Vermouth Rosso di Torino- Superiore-",
+            "name": "Vermouth Rosso di Torino- Superiore-Nonis Februariis",
             "description": "Ruchè di Castagnole Monferrato DOCG. Tanaceto Artemisia, Salvia Scalarea, Timo Cedrato, Arancio, Cannella. ",
             "price": "€6.00"
           },
@@ -566,16 +590,21 @@
             "available": true
           },
           {
-            "name": "La Gloriette Vanille Rhum",
-            "description": "Caribbean",
-            "price": "€ 11.00",
-            "available": false
+            "name": "Gosiling Barbados black rum ",
+            "description": "",
+            "price": "€ 10.00",
+            "available": true
           },
           {
             "name": "Havana Club 3 Años Añejo",
             "description": "",
             "price": "€ 10.00",
             "available": true
+          },
+          {
+            "available": true,
+            "name": "Legendario Rum  7 (Cuba) ",
+            "price": "€ 10.00"
           }
         ]
       },
@@ -589,7 +618,7 @@
           },
           {
             "available": true,
-            "name": "Coca cola, Tonica Tomas henry, Ginger beer, Lemon Soda",
+            "name": "Coca cola, Tonica Tomas henry, Ginger beer, Lemon Soda, Chinotto",
             "description": "Bottiglietta ",
             "price": "€ 5.00"
           }
