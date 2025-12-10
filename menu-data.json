@@ -67,12 +67,6 @@
           },
           {
             "available": true,
-            "name": "Mocktails analcolici anche d'autore ",
-            "price": "€8.00",
-            "description": "i Nostri Analcolici sono una delle nostre specialità, utilizziamo al 100% succhi estratti senza zuccheri aggiunti, puree di frutta e sciroppi fatti in casa Desabafo"
-          },
-          {
-            "available": true,
             "name": "Afro Baobab (disponibile analcolico 8€)",
             "description": "Rum, Falernum, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
@@ -89,12 +83,6 @@
         "name": "Gin",
         "icon": "🌿",
         "items": [
-          {
-            "name": "East Hyogo Dry (Giappone)",
-            "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
-            "price": "€ 12.00",
-            "available": true
-          },
           {
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
@@ -147,6 +135,12 @@
             "name": "Genever Otemba (Olanda)",
             "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
             "price": "€ 14.00",
+            "available": true
+          },
+          {
+            "name": "East Hyogo Dry (Giappone)",
+            "description": "Legno di cedro, foglie di shiso, fiori di crisantemo, pepe di sansho e yuzu, angelica, coriandolo e ginepro, base Sake",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -222,7 +216,7 @@
             "price": "€12,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Tip toe (Portogallo)",
             "description": "Gin Tiptoe Tropical è un gin che nasce dall’infusione in alcol di 5 botaniche selezionate: ginepro, menta, coriandolo, mango e papaya. Una volta essere filtrato per 3 volte, si ottiene un gin perfetto per chi ama i gusti esotici e fruttati.",
             "price": "€12,00"
@@ -319,6 +313,12 @@
             "available": false,
             "name": "Bolla-Moscato di Castigliole di Asti-Antica Cantina di Calosso",
             "price": "€ 5.00"
+          },
+          {
+            "available": true,
+            "name": "Rosso-Nebbiolo-Produttori del Barbaresco (Piemonte)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Nebbiolo\nAnnata: 2024\nZona Di Produzione: Barbaresco (Langhe)",
+            "price": "€ 7.00"
           }
         ]
       },
@@ -402,7 +402,7 @@
             "name": "Rosè - Grande Courtade (Francia) BIO",
             "description": "Gradazione Alcolica: 12,5%\nVitigno: Merlot, Sauvignon; Pinot Noir\nAnnata: 2024\nZona Di Produzione: Occitania",
             "price": "€ 26.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Orange - Louis Andrieu BIO",
@@ -439,6 +439,18 @@
             "name": "Rosso-Chianti-Poggio alla Sala-Colli Senesi (Toscana)",
             "price": "23,00",
             "description": "Gradazione Alcolica: 13 \nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione: Colli Senesi"
+          },
+          {
+            "available": true,
+            "name": "Rosè - Sable Gris- Mas du Petit Pin (Francia) BIO",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2024\nZona Di Produzione: Camargue",
+            "price": "€ 26.00"
+          },
+          {
+            "available": true,
+            "name": "Bolla-Cremant de Limoux-Les 4 vents (Francia) BIO",
+            "description": "Gradazione alcolica: 12%\nMetodo Classico\nExtra brut\nVitigno: Chenin, Chardonnay, Pinot Noir\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
+            "price": "€30,00"
           }
         ]
       },
