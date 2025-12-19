@@ -290,7 +290,7 @@
             "name": "Bianco - Ribolla gialla ferma (friuli)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Ribolla gialla\nAnnata: 2024\nZona Di Produzione: Friuli Venezia Giulia",
             "price": "€ 6.00",
-            "available": true
+            "available": false
           },
           {
             "available": true,
@@ -314,7 +314,7 @@
             "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
             "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
             "price": "€ 7.00",
-            "available": true
+            "available": false
           },
           {
             "available": false,
