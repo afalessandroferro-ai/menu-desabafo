@@ -193,6 +193,12 @@
           },
           {
             "available": true,
+            "name": "Seri Pervas Long (Italia)",
+            "description": "Si tratta di un Dry Gin ottenuto dalla distillazione di alcune botaniche esotiche come tè verde Bancha, tè nero Darjeeling, pepe di Sichuan, pepe di Timut, pepe del Madagascar e scorze di bergamotto.",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
             "description": "ginepro, pepe del Sichuan, mano del Buddha, menta cinese, angelica cinese, semi di coriandolo, liquirizia cinese, mandorle cinesi, cardamomo, cassi\n",
             "name": "Peddlers (Cina) ",
             "price": "€ 12.00"
@@ -238,6 +244,12 @@
             "name": "Clandestino (Italia)",
             "description": "ginepro in primo piano, seguito dalla piccantezza del coriandolo, il tutto bilanciato dall’angelica che lega ed esalta le note balsamiche, citriche e floreali di cardamomo e calamo aromatico. La sua complessità aromatica viene esaltata da freschi e pungenti sentori agrumati",
             "price": "€13,00"
+          },
+          {
+            "available": true,
+            "name": "Mataroa (Grecia)",
+            "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
+            "price": "€12,00"
           }
         ]
       },
@@ -272,7 +284,8 @@
           {
             "available": true,
             "name": "Rosso-Chianti-poggio alla sala (Toscana)",
-            "price": "€6,00"
+            "price": "€6,00",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione:  Colli senesi"
           },
           {
             "name": "Rosso - Ribera del Duero Pradorey",
@@ -285,12 +298,6 @@
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 5.00",
             "available": true
-          },
-          {
-            "name": "Bianco - Ribolla gialla ferma (friuli)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Ribolla gialla\nAnnata: 2024\nZona Di Produzione: Friuli Venezia Giulia",
-            "price": "€ 6.00",
-            "available": false
           },
           {
             "available": true,
@@ -311,21 +318,27 @@
             "price": "€ 8.00"
           },
           {
+            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
+            "price": "€ 6.00",
+            "available": true
+          },
+          {
+            "name": "Bianco - Ribolla gialla ferma (friuli)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Ribolla gialla\nAnnata: 2024\nZona Di Produzione: Friuli Venezia Giulia",
+            "price": "€ 6.00",
+            "available": false
+          },
+          {
             "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
             "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
             "price": "€ 7.00",
             "available": false
           },
           {
-            "available": false,
+            "available": true,
             "name": "Bianco- Chardonnay- Endrizzi (trentino)",
             "price": "€6,00"
-          },
-          {
-            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00",
-            "available": true
           },
           {
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
@@ -455,7 +468,7 @@
           {
             "available": true,
             "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
-            "name": "Bolla- Alta Langa- Ivan- Dante Rivetti (Piemonte)",
+            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
             "price": "€30,00"
           },
           {
@@ -468,7 +481,13 @@
             "available": true,
             "name": "Bolla-Cremant de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nExtra brut\nVitigno: Chenin, Chardonnay, Pinot Noir\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
-            "price": "€32,00"
+            "price": "€34,00"
+          },
+          {
+            "available": true,
+            "name": "Rosso-Nebbiolo-Dante Rivetti- (Langhe)",
+            "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: 2022\nZona Di Produzione: Neive (Langhe)",
+            "price": "€30,00"
           }
         ]
       },
@@ -549,21 +568,50 @@
           },
           {
             "available": true,
-            "name": "Vermouth Rosso- La Quintinye",
-            "description": "Realizzato da una selezione di 28 piante e spezie insieme a una miscela di vini bianchi e Pineau des Charentes Rouges, La Quintinye Rouge rilascia un bouquet di aromi complesso e sontuoso.\n",
-            "price": " €7,00 "
-          },
-          {
-            "available": true,
             "name": "Vermouth Rosso di Torino- Superiore-Nonis Februariis",
             "description": "Ruchè di Castagnole Monferrato DOCG. Tanaceto Artemisia, Salvia Scalarea, Timo Cedrato, Arancio, Cannella. ",
             "price": "€6.00"
+          },
+          {
+            "available": true,
+            "price": "€5,00",
+            "description": " intenso, di erbe aromatiche; molto complesso con spiccate note di vaniglia, arancia amara, genziana, china e rabarbaro",
+            "name": "Vermouth rosso di Torino-Martelletti"
+          },
+          {
+            "available": true,
+            "price": "€5,00",
+            "description": "Al naso emergono note agrumate e speziate di cannella, chiodi di garofano, noce moscata e un accenno di vaniglia che arricchiscono l’esperienza olfattiva.",
+            "name": "Vermouth rosso di Torino-Da marco-Coloniale"
+          },
+          {
+            "available": true,
+            "price": "€5,00",
+            "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque",
+            "description": "Il suo colore rubino intenso seduce la vista. Anticipa un gusto complesso e avvolgente. Offre note aromatiche di erbe e spezie. La dolcezza del vino bilancia il tutto. Si percepiscono sentori di agrumi freschie vaniglia."
+          },
+          {
+            "available": true,
+            "price": "€7,00",
+            "name": "Vermut Rosso-Seri pervas",
+            "description": "Le note vinose della Malvasia e del Terrano sono ben accompagnate da quelle più calde della santoreggia, del rabarbaro e della corteccia di china, equilibrate poi da quelle più fresche del chinotto e della salvia. Nel finale rimangono note calde di fiori di sambuco e note speziate di santoreggia."
+          },
+          {
+            "available": true,
+            "price": "€5.00",
+            "name": "Porto Rosso Tawny-Offley"
           },
           {
             "name": "Fernet Branca, Amaro del Capo, Montenegro, Amaroc, Cynar, San Simone",
             "description": "",
             "price": "€ 5.00",
             "available": true
+          },
+          {
+            "available": false,
+            "name": "Vermouth Rosso- La Quintinye",
+            "description": "Realizzato da una selezione di 28 piante e spezie insieme a una miscela di vini bianchi e Pineau des Charentes Rouges, La Quintinye Rouge rilascia un bouquet di aromi complesso e sontuoso.\n",
+            "price": " €7,00 "
           }
         ]
       },
@@ -655,7 +703,7 @@
           {
             "available": true,
             "name": "Anciove al verd",
-            "price": "€ 6.00",
+            "price": "€ 8.00",
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
           },
           {
@@ -678,9 +726,15 @@
           },
           {
             "available": true,
-            "name": "Carpacho Rosa",
-            "description": "Carpaccio di filetto rosa di maiale in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno. Da paura ",
+            "name": "Carpacho Ahumado",
+            "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
             "price": "€ 8.00"
+          },
+          {
+            "available": true,
+            "name": "Mahialinho",
+            "description": "Stinco di maialino tenerissimo (150/200g) disossato e sfilettato, servito con mojo picòn (salsa tipica delle isole Canarie a base di peperone rosso e aglio.\nMeraviglioso.",
+            "price": "€8,00"
           }
         ],
         "icon": "🥪"
