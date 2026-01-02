@@ -67,6 +67,12 @@
           },
           {
             "available": true,
+            "description": "Bourbon Whiskey, Liquore caffè, caffè, caramello salato",
+            "price": "€12.00",
+            "name": "Moka Makako"
+          },
+          {
+            "available": true,
             "name": "Afro Baobab (disponibile analcolico 8€)",
             "description": "Rum, Falernum, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
@@ -76,12 +82,6 @@
             "name": "Carmagnola Groove (Disponibile Analcolico 8€)",
             "description": "Tequila, Passoa, Ancho Reyes, Succo di peperone, Limone, Sale",
             "price": "€ 12,00"
-          },
-          {
-            "available": true,
-            "description": "Bourbon Whiskey, Liquore caffè, caffè, caramello salato",
-            "price": "€12.00",
-            "name": "Moka Makako"
           }
         ]
       },
@@ -567,7 +567,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Vermouth Rosso di Torino- Superiore-Nonis Februariis",
             "description": "Ruchè di Castagnole Monferrato DOCG. Tanaceto Artemisia, Salvia Scalarea, Timo Cedrato, Arancio, Cannella. ",
             "price": "€6.00"
