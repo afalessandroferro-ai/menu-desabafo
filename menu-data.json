@@ -564,7 +564,7 @@
             "name": "Vermouth Rosso - Farmacopea Popolare",
             "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
             "price": "€ 8.00",
-            "available": true
+            "available": false
           },
           {
             "available": false,
@@ -573,7 +573,7 @@
             "price": "€6.00"
           },
           {
-            "available": true,
+            "available": false,
             "price": "€5,00",
             "description": " intenso, di erbe aromatiche; molto complesso con spiccate note di vaniglia, arancia amara, genziana, china e rabarbaro",
             "name": "Vermouth rosso di Torino-Martelletti"
@@ -591,7 +591,7 @@
             "description": "Il suo colore rubino intenso seduce la vista. Anticipa un gusto complesso e avvolgente. Offre note aromatiche di erbe e spezie. La dolcezza del vino bilancia il tutto. Si percepiscono sentori di agrumi freschie vaniglia."
           },
           {
-            "available": true,
+            "available": false,
             "price": "€7,00",
             "name": "Vermut Rosso-Seri pervas",
             "description": "Le note vinose della Malvasia e del Terrano sono ben accompagnate da quelle più calde della santoreggia, del rabarbaro e della corteccia di china, equilibrate poi da quelle più fresche del chinotto e della salvia. Nel finale rimangono note calde di fiori di sambuco e note speziate di santoreggia."
