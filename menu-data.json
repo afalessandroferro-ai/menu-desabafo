@@ -276,8 +276,8 @@
             "price": "€ 7.00"
           },
           {
-            "name": "Rosso- Cannonau- Su'Anima- Su'Entu (Sardegna)",
-            "description": "Gradazione Alcolica: 14%\nVitigno: Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
+            "name": "Rosso-Bovale-Su'di terra-Su'entu(Sardegna)",
+            "description": "Gradazione Alcolica: 14%\nVitigno:Bovale\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 6.00",
             "available": true
           },
@@ -737,7 +737,7 @@
             "price": "€ 8.00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Focaccina calda con patè di lardo",
             "description": "Eh niente, è così...ma il pate è preparato con lardo pancettato, olive, noci ed erbette aromatiche profumatissime. Bon.",
             "price": "€8,00"
