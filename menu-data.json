@@ -18,9 +18,9 @@
             "available": true
           },
           {
-            "name": "Patron de Oaxaca",
-            "description": "Mezcal, Ancho Reyes, Sciroppo di  zenzero, limone e sale nero ",
-            "price": "€ 12.00",
+            "name": "Pestati, shakerati e classici",
+            "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
+            "price": "€ 10.00",
             "available": true
           },
           {
@@ -30,9 +30,9 @@
             "available": true
           },
           {
-            "name": "Pestati, shakerati e classici",
-            "description": "Negroni, Long island, sour, fizz, Caipiroska, Mojito ecc. Per maggiori info chiedere al personale.",
-            "price": "€ 10.00",
+            "name": "Patron de Oaxaca",
+            "description": "Mezcal, Ancho Reyes, Sciroppo di  zenzero, limone e sale nero ",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -93,7 +93,7 @@
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
             "price": "€ 12.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Argintario (Italia)",
@@ -129,7 +129,7 @@
             "name": "Cilento Wild (Italia)",
             "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
             "price": "€ 12.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Duroc Smoked Dry (Italia)",
@@ -150,7 +150,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "description": "\nIl Yellow Gin racconta “the spirit of Garda lake”. Con erbe e spezie del lago di Garda cresce un Gin estivo e moderno. La parte citrica viene dal limone della limonaia “La Garbera” del lago di Garda.",
             "name": "Zu Plun Yellow (Italia)",
             "price": "€ 14.00"
@@ -174,7 +174,7 @@
             "price": "€ 13.00"
           },
           {
-            "available": true,
+            "available": false,
             "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
             "name": "Ungava (Canada)",
             "price": "€ 12.00"
@@ -719,7 +719,7 @@
             "price": "€ 8.00/ 12.00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Anciove al verd",
             "price": "€ 8.00",
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
