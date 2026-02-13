@@ -6,14 +6,14 @@
         "icon": "🍹",
         "items": [
           {
-            "name": "Long Drinks",
-            "description": "Base alcolica + bibita",
+            "name": "Spritz",
+            "description": "Select-Campari-Aperol",
             "price": "€ 8.00",
             "available": true
           },
           {
-            "name": "Spritz",
-            "description": "Select-Campari-Aperol",
+            "name": "Long Drinks",
+            "description": "Base alcolica + bibita",
             "price": "€ 8.00",
             "available": true
           },
@@ -302,7 +302,7 @@
             "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 6.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
@@ -329,10 +329,10 @@
             "price": "€ 8.00"
           },
           {
-            "name": "Bianco - Ribolla gialla ferma (friuli)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Ribolla gialla\nAnnata: 2024\nZona Di Produzione: Friuli Venezia Giulia",
-            "price": "€ 6.00",
-            "available": false
+            "name": "Bianco - Gewurtraminer-St pauls",
+            "description": "Gradazione Alcolica: 14%\nVitigno:Traminer\nAnnata: 2024\nZona Di Produzione: Trentino",
+            "price": "€7.00",
+            "available": true
           },
           {
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
