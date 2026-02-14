@@ -719,7 +719,7 @@
             "price": "€ 8.00/ 12.00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Anciove al verd",
             "price": "€ 8.00",
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
