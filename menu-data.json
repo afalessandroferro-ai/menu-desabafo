@@ -258,7 +258,7 @@
         "icon": "🍷",
         "items": [
           {
-            "available": false,
+            "available": true,
             "description": "Vino rosso Langhe, spezie varie e zucchero",
             "name": "Vin Brulè",
             "price": "€5,00"
@@ -299,15 +299,15 @@
             "price": "€6,00"
           },
           {
-            "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
-            "price": "€ 6.00",
-            "available": false
-          },
-          {
             "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 6.00",
+            "available": true
+          },
+          {
+            "name": "Bianco - Gewurtraminer-St pauls",
+            "description": "Gradazione Alcolica: 14%\nVitigno:Traminer\nAnnata: 2024\nZona Di Produzione: Trentino",
+            "price": "€7.00",
             "available": true
           },
           {
@@ -329,10 +329,10 @@
             "price": "€ 8.00"
           },
           {
-            "name": "Bianco - Gewurtraminer-St pauls",
-            "description": "Gradazione Alcolica: 14%\nVitigno:Traminer\nAnnata: 2024\nZona Di Produzione: Trentino",
-            "price": "€7.00",
-            "available": true
+            "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
+            "price": "€ 6.00",
+            "available": false
           },
           {
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
@@ -364,7 +364,7 @@
             "price": "€20,00"
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: \nAffinamento:, 6 mesi in botti di Rovere\nZona Di Produzione: Langhe ",
             "name": "Rosso- Nebbiolo- Produttori del Barbaresco- (Piemonte)",
             "price": "€30,00"
@@ -433,10 +433,10 @@
             "name": "Bianco - Viognier- Domaine de Luc-instant rare  BIO",
             "description": "Gradazione Alcolica: 13,5%\nVitigno: Viogner\nAnnata: 2023\nZona Di Produzione: Occitania",
             "price": "€ 23.00",
-            "available": true
+            "available": false
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "name": "Bianco- Vermentino- Su'Imari- Su'Entu (Sardegna)",
             "price": "€25.00"
@@ -659,7 +659,7 @@
             "name": "Black Tears Spiced Rum",
             "description": "",
             "price": "€ 12.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Gosiling Barbados black rum ",
@@ -731,7 +731,7 @@
             "price": "€8,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
