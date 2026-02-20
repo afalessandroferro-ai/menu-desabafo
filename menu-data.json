@@ -26,7 +26,7 @@
           {
             "name": "Madame Violet (disponibile Analcolico 8€)",
             "description": "Vodka, Cointreau, violetta, limone, soda",
-            "price": "€ 11.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -44,7 +44,7 @@
           {
             "name": "Bloody Mario Bros (Disponibile analcolico 10€)",
             "description": "Mezcal, succo di pomodoro ciliegino, limone, sale, pepe,succo di sedano, pozione Desabafo",
-            "price": "€ 13.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -55,7 +55,7 @@
           },
           {
             "name": "Calavèra Catrina",
-            "description": "Rum gold, black rum barbados, Demerara rum, Falernum, sciroppo cannella, lime, pompelmo, mango, granatina, angostura",
+            "description": "Rum gold, rub bianco, Falernum, sciroppo cannella, lime, pompelmo, mango, granatina, angostura",
             "price": "€ 12.00",
             "available": true
           },
@@ -93,12 +93,12 @@
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
             "price": "€ 12.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Argintario (Italia)",
             "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
-            "price": "€ 13.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -129,7 +129,7 @@
             "name": "Cilento Wild (Italia)",
             "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
             "price": "€ 12.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Duroc Smoked Dry (Italia)",
@@ -140,7 +140,7 @@
           {
             "name": "Genever Otemba (Olanda)",
             "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
-            "price": "€ 14.00",
+            "price": "€ 12.00",
             "available": true
           },
           {
@@ -159,19 +159,19 @@
             "available": true,
             "name": "Yoshi Nama Mikan (Germania) ",
             "description": "arance rosse, pompelmi e limoni freschi. In perfetto equilibrio con ginepro, semi di coriandolo e tre classici botanici.\n",
-            "price": "€ 13.00"
+            "price": "€ 12.00"
           },
           {
             "available": true,
             "description": "\nViene ottenuto con 13 botaniche biologiche o selvatiche, come ginepro, genziana, zafferano, mirtilli rossi, prugnole, melograno, scorza di limone e pompelmo.\n",
-            "price": "€ 13.00",
+            "price": "€ 12.00",
             "name": "Yoshi Nama Little Tokyo (Germania)"
           },
           {
             "available": true,
             "description": "bacche di ginepro toscano, basilico ligure, bucce di limoni siciliani e aneto irlandese",
             "name": "Upperhand (Irlanda)",
-            "price": "€ 13.00"
+            "price": "€ 12.00"
           },
           {
             "available": false,
@@ -250,6 +250,30 @@
             "name": "Mataroa (Grecia)",
             "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
             "price": "€12,00"
+          },
+          {
+            "available": true,
+            "name": "Jiji dry (India)",
+            "description": "Jin Jiji Indian Dry Gin viene fatto utilizzando il ginepro selvatico, raccolto direttamente sull'Himalaya, unendosi in maniera perfetta con le botaniche rigorosamente indiane, come le foglie di Tulsi, con proprietà ayurvediche. Altre botaniche presenti sono il fiore selvatico della camomilla, il coriandolo, l'anacardo e la radice di angelica. ",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "description": "Sin dal 1793 viene distillato a partire da una miscela unica di 7 botaniche, acqua di Dartmore e puro alcol di grano. L’alambicco utilizzato è lo stesso da circa 200 anni, che rende, secondo i mastro distillatori, il Plymouth più saporito e gustoso, con note olfattive più corpose.",
+            "price": "€12,00",
+            "name": "Plymouth (Inghilterra)"
+          },
+          {
+            "available": true,
+            "description": "il Gin Ukibi Dry è distillato con botaniche locali come yuzu, sansho, tè verde e fiori di sakura, che ne definiscono la purezza e l’equilibrio.\n\nAl naso emergono delicati sentori di agrumi giapponesi e fiori bianchi. ",
+            "name": "Ukibi (Giappone)",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "price": "€12,00",
+            "name": "Ginkognito (Germania)",
+            "description": "Limoni maturati al sole, more selvatiche, prugnole e melissa dal profumo fresco. Il mix di freschezza agrumata, frutta delicata e dolcezza sottile gli conferisce il suo carattere distintivo e crea un gusto che rimane impresso nella memoria."
           }
         ]
       },
@@ -424,6 +448,12 @@
             "available": true
           },
           {
+            "available": true,
+            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
+            "description": "Gradazione Alcolica: 12,5%\nVitigno: Chardonnay\nAnnata: 2024\nZona Di Produzione: Trentino",
+            "price": "€23.00"
+          },
+          {
             "name": "Bianco - Sable Blanc- Mas du Petit Pin (Francia) BIO",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 23.00",
@@ -543,15 +573,15 @@
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Carlo Alberto",
-            "description": "27 botaniche coltivate con metodi biologici",
-            "price": "€ 5.00",
+            "name": "Vermouth Rosso - Del Professore",
+            "description": "",
+            "price": "€ 6.00",
             "available": true
           },
           {
             "name": "Vermouth Rosso - Dolin",
             "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
-            "price": "€ 5.00",
+            "price": "€ 6.00",
             "available": true
           },
           {
@@ -574,25 +604,25 @@
           },
           {
             "available": true,
-            "price": "€5,00",
+            "price": "€6,00",
             "description": " intenso, di erbe aromatiche; molto complesso con spiccate note di vaniglia, arancia amara, genziana, china e rabarbaro",
             "name": "Vermouth rosso di Torino-Martelletti"
           },
           {
             "available": true,
-            "price": "€5,00",
+            "price": "€6,00",
             "description": "Al naso emergono note agrumate e speziate di cannella, chiodi di garofano, noce moscata e un accenno di vaniglia che arricchiscono l’esperienza olfattiva.",
             "name": "Vermouth rosso di Torino-Da marco-Coloniale"
           },
           {
             "available": true,
-            "price": "€5,00",
+            "price": "€6,00",
             "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque",
             "description": "Il suo colore rubino intenso seduce la vista. Anticipa un gusto complesso e avvolgente. Offre note aromatiche di erbe e spezie. La dolcezza del vino bilancia il tutto. Si percepiscono sentori di agrumi freschie vaniglia."
           },
           {
             "available": true,
-            "price": "€7,00",
+            "price": "€6,00",
             "name": "Vermut Rosso-Seri pervas",
             "description": "Le note vinose della Malvasia e del Terrano sono ben accompagnate da quelle più calde della santoreggia, del rabarbaro e della corteccia di china, equilibrate poi da quelle più fresche del chinotto e della salvia. Nel finale rimangono note calde di fiori di sambuco e note speziate di santoreggia."
           },
@@ -709,7 +739,7 @@
           {
             "available": true,
             "name": "Taglierozzo Desabafo",
-            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, patè di lardo pancettato con olive e noci, hummus di ceci a scelta, crudites, acciughine al verde e focaccina bianca calda. Per veri golosoni goderecci (consigliato 2/3 pax) ",
+            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, focaccina bianca calda e cose a caso secondo l'estro dello chef. Per veri golosoni goderecci (consigliato 2/3 pax) ",
             "price": "€ 25.00"
           },
           {
@@ -731,7 +761,7 @@
             "price": "€8,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
@@ -743,13 +773,13 @@
             "price": "€8,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Carpacho Ahumado",
             "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
             "price": "€ 8.00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Mahialinho",
             "description": "Stinco di maialino tenerissimo (150/200g) disossato e sfilettato, servito con mojo picòn (salsa tipica delle isole Canarie a base di peperone rosso e aglio.\nMeraviglioso.",
             "price": "€8,00"
