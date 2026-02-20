@@ -773,7 +773,7 @@
             "price": "€8,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Carpacho Ahumado",
             "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
             "price": "€ 8.00"
