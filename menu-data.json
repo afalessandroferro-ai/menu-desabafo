@@ -67,15 +67,15 @@
           },
           {
             "available": true,
-            "description": "Bourbon Whiskey, Liquore caffè, caffè, caramello salato",
-            "price": "€12.00",
-            "name": "Moka Makako"
-          },
-          {
-            "available": true,
             "name": "Afro Baobab (disponibile analcolico 8€)",
             "description": "Rum, Falernum, Purè mango, Succo di arancia, sciroppo zenzero e passion fruit, angostura",
             "price": "€ 12,00"
+          },
+          {
+            "available": true,
+            "description": "Bourbon Whiskey, Liquore caffè, caffè, caramello salato",
+            "price": "€12.00",
+            "name": "Moka Makako"
           },
           {
             "available": true,
@@ -773,7 +773,7 @@
             "price": "€8,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Carpacho Ahumado",
             "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
             "price": "€ 8.00"
