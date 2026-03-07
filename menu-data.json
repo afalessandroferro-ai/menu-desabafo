@@ -246,7 +246,7 @@
             "price": "€13,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Mataroa (Grecia)",
             "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
             "price": "€12,00"
@@ -318,7 +318,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bianco- Chardonnay- Endrizzi (trentino)",
             "price": "€6,00"
           },
@@ -388,7 +388,7 @@
             "price": "€ 5.00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Bianco-Roero Arneis-Daivej-Deltetto-(Piemonte)",
             "description": "Gradazione Alcolica: 13,5%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
             "price": "€5,00"
