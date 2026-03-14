@@ -331,7 +331,7 @@
           {
             "available": true,
             "description": "Gradazione Alcolica: 13%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
-            "price": "€6,00",
+            "price": "€5,00",
             "name": "Bianco-Roero Arneis-Tenuta Laramè-Cantine Povero (Piemonte)"
           },
           {
@@ -388,7 +388,7 @@
             "price": "€ 5.00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bianco-Roero Arneis-Daivej-Deltetto-(Piemonte)",
             "description": "Gradazione Alcolica: 13,5%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
             "price": "€5,00"
