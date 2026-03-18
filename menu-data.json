@@ -651,28 +651,34 @@
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Del Professore",
-            "description": "",
+            "available": true,
+            "name": "Vermouth rosso di Torino Punt e Mes ",
+            "price": "€ 6.00",
+            "description": ""
+          },
+          {
+            "available": true,
+            "description": "Il Vermouth del Professore Classico è un vermouth bianco che nasce dalla lavorazione di un Moscato bianco le cui uve provengono dalle Langhe piemontesi. Dopo aver aggiunto alcool purissimo a questa base, si procede con una distillazione, per poi aromatizzare il prodotto con una quindicina di erbe aromatiche e officinali, a cui si aggiungono alcune spezie, provenienti dalle colline che contornano la città di Torino.",
+            "price": "€ 6.00",
+            "name": "Vermouth Bianco Del Professore (Piemonte)"
+          },
+          {
+            "name": "Vermouth Rosso - Del Professore (Piemonte)",
+            "description": "Il Vermouth Rosso del Professore è un vino speziato robusto e inteso che presenta una grande particolarità: è l’unico vermouth al mondo che viene creato a partire da bianchi e rossi, ovviamente al 100% realizzati da uve italiane.\nSu questa base di vini bianchi e rossi si procede poi all’infusione di spezie piemontesi e, infine, all’invecchiamento del vermouth ottenuto per 6 mesi in piccole botti di rovere.",
             "price": "€ 6.00",
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Dolin",
+            "name": "Vermouth Rosso - Dolin (Francia)",
             "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
             "price": "€ 6.00",
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Lillet Rouge",
+            "name": "Vermouth Rosso - Lillet Rouge (Francia)",
             "description": "Base di vino rosso di Bordeaux con infusione di erbe, spezie e radici",
             "price": "€ 6.00",
             "available": true
-          },
-          {
-            "name": "Vermouth Rosso - Farmacopea Popolare",
-            "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
-            "price": "€ 8.00",
-            "available": false
           },
           {
             "available": true,
@@ -684,25 +690,37 @@
             "available": true,
             "price": "€6,00",
             "description": " intenso, di erbe aromatiche; molto complesso con spiccate note di vaniglia, arancia amara, genziana, china e rabarbaro",
-            "name": "Vermouth rosso di Torino-Martelletti"
+            "name": "Vermouth rosso di Torino-Martelletti (Torino)"
           },
           {
             "available": true,
             "price": "€6,00",
             "description": "Al naso emergono note agrumate e speziate di cannella, chiodi di garofano, noce moscata e un accenno di vaniglia che arricchiscono l’esperienza olfattiva.",
-            "name": "Vermouth rosso di Torino-Da marco-Coloniale"
+            "name": "Vermouth rosso di Torino-Da marco-Coloniale (Torino)"
           },
           {
             "available": true,
             "price": "€6,00",
-            "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque",
+            "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque (Torino)",
             "description": "Il suo colore rubino intenso seduce la vista. Anticipa un gusto complesso e avvolgente. Offre note aromatiche di erbe e spezie. La dolcezza del vino bilancia il tutto. Si percepiscono sentori di agrumi freschie vaniglia."
           },
           {
             "available": true,
             "price": "€6,00",
-            "name": "Vermut Rosso-Seri pervas",
+            "name": "Vermut Rosso-Seri pervas (Friuli)",
             "description": "Le note vinose della Malvasia e del Terrano sono ben accompagnate da quelle più calde della santoreggia, del rabarbaro e della corteccia di china, equilibrate poi da quelle più fresche del chinotto e della salvia. Nel finale rimangono note calde di fiori di sambuco e note speziate di santoreggia."
+          },
+          {
+            "available": true,
+            "description": "incarna la tradizione piemontese e unico nel suo genere nasce da una base di Barbera d’Asti DOCG con sentori di assenzio, sambuco, arancia, salvia e altre spezie.",
+            "name": "Vermouth Rosso del Presidente (Torino)",
+            "price": "€6,00"
+          },
+          {
+            "available": true,
+            "price": "€ 6.00",
+            "name": "Vermutto (Sardegna)",
+            "description": "Il \"Vermuto\" Mastio Hofmann è un particolare vermouth sardo, prodotto con base di vino Cannonau, caratterizzato da note di prugnolo, erbe aromatiche, chiodi di garofano e rosmarino. "
           },
           {
             "available": true,
@@ -711,7 +729,7 @@
           },
           {
             "name": "Amari",
-            "description": "-San Simone\n-Amaro di Torino\n-Amaro Di langa\n-Amaroc\n-Cynar\n-Petrus\n-Fernet Branca\n-Amaro Del Capo\n-Lucano\n-Averna\n-Sambuca\n-Grappa Bianca (Bonollo)\n-Limoncello\n-Mirto\n-Liquirizia\n-Baileys\n",
+            "description": "-San Simone\n-Amaro di Torino\n-Amaro Di langa\n-Amaroc\n-Cynar\n-Petrus\n-Fernet Branca\n-Amaro Del Capo\n-Lucano\n-Averna\n-Sambuca\n-Grappa Bianca (Bonollo)\n-Genepy\n-Limoncello\n-Mirto\n-Liquirizia\n-Baileys\n",
             "price": "€ 5.00",
             "available": true
           },
@@ -720,6 +738,12 @@
             "name": "Vermouth Rosso- La Quintinye",
             "description": "Realizzato da una selezione di 28 piante e spezie insieme a una miscela di vini bianchi e Pineau des Charentes Rouges, La Quintinye Rouge rilascia un bouquet di aromi complesso e sontuoso.\n",
             "price": " €7,00 "
+          },
+          {
+            "name": "Vermouth Rosso - Farmacopea Popolare",
+            "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
+            "price": "€ 8.00",
+            "available": false
           }
         ]
       },
@@ -798,8 +822,8 @@
           },
           {
             "available": true,
-            "name": "Coca cola/zero, Tonica Tomas henry, Ginger beer, Lemon Soda, Chinotto",
-            "description": "Bottiglietta ",
+            "name": "Bibite ",
+            "description": "-Coca Cola \n-Coca cola 0\n-Tonica Thomas Henry\n-Ginger beer Thomas Henry\n-Lemon Soda\n-Chinotto\n",
             "price": "€ 5.00"
           }
         ],
