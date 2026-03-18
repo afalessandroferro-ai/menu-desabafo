@@ -90,6 +90,12 @@
         "icon": "🌿",
         "items": [
           {
+            "available": true,
+            "name": "Beefeater 0,0",
+            "price": "€8,00",
+            "description": "Gin Analcolico"
+          },
+          {
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
             "price": "€ 12.00",
@@ -126,20 +132,38 @@
             "available": true
           },
           {
+            "available": true,
+            "price": "€12,00",
+            "name": "Big Gino Red Hot (Italia)",
+            "description": "Si tratta di un compound gin tutto italiano prodotto artigianalmente utilizzando alcol di grano biologico, fragole rosse e peperoncino pugliese che donano sapori bilanciati intensi ed afrodisiaci.\nIn questo gin l’aroma di fragola è predominante e deciso, ma allo stesso tempo bilanciato dal piccante del peperoncino."
+          },
+          {
+            "available": true,
+            "price": "€12,00",
+            "name": "Big Gino Pepino loco (Italia)",
+            "description": "Si tratta di un compound gin tutto italiano prodotto artigianalmente utilizzando alcol di grano biologico, cetriolo e limone pugliese.\nQuesto gin combina l’inebriante freschezza del cetriolo e del limone pugliese con note aromatiche ed erbacee della menta e dell’angelica."
+          },
+          {
             "name": "Cilento Wild (Italia)",
             "description": "Ginepro rosso, foglie di mirto, finocchio marino e scorza dei limoni di Scario",
             "price": "€ 12.00",
             "available": true
           },
           {
-            "name": "Duroc Smoked Dry (Italia)",
-            "description": "Gin affumicato artigianale italiano",
-            "price": "€ 12.00",
-            "available": true
+            "available": true,
+            "name": "Clandestino (Italia)",
+            "description": "ginepro in primo piano, seguito dalla piccantezza del coriandolo, il tutto bilanciato dall’angelica che lega ed esalta le note balsamiche, citriche e floreali di cardamomo e calamo aromatico. La sua complessità aromatica viene esaltata da freschi e pungenti sentori agrumati",
+            "price": "€13,00"
           },
           {
-            "name": "Genever Otemba (Olanda)",
-            "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
+            "available": true,
+            "name": "Condesa (Messico)",
+            "description": "Ginepro, palo santo, salvia, gelsomino, fiori di sambuco, lavanda, mirra e agrumi sono alcune delle 12 botaniche coltivate e selezionate a mano dalle Master Distiller.",
+            "price": "€12,00"
+          },
+          {
+            "name": "Duroc Smoked Dry (Italia)",
+            "description": "Gin affumicato artigianale italiano",
             "price": "€ 12.00",
             "available": true
           },
@@ -150,40 +174,70 @@
             "available": true
           },
           {
-            "available": false,
-            "description": "\nIl Yellow Gin racconta “the spirit of Garda lake”. Con erbe e spezie del lago di Garda cresce un Gin estivo e moderno. La parte citrica viene dal limone della limonaia “La Garbera” del lago di Garda.",
-            "name": "Zu Plun Yellow (Italia)",
-            "price": "€ 14.00"
-          },
-          {
-            "available": true,
-            "name": "Yoshi Nama Mikan (Germania) ",
-            "description": "arance rosse, pompelmi e limoni freschi. In perfetto equilibrio con ginepro, semi di coriandolo e tre classici botanici.\n",
-            "price": "€ 12.00"
-          },
-          {
-            "available": true,
-            "description": "\nViene ottenuto con 13 botaniche biologiche o selvatiche, come ginepro, genziana, zafferano, mirtilli rossi, prugnole, melograno, scorza di limone e pompelmo.\n",
+            "name": "Genever Otemba (Olanda)",
+            "description": "Orzo, segale, mais, foglie di pandan, tè sencha, citronella, fiori d'arancio e pepe sansho",
             "price": "€ 12.00",
-            "name": "Yoshi Nama Little Tokyo (Germania)"
+            "available": true
           },
           {
             "available": true,
-            "description": "bacche di ginepro toscano, basilico ligure, bucce di limoni siciliani e aneto irlandese",
-            "name": "Upperhand (Irlanda)",
-            "price": "€ 12.00"
+            "price": "€12,00",
+            "name": "Ginepraio Mediterraneo (Italia)",
+            "description": "Mediterraneo in tutti i sensi, questo gin è un ventaglio di profumi e sapori esaltanti, dal mandarino verde all'arancia amara, dall'origano al lentisco e alla carota selvatica, con un ottimo finale minerale "
           },
           {
-            "available": false,
-            "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
-            "name": "Ungava (Canada)",
+            "available": true,
+            "price": "€12,00",
+            "name": "Ginkognito (Germania)",
+            "description": "Limoni maturati al sole, more selvatiche, prugnole e melissa dal profumo fresco. Il mix di freschezza agrumata, frutta delicata e dolcezza sottile gli conferisce il suo carattere distintivo e crea un gusto che rimane impresso nella memoria."
+          },
+          {
+            "available": true,
+            "name": "Jiji dry (India)",
+            "description": "Jin Jiji Indian Dry Gin viene fatto utilizzando il ginepro selvatico, raccolto direttamente sull'Himalaya, unendosi in maniera perfetta con le botaniche rigorosamente indiane, come le foglie di Tulsi, con proprietà ayurvediche. Altre botaniche presenti sono il fiore selvatico della camomilla, il coriandolo, l'anacardo e la radice di angelica. ",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "price": "€12,00",
+            "description": "Le Gin è un distilled gin a base di botaniche come ginepro, zenzero, vaniglia, limone, cardamomo, cannella, rosa e mandorla. Tutte le botaniche vengono macerate separatamente in alcool di grano. Questa seperazione permette di raggoungere il livello ottimale di estrazione delle singole essenze. Gli infusi vengono poi aggiungi all'alcool di mele che viene ridistillato.",
+            "name": "Le Gin de Christian Drouin Classico (Francia)"
+          },
+          {
+            "available": true,
+            "price": "€12,00",
+            "name": "Le Gin de Christian Drouin Pira (Francia)",
+            "description": "Prodotto nel cuore della Normandia, Le Gin De Christian Drouin Pira è un gin creato a partire da una varietà di pera normanna di tipo Domfront, a cui vengono aggiunte diverse botaniche, tra cui ginepro, vaniglia, limone, pepe nero e radice di iris."
+          },
+          {
+            "available": true,
+            "name": "Mataroa (Grecia)",
+            "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "description": "Monginbello è un gin siciliano ottenuto dall’infusione in alcol di grano di diverse botaniche tra cui bacche di ginepro, fiori e agrumi. Al naso offre fresche e intense note di ginepro e agrumi.\n",
+            "name": "Monginbello (Italia)",
             "price": "€ 12.00"
           },
           {
             "available": true,
-            "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
-            "name": "Ukiyo yuzu (Giappone)",
-            "price": "€ 13.00"
+            "description": "Tra le botaniche sono presenti ginepro, coriandolo, limone, arancia, angelica, cassia, liquirizia, cannella, giaggiolo e noce moscata.",
+            "name": "Old English gin (Inghilterra)",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "description": "ginepro, pepe del Sichuan, mano del Buddha, menta cinese, angelica cinese, semi di coriandolo, liquirizia cinese, mandorle cinesi, cardamomo, cassi\n",
+            "name": "Peddlers (Cina) ",
+            "price": "€ 12.00"
+          },
+          {
+            "available": true,
+            "description": "Sin dal 1793 viene distillato a partire da una miscela unica di 7 botaniche, acqua di Dartmore e puro alcol di grano. L’alambicco utilizzato è lo stesso da circa 200 anni, che rende, secondo i mastro distillatori, il Plymouth più saporito e gustoso, con note olfattive più corpose.",
+            "price": "€12,00",
+            "name": "Plymouth (Inghilterra)"
           },
           {
             "available": true,
@@ -199,32 +253,8 @@
           },
           {
             "available": true,
-            "description": "ginepro, pepe del Sichuan, mano del Buddha, menta cinese, angelica cinese, semi di coriandolo, liquirizia cinese, mandorle cinesi, cardamomo, cassi\n",
-            "name": "Peddlers (Cina) ",
-            "price": "€ 12.00"
-          },
-          {
-            "available": true,
-            "description": "Monginbello è un gin siciliano ottenuto dall’infusione in alcol di grano di diverse botaniche tra cui bacche di ginepro, fiori e agrumi. Al naso offre fresche e intense note di ginepro e agrumi.\n",
-            "name": "Monginbello (Italia)",
-            "price": "€ 12.00"
-          },
-          {
-            "available": true,
             "name": "Tenjaku (Giappone)",
             "description": "Ginepro, coriandolo, scorza di limone e arancia, radice di angelica, corteccia di cassia, liquirizia, radice di giaggiolo, noce moscata, cannella, yuzu (agrume giapponese), sansho (pepe giapponese), tè verde ed estratto di pesca.",
-            "price": "€12,00"
-          },
-          {
-            "available": true,
-            "description": "Tra le botaniche sono presenti ginepro, coriandolo, limone, arancia, angelica, cassia, liquirizia, cannella, giaggiolo e noce moscata.",
-            "name": "Old English gin (Inghilterra)",
-            "price": "€12,00"
-          },
-          {
-            "available": true,
-            "name": "Condesa (Messico)",
-            "description": "Ginepro, palo santo, salvia, gelsomino, fiori di sambuco, lavanda, mirra e agrumi sono alcune delle 12 botaniche coltivate e selezionate a mano dalle Master Distiller.",
             "price": "€12,00"
           },
           {
@@ -235,33 +265,15 @@
           },
           {
             "available": true,
-            "name": "Xoriguer (Spagna)",
-            "description": "Gin Xoriguer Mahon viene distillato artigianalmente con metodo One Shot. L’alcol di base, in cui viene infusa una sola botanica (le bacche di ginepro dei Pirenei), viene dal vino. ",
-            "price": "€12,00"
+            "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
+            "name": "Ukiyo yuzu (Giappone)",
+            "price": "€ 13.00"
           },
           {
             "available": true,
-            "name": "Clandestino (Italia)",
-            "description": "ginepro in primo piano, seguito dalla piccantezza del coriandolo, il tutto bilanciato dall’angelica che lega ed esalta le note balsamiche, citriche e floreali di cardamomo e calamo aromatico. La sua complessità aromatica viene esaltata da freschi e pungenti sentori agrumati",
-            "price": "€13,00"
-          },
-          {
-            "available": false,
-            "name": "Mataroa (Grecia)",
-            "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
-            "price": "€12,00"
-          },
-          {
-            "available": true,
-            "name": "Jiji dry (India)",
-            "description": "Jin Jiji Indian Dry Gin viene fatto utilizzando il ginepro selvatico, raccolto direttamente sull'Himalaya, unendosi in maniera perfetta con le botaniche rigorosamente indiane, come le foglie di Tulsi, con proprietà ayurvediche. Altre botaniche presenti sono il fiore selvatico della camomilla, il coriandolo, l'anacardo e la radice di angelica. ",
-            "price": "€12,00"
-          },
-          {
-            "available": true,
-            "description": "Sin dal 1793 viene distillato a partire da una miscela unica di 7 botaniche, acqua di Dartmore e puro alcol di grano. L’alambicco utilizzato è lo stesso da circa 200 anni, che rende, secondo i mastro distillatori, il Plymouth più saporito e gustoso, con note olfattive più corpose.",
-            "price": "€12,00",
-            "name": "Plymouth (Inghilterra)"
+            "description": "bacche di ginepro toscano, basilico ligure, bucce di limoni siciliani e aneto irlandese",
+            "name": "Upperhand (Irlanda)",
+            "price": "€ 12.00"
           },
           {
             "available": true,
@@ -272,8 +284,38 @@
           {
             "available": true,
             "price": "€12,00",
-            "name": "Ginkognito (Germania)",
-            "description": "Limoni maturati al sole, more selvatiche, prugnole e melissa dal profumo fresco. Il mix di freschezza agrumata, frutta delicata e dolcezza sottile gli conferisce il suo carattere distintivo e crea un gusto che rimane impresso nella memoria."
+            "description": "Sugarbird Juniper Unfiltered è un London Dry Gin leggermente floreale, ottenuto con diverse botaniche, tra cui ginepro, agrumi, rooibos e alcuni fiori (come la camomilla).\nSi tratta di un gin non filtrato dal colore violaceo (il classico colore rilasciato dal ginepro) dal gusto morbido, con note floreali, agrumate e leggermente legnose.",
+            "name": "Sugarbird Floral unfiltered (Sudafrica)"
+          },
+          {
+            "available": true,
+            "name": "Xoriguer (Spagna)",
+            "description": "Gin Xoriguer Mahon viene distillato artigianalmente con metodo One Shot. L’alcol di base, in cui viene infusa una sola botanica (le bacche di ginepro dei Pirenei), viene dal vino. ",
+            "price": "€12,00"
+          },
+          {
+            "available": true,
+            "name": "Yoshi Nama Mikan (Germania) ",
+            "description": "arance rosse, pompelmi e limoni freschi. In perfetto equilibrio con ginepro, semi di coriandolo e tre classici botanici.\n",
+            "price": "€ 12.00"
+          },
+          {
+            "available": true,
+            "description": "\nViene ottenuto con 13 botaniche biologiche o selvatiche, come ginepro, genziana, zafferano, mirtilli rossi, prugnole, melograno, scorza di limone e pompelmo.\n",
+            "price": "€ 12.00",
+            "name": "Yoshi Nama Little Tokyo (Germania)"
+          },
+          {
+            "available": false,
+            "description": "\nIl Yellow Gin racconta “the spirit of Garda lake”. Con erbe e spezie del lago di Garda cresce un Gin estivo e moderno. La parte citrica viene dal limone della limonaia “La Garbera” del lago di Garda.",
+            "name": "Zu Plun Yellow (Italia)",
+            "price": "€ 14.00"
+          },
+          {
+            "available": false,
+            "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
+            "name": "Ungava (Canada)",
+            "price": "€ 12.00"
           }
         ]
       },
@@ -359,7 +401,7 @@
             "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
             "price": "€ 8.00"
@@ -374,7 +416,7 @@
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
             "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
             "price": "€ 8,00",
-            "available": false
+            "available": true
           },
           {
             "name": "Rosso - Ribera del Duero Pradorey",
@@ -609,28 +651,34 @@
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Del Professore",
-            "description": "",
+            "available": true,
+            "name": "Vermouth rosso di Torino Punt e Mes ",
+            "price": "€ 6.00",
+            "description": ""
+          },
+          {
+            "available": true,
+            "description": "Il Vermouth del Professore Classico è un vermouth bianco che nasce dalla lavorazione di un Moscato bianco le cui uve provengono dalle Langhe piemontesi. Dopo aver aggiunto alcool purissimo a questa base, si procede con una distillazione, per poi aromatizzare il prodotto con una quindicina di erbe aromatiche e officinali, a cui si aggiungono alcune spezie, provenienti dalle colline che contornano la città di Torino.",
+            "price": "€ 6.00",
+            "name": "Vermouth Bianco Del Professore (Piemonte)"
+          },
+          {
+            "name": "Vermouth Rosso - Del Professore (Piemonte)",
+            "description": "Il Vermouth Rosso del Professore è un vino speziato robusto e inteso che presenta una grande particolarità: è l’unico vermouth al mondo che viene creato a partire da bianchi e rossi, ovviamente al 100% realizzati da uve italiane.\nSu questa base di vini bianchi e rossi si procede poi all’infusione di spezie piemontesi e, infine, all’invecchiamento del vermouth ottenuto per 6 mesi in piccole botti di rovere.",
             "price": "€ 6.00",
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Dolin",
+            "name": "Vermouth Rosso - Dolin (Francia)",
             "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
             "price": "€ 6.00",
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Lillet Rouge",
+            "name": "Vermouth Rosso - Lillet Rouge (Francia)",
             "description": "Base di vino rosso di Bordeaux con infusione di erbe, spezie e radici",
             "price": "€ 6.00",
             "available": true
-          },
-          {
-            "name": "Vermouth Rosso - Farmacopea Popolare",
-            "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
-            "price": "€ 8.00",
-            "available": false
           },
           {
             "available": true,
@@ -642,25 +690,37 @@
             "available": true,
             "price": "€6,00",
             "description": " intenso, di erbe aromatiche; molto complesso con spiccate note di vaniglia, arancia amara, genziana, china e rabarbaro",
-            "name": "Vermouth rosso di Torino-Martelletti"
+            "name": "Vermouth rosso di Torino-Martelletti (Torino)"
           },
           {
             "available": true,
             "price": "€6,00",
             "description": "Al naso emergono note agrumate e speziate di cannella, chiodi di garofano, noce moscata e un accenno di vaniglia che arricchiscono l’esperienza olfattiva.",
-            "name": "Vermouth rosso di Torino-Da marco-Coloniale"
+            "name": "Vermouth rosso di Torino-Da marco-Coloniale (Torino)"
           },
           {
             "available": true,
             "price": "€6,00",
-            "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque",
+            "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque (Torino)",
             "description": "Il suo colore rubino intenso seduce la vista. Anticipa un gusto complesso e avvolgente. Offre note aromatiche di erbe e spezie. La dolcezza del vino bilancia il tutto. Si percepiscono sentori di agrumi freschie vaniglia."
           },
           {
             "available": true,
             "price": "€6,00",
-            "name": "Vermut Rosso-Seri pervas",
+            "name": "Vermut Rosso-Seri pervas (Friuli)",
             "description": "Le note vinose della Malvasia e del Terrano sono ben accompagnate da quelle più calde della santoreggia, del rabarbaro e della corteccia di china, equilibrate poi da quelle più fresche del chinotto e della salvia. Nel finale rimangono note calde di fiori di sambuco e note speziate di santoreggia."
+          },
+          {
+            "available": true,
+            "description": "incarna la tradizione piemontese e unico nel suo genere nasce da una base di Barbera d’Asti DOCG con sentori di assenzio, sambuco, arancia, salvia e altre spezie.",
+            "name": "Vermouth Rosso del Presidente (Torino)",
+            "price": "€6,00"
+          },
+          {
+            "available": true,
+            "price": "€ 6.00",
+            "name": "Vermutto (Sardegna)",
+            "description": "Il \"Vermuto\" Mastio Hofmann è un particolare vermouth sardo, prodotto con base di vino Cannonau, caratterizzato da note di prugnolo, erbe aromatiche, chiodi di garofano e rosmarino. "
           },
           {
             "available": true,
@@ -668,8 +728,8 @@
             "name": "Porto Rosso Tawny-Offley"
           },
           {
-            "name": "Fernet Branca, Amaro del Capo, amaro di langa, Montenegro, Amaroc, Cynar, San Simone",
-            "description": "",
+            "name": "Amari",
+            "description": "-San Simone\n-Amaro di Torino\n-Amaro Di langa\n-Amaroc\n-Cynar\n-Petrus\n-Fernet Branca\n-Amaro Del Capo\n-Lucano\n-Averna\n-Sambuca\n-Grappa Bianca (Bonollo)\n-Genepy\n-Limoncello\n-Mirto\n-Liquirizia\n-Baileys\n",
             "price": "€ 5.00",
             "available": true
           },
@@ -678,6 +738,12 @@
             "name": "Vermouth Rosso- La Quintinye",
             "description": "Realizzato da una selezione di 28 piante e spezie insieme a una miscela di vini bianchi e Pineau des Charentes Rouges, La Quintinye Rouge rilascia un bouquet di aromi complesso e sontuoso.\n",
             "price": " €7,00 "
+          },
+          {
+            "name": "Vermouth Rosso - Farmacopea Popolare",
+            "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
+            "price": "€ 8.00",
+            "available": false
           }
         ]
       },
@@ -756,8 +822,8 @@
           },
           {
             "available": true,
-            "name": "Coca cola/zero, Tonica Tomas henry, Ginger beer, Lemon Soda, Chinotto",
-            "description": "Bottiglietta ",
+            "name": "Bibite ",
+            "description": "-Coca Cola \n-Coca cola 0\n-Tonica Thomas Henry\n-Ginger beer Thomas Henry\n-Lemon Soda\n-Chinotto\n",
             "price": "€ 5.00"
           }
         ],
