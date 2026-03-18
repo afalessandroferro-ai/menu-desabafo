@@ -2,6 +2,66 @@
   "menu_data": {
     "categories": [
       {
+        "name": "Da Stuzzicare",
+        "items": [
+          {
+            "available": true,
+            "name": "Taglierino",
+            "description": "Selezione di affettati (cotto gran brace affumicato alle erbe, pancetta coppata filettata, Mortadella di cinghiale, salame Finocchiona IGP e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda e taralli (consigliato 1 pax)",
+            "price": "€10.00"
+          },
+          {
+            "available": true,
+            "name": "Taglierozzo Desabafo",
+            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, focaccina bianca calda e cose a caso secondo l'estro dello chef. Per veri golosoni goderecci (consigliato 2/3 pax) ",
+            "price": "€ 25.00"
+          },
+          {
+            "available": true,
+            "name": "Piatto Veggie",
+            "description": "Hummus di ceci pazzesco, in tre varianti a scelta(pomodori/spinaci/barbabietole) o tris ciapatut.\nPer chi ama limonare duro.",
+            "price": "€ 8.00/ 12.00"
+          },
+          {
+            "available": true,
+            "name": "Anciove al verd",
+            "price": "€ 8.00",
+            "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
+          },
+          {
+            "available": true,
+            "name": "Tumìn fòl",
+            "description": "Tomino piemontese scaldato \"incamiciato\", avvolto in sottili fette di speck affumicato con legno di faggio, su lettino di rucola. Guarnito con un filo di miele di castagno e noci, accompagnato da crostone integrale caldo.\nTroppo??",
+            "price": "€8,00"
+          },
+          {
+            "available": true,
+            "name": "Vitel tonnè",
+            "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
+            "price": "€ 8.00"
+          },
+          {
+            "available": false,
+            "name": "Focaccina calda con patè di lardo",
+            "description": "Eh niente, è così...ma il pate è preparato con lardo pancettato, olive, noci ed erbette aromatiche profumatissime. Bon.",
+            "price": "€8,00"
+          },
+          {
+            "available": true,
+            "name": "Carpacho Ahumado",
+            "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
+            "price": "€ 8.00"
+          },
+          {
+            "available": true,
+            "name": "Mahialinho",
+            "description": "Stinco di maialino tenerissimo (150/200g) disossato e sfilettato, servito con mojo picòn (salsa tipica delle isole Canarie a base di peperone rosso e aglio.\nMeraviglioso.",
+            "price": "€8,00"
+          }
+        ],
+        "icon": "🥪"
+      },
+      {
         "name": "Cocktails/Mocktails",
         "icon": "🍹",
         "items": [
@@ -791,7 +851,7 @@
             "name": "Black Tears Spiced Rum",
             "description": "",
             "price": "€ 12.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Gosiling Barbados black rum ",
@@ -809,6 +869,18 @@
             "available": true,
             "name": "Legendario Rum  7 (Cuba) ",
             "price": "€ 10.00"
+          },
+          {
+            "available": true,
+            "name": "El Dorado 12y (Guyana)",
+            "price": "€ 12.00",
+            "description": ""
+          },
+          {
+            "available": true,
+            "name": "Rum Belizean Blue (Belize)",
+            "price": "€ 12.00",
+            "description": "\n"
           }
         ]
       },
@@ -828,66 +900,6 @@
           }
         ],
         "icon": "🥤"
-      },
-      {
-        "name": "Da Stuzzicare",
-        "items": [
-          {
-            "available": true,
-            "name": "Taglierino",
-            "description": "Selezione di affettati (cotto gran brace affumicato alle erbe, pancetta coppata filettata, Mortadella di cinghiale, salame Finocchiona IGP e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda e taralli (consigliato 1 pax)",
-            "price": "€10.00"
-          },
-          {
-            "available": true,
-            "name": "Taglierozzo Desabafo",
-            "description": "Tagliere super potenziato con gran misto di affettati e formaggi, focaccina bianca calda e cose a caso secondo l'estro dello chef. Per veri golosoni goderecci (consigliato 2/3 pax) ",
-            "price": "€ 25.00"
-          },
-          {
-            "available": true,
-            "name": "Piatto Veggie",
-            "description": "Hummus di ceci pazzesco, in tre varianti a scelta(pomodori/spinaci/barbabietole) o tris ciapatut.\nPer chi ama limonare duro.",
-            "price": "€ 8.00/ 12.00"
-          },
-          {
-            "available": true,
-            "name": "Anciove al verd",
-            "price": "€ 8.00",
-            "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
-          },
-          {
-            "available": true,
-            "name": "Tumìn fòl",
-            "description": "Tomino piemontese scaldato \"incamiciato\", avvolto in sottili fette di speck affumicato con legno di faggio, su lettino di rucola. Guarnito con un filo di miele di castagno e noci, accompagnato da crostone integrale caldo.\nTroppo??",
-            "price": "€8,00"
-          },
-          {
-            "available": true,
-            "name": "Vitel tonnè",
-            "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
-            "price": "€ 8.00"
-          },
-          {
-            "available": false,
-            "name": "Focaccina calda con patè di lardo",
-            "description": "Eh niente, è così...ma il pate è preparato con lardo pancettato, olive, noci ed erbette aromatiche profumatissime. Bon.",
-            "price": "€8,00"
-          },
-          {
-            "available": true,
-            "name": "Carpacho Ahumado",
-            "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
-            "price": "€ 8.00"
-          },
-          {
-            "available": true,
-            "name": "Mahialinho",
-            "description": "Stinco di maialino tenerissimo (150/200g) disossato e sfilettato, servito con mojo picòn (salsa tipica delle isole Canarie a base di peperone rosso e aglio.\nMeraviglioso.",
-            "price": "€8,00"
-          }
-        ],
-        "icon": "🥪"
       }
     ]
   }
