@@ -270,7 +270,7 @@
             "description": "Prodotto nel cuore della Normandia, Le Gin De Christian Drouin Pira è un gin creato a partire da una varietà di pera normanna di tipo Domfront, a cui vengono aggiunte diverse botaniche, tra cui ginepro, vaniglia, limone, pepe nero e radice di iris."
           },
           {
-            "available": true,
+            "available": false,
             "name": "Mataroa (Grecia)",
             "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
             "price": "€12,00"
@@ -384,9 +384,9 @@
         "icon": "🍷",
         "items": [
           {
-            "available": false,
-            "description": "Vino rosso Langhe, spezie varie e zucchero",
-            "name": "Vin Brulè",
+            "available": true,
+            "description": "La verdadera sangria casera con un tocco piemontese",
+            "name": "Sangria casera",
             "price": "€5,00"
           },
           {
