@@ -47,13 +47,13 @@
             "price": "€8,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Carpacho Ahumado",
             "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
             "price": "€ 8.00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Mahialinho pulled pork",
             "description": "Stinco di maialino tenerissimo (150/200g) disossato e sfilettato, servito con mojo picòn (salsa tipica delle isole Canarie a base di peperone rosso e aglio.\nMeraviglioso.",
             "price": "€8,00"
