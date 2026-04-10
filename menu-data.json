@@ -426,7 +426,7 @@
             "price": "€6,00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 6.00"
