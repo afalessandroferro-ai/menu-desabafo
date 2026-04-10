@@ -165,7 +165,7 @@
             "name": "Argintario (Italia)",
             "description": "Ginepro, melissa, arancia amara, gelsomino, un tocco di acqua vite d'uva, lentisco e finocchietto marittimo",
             "price": "€ 12.00",
-            "available": true
+            "available": false
           },
           {
             "name": "Bayab Orange (Sudafrica)",
@@ -213,7 +213,7 @@
             "available": true,
             "name": "Clandestino (Italia)",
             "description": "ginepro in primo piano, seguito dalla piccantezza del coriandolo, il tutto bilanciato dall’angelica che lega ed esalta le note balsamiche, citriche e floreali di cardamomo e calamo aromatico. La sua complessità aromatica viene esaltata da freschi e pungenti sentori agrumati",
-            "price": "€13,00"
+            "price": "€12,00"
           },
           {
             "available": true,
@@ -270,7 +270,7 @@
             "description": "Prodotto nel cuore della Normandia, Le Gin De Christian Drouin Pira è un gin creato a partire da una varietà di pera normanna di tipo Domfront, a cui vengono aggiunte diverse botaniche, tra cui ginepro, vaniglia, limone, pepe nero e radice di iris."
           },
           {
-            "available": false,
+            "available": true,
             "name": "Mataroa (Grecia)",
             "description": "\nMataroa Mediterranean è un gin greco che nasce dall’unione di ben 12 botaniche selezionate tra i paesi bagnati dal Mar Mediterraneo: ginepro, radice di giaggiolo, lavanda, radice di angelica, scorza d’arancia, scorza di mandarino, scorza di limone, semi di coriandolo, foglie di alloro, fiori di camomilla, radice di liquirizia e mastiha.",
             "price": "€12,00"
@@ -282,7 +282,7 @@
             "price": "€ 12.00"
           },
           {
-            "available": true,
+            "available": false,
             "description": "Tra le botaniche sono presenti ginepro, coriandolo, limone, arancia, angelica, cassia, liquirizia, cannella, giaggiolo e noce moscata.",
             "name": "Old English gin (Inghilterra)",
             "price": "€12,00"
@@ -327,7 +327,7 @@
             "available": true,
             "description": "Il Japanese Yuzu Gin a firma Ukiyo nasce da una base di Shōchū, ridistillato con ginepro, yuzu e altre botaniche locali. Lo yuzu, in questo caso, dona al Gin rinfrescanti note agrumate e toni erbacei\n",
             "name": "Ukiyo yuzu (Giappone)",
-            "price": "€ 13.00"
+            "price": "€ 12.00"
           },
           {
             "available": true,
@@ -376,6 +376,12 @@
             "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
             "name": "Ungava (Canada)",
             "price": "€ 12.00"
+          },
+          {
+            "available": true,
+            "description": "Prodotto in un piccolo distillatore di rame degli anni Settanta, Dr. Mason Gin si ispira al mondo farmaceutico.\nLe botaniche di ginepro, coriandolo, scorza d’arancia, ireos, fava di Tonka e salicornia, aprono l’olfatto ad aromi mediterranei.",
+            "name": "Dr Mason",
+            "price": "€ 12.00"
           }
         ]
       },
@@ -396,12 +402,6 @@
             "available": true
           },
           {
-            "available": true,
-            "name": "Rosso-Nebbiolo-Dante Rivetti",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Nebbiolo\nAnnata: 2022\nZona Di Produzione: Neive (Langhe)",
-            "price": "€ 7.00"
-          },
-          {
             "name": "Rosso-Cannonau-Su'Anima-Su'entu(Sardegna)",
             "description": "Gradazione Alcolica: 14%\nVitigno:Cannonau\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
             "price": "€ 6.00",
@@ -414,17 +414,6 @@
             "description": "Gradazione Alcolica: 13%\nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione:  Colli senesi"
           },
           {
-            "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
-            "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
-            "price": "€ 7.00",
-            "available": true
-          },
-          {
-            "available": false,
-            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
-            "price": "€6,00"
-          },
-          {
             "available": true,
             "description": "Gradazione Alcolica: 13,5%\nVitigno: Falanghina\nAnnata: 2024\nZona Di Produzione: Sannio",
             "price": "€5,00",
@@ -432,15 +421,15 @@
           },
           {
             "available": true,
-            "description": "Gradazione Alcolica: 13%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
-            "price": "€5,00",
-            "name": "Bianco-Roero Arneis-Tenuta Laramè-Cantine Povero (Piemonte)"
+            "name": "Bianco-Roero Arneis-Daivej-Deltetto-(Piemonte)",
+            "description": "Gradazione Alcolica: 13,5%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
+            "price": "€6,00"
           },
           {
-            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+            "available": false,
+            "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00",
-            "available": true
+            "price": "€ 6.00"
           },
           {
             "name": "Bianco - Gewurtraminer-St pauls",
@@ -450,9 +439,9 @@
           },
           {
             "available": true,
-            "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00"
+            "name": "Orange - Louis Andrieu BIO",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Sauvignon blanc\nAnnata: 2022\nZona Di Produzione: Occitania",
+            "price": "€8,00"
           },
           {
             "available": true,
@@ -461,10 +450,33 @@
             "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
           },
           {
-            "available": false,
+            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
+            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
+            "price": "€ 7,00",
+            "available": true
+          },
+          {
+            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
+            "price": "€ 6.00",
+            "available": false
+          },
+          {
+            "available": true,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
             "price": "€ 8.00"
+          },
+          {
+            "available": false,
+            "description": "Gradazione Alcolica: 13%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
+            "price": "€5,00",
+            "name": "Bianco-Roero Arneis-Tenuta Laramè-Cantine Povero (Piemonte)"
+          },
+          {
+            "available": false,
+            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
+            "price": "€6,00"
           },
           {
             "name": "Bianco - Vermentino- Su'imari- Su'Entu (Sardegna)",
@@ -473,10 +485,10 @@
             "available": false
           },
           {
-            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
-            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
-            "price": "€ 7,00",
-            "available": true
+            "name": "Rosso - Pinot Nero St.Pauls (Alto Adige)",
+            "description": "Gradazione alcolica: 13,5%\nVitigno: Pinot nero\nAnnata; 2024\nZona Produzione: Alto Adige",
+            "price": "€ 7.00",
+            "available": false
           },
           {
             "name": "Rosso - Ribera del Duero Pradorey",
@@ -491,9 +503,9 @@
           },
           {
             "available": false,
-            "name": "Bianco-Roero Arneis-Daivej-Deltetto-(Piemonte)",
-            "description": "Gradazione Alcolica: 13,5%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
-            "price": "€5,00"
+            "name": "Rosso-Nebbiolo-Dante Rivetti",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Nebbiolo\nAnnata: 2022\nZona Di Produzione: Neive (Langhe)",
+            "price": "€ 7.00"
           }
         ]
       },
@@ -562,7 +574,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "description": "Gradazione Alcolica: 13%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
             "price": "€20,00",
             "name": "Bianco-Roero Arneis-Tenuta Laramè-Cantine Povero (Piemonte)"
@@ -895,7 +907,7 @@
           {
             "available": true,
             "name": "Bibite ",
-            "description": "-Coca Cola \n-Coca cola 0\n-Tonica Thomas Henry\n-Ginger beer Thomas Henry\n-Lemon Soda\n-Chinotto\n",
+            "description": "-Coca Cola \n-Coca cola 0\n-Tonica Thomas Henry\n-Ginger beer Thomas Henry\n-Lemon Soda\n-Chinotto\n-Succo Ananas\n-Succo Pesca\n",
             "price": "€ 5.00"
           }
         ],
