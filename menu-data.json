@@ -145,7 +145,7 @@
           },
           {
             "available": true,
-            "name": "Agua Maldita",
+            "name": "Agua Maldita (disponibile analcolico)",
             "price": "€ 12,00",
             "description": "Tequila blanca, Tequila piccante, sambuca, succo di finocchio, lychee, limone"
           },
@@ -153,7 +153,7 @@
             "available": true,
             "name": "Donkey shot",
             "price": "€ 12,00",
-            "description": "Gin"
+            "description": "Bourbon, vin santo, succo mandarino, limone, sciroppo rosmarino e pepe"
           }
         ]
       },
