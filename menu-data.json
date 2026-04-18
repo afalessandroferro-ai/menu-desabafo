@@ -771,7 +771,7 @@
             "price": "€6.00"
           },
           {
-            "available": false,
+            "available": true,
             "price": "€6,00",
             "description": " intenso, di erbe aromatiche; molto complesso con spiccate note di vaniglia, arancia amara, genziana, china e rabarbaro",
             "name": "Vermouth rosso di Torino-Martelletti (Torino)"
@@ -795,16 +795,16 @@
             "description": "Le note vinose della Malvasia e del Terrano sono ben accompagnate da quelle più calde della santoreggia, del rabarbaro e della corteccia di china, equilibrate poi da quelle più fresche del chinotto e della salvia. Nel finale rimangono note calde di fiori di sambuco e note speziate di santoreggia."
           },
           {
-            "available": false,
+            "available": true,
             "description": "incarna la tradizione piemontese e unico nel suo genere nasce da una base di Barbera d’Asti DOCG con sentori di assenzio, sambuco, arancia, salvia e altre spezie.",
             "name": "Vermouth Rosso del Presidente (Torino)",
             "price": "€6,00"
           },
           {
-            "available": false,
+            "available": true,
             "price": "€ 6.00",
-            "name": "Vermutto (Sardegna)",
-            "description": "Il \"Vermuto\" Mastio Hofmann è un particolare vermouth sardo, prodotto con base di vino Cannonau, caratterizzato da note di prugnolo, erbe aromatiche, chiodi di garofano e rosmarino. "
+            "name": "Canone occidentale vermouth di torino",
+            "description": ""
           },
           {
             "available": true,
