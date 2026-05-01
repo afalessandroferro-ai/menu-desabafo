@@ -67,7 +67,7 @@
         "items": [
           {
             "name": "Spritz",
-            "description": "Select-Campari-Aperol",
+            "description": "Select-Campari-Aperol-Hugo",
             "price": "€ 8.00",
             "available": true
           },
@@ -154,6 +154,12 @@
             "name": "Donkey shot",
             "price": "€ 12,00",
             "description": "Bourbon, vin santo, succo mandarino, limone, sciroppo rosmarino e pepe"
+          },
+          {
+            "available": true,
+            "name": "Black Mamba",
+            "description": "Tequila piccante, Fernet Branca, Liquore liquirizia, Petrus, bitter. (amaro erbaceo Per veri duri/e)",
+            "price": "€ 12,00"
           }
         ]
       },
@@ -164,7 +170,7 @@
           {
             "available": true,
             "name": "Beefeater 0,0",
-            "price": "€8,00",
+            "price": "€10,00",
             "description": "Gin Analcolico"
           },
           {
@@ -237,7 +243,13 @@
             "name": "Duroc Smoked Dry (Italia)",
             "description": "Gin affumicato artigianale italiano",
             "price": "€ 12.00",
-            "available": true
+            "available": false
+          },
+          {
+            "available": true,
+            "description": "Prodotto in un piccolo distillatore di rame degli anni Settanta, Dr. Mason Gin si ispira al mondo farmaceutico.\nLe botaniche di ginepro, coriandolo, scorza d’arancia, ireos, fava di Tonka e salicornia, aprono l’olfatto ad aromi mediterranei.",
+            "name": "Dr Mason (Italia)",
+            "price": "€ 12.00"
           },
           {
             "name": "East Hyogo Dry (Giappone)",
@@ -262,6 +274,12 @@
             "price": "€12,00",
             "name": "Ginkognito (Germania)",
             "description": "Limoni maturati al sole, more selvatiche, prugnole e melissa dal profumo fresco. Il mix di freschezza agrumata, frutta delicata e dolcezza sottile gli conferisce il suo carattere distintivo e crea un gusto che rimane impresso nella memoria."
+          },
+          {
+            "available": true,
+            "price": "€ 12.00",
+            "name": "Haymans Old Tom (Inghilterra)",
+            "description": "Il gin Hayman’s Old Tom è prodotto in Inghilterra da una distilleria familiare che segue un’antica ricetta segreta e tradizionale di famiglia sin dal XIX secolo.\n\nÈ un distillato di grano al 100%, ottenuto seguendo il classico metodo del London Dry con infine un’aggiunta di una grossa quantità di zucchero per renderlo più gustoso"
           },
           {
             "available": true,
@@ -313,6 +331,12 @@
           },
           {
             "available": true,
+            "description": "Sakurao Classic viene realizzato con 9 botaniche provenienti da Hiroshima (arancia navel, arancio dolce estivo, yuzu, dai dai (arancio amaro), hinoki (cipresso giapponese), tè verde, shiso, zenzero e limone) e altri 5 tipi come bacche di ginepro e semi di coriandolo.",
+            "name": "Sakurao (Giappone)",
+            "price": "€ 12.00"
+          },
+          {
+            "available": true,
             "description": "Viene realizzato a partire da botaniche italiane come ginepro, basilico, rosmarino e ulivo",
             "name": "Seri Pervas dry (Italia)",
             "price": "€ 12.00"
@@ -324,7 +348,7 @@
             "price": "€12,00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Tenjaku (Giappone)",
             "description": "Ginepro, coriandolo, scorza di limone e arancia, radice di angelica, corteccia di cassia, liquirizia, radice di giaggiolo, noce moscata, cannella, yuzu (agrume giapponese), sansho (pepe giapponese), tè verde ed estratto di pesca.",
             "price": "€12,00"
@@ -388,12 +412,6 @@
             "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
             "name": "Ungava (Canada)",
             "price": "€ 12.00"
-          },
-          {
-            "available": true,
-            "description": "Prodotto in un piccolo distillatore di rame degli anni Settanta, Dr. Mason Gin si ispira al mondo farmaceutico.\nLe botaniche di ginepro, coriandolo, scorza d’arancia, ireos, fava di Tonka e salicornia, aprono l’olfatto ad aromi mediterranei.",
-            "name": "Dr Mason",
-            "price": "€ 12.00"
           }
         ]
       },
@@ -438,10 +456,10 @@
             "price": "€6,00"
           },
           {
-            "available": true,
-            "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
+            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00"
+            "price": "€ 6.00",
+            "available": true
           },
           {
             "name": "Bianco - Gewurtraminer-St pauls",
@@ -462,18 +480,6 @@
             "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
           },
           {
-            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
-            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
-            "price": "€ 7,00",
-            "available": false
-          },
-          {
-            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00",
-            "available": false
-          },
-          {
             "available": true,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
@@ -481,9 +487,15 @@
           },
           {
             "available": false,
-            "description": "Gradazione Alcolica: 13%\nVitigno: Arneis\nAnnata: 2024\nZona Di Produzione: Roero",
-            "price": "€5,00",
-            "name": "Bianco-Roero Arneis-Tenuta Laramè-Cantine Povero (Piemonte)"
+            "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
+            "price": "€ 6.00"
+          },
+          {
+            "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
+            "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
+            "price": "€ 7,00",
+            "available": false
           },
           {
             "available": false,
@@ -723,16 +735,15 @@
         "icon": "🍸",
         "items": [
           {
-            "name": "Pastis Richard",
-            "description": "",
+            "name": "Amari",
+            "description": "-San Simone\n-Amaro di Torino\n-Amaro Di langa\n-Amaroc\n-Cynar\n-Petrus\n-Fernet Branca\n-Amaro Del Capo\n-Lucano\n-Averna\n-Sambuca\n-Grappa Bianca (Bonollo)\n-Genepy\n-Limoncello\n-Mirto\n-Liquirizia\n-Baileys\n-Pastis",
             "price": "€ 5.00",
             "available": true
           },
           {
-            "name": "Pastis Pernod",
-            "description": "",
-            "price": "€ 5.00",
-            "available": true
+            "available": true,
+            "price": "€5.00",
+            "name": "Porto Rosso Tawny-Offley"
           },
           {
             "available": true,
@@ -753,12 +764,6 @@
             "available": true
           },
           {
-            "name": "Vermouth Rosso - Dolin (Francia)",
-            "description": "Prodotto a Chambéry con la ricetta del 1821, 54 botaniche alpine raccolte a mano",
-            "price": "€ 6.00",
-            "available": false
-          },
-          {
             "name": "Vermouth Rosso - Lillet Rouge (Francia)",
             "description": "Base di vino rosso di Bordeaux con infusione di erbe, spezie e radici",
             "price": "€ 6.00",
@@ -777,18 +782,6 @@
             "name": "Vermouth rosso di Torino-Martelletti (Torino)"
           },
           {
-            "available": false,
-            "price": "€6,00",
-            "description": "Al naso emergono note agrumate e speziate di cannella, chiodi di garofano, noce moscata e un accenno di vaniglia che arricchiscono l’esperienza olfattiva.",
-            "name": "Vermouth rosso di Torino-Da marco-Coloniale (Torino)"
-          },
-          {
-            "available": true,
-            "price": "€6,00",
-            "name": "Vermouth rosso Di Torino-Da Marco-Belle epoque (Torino)",
-            "description": "Il suo colore rubino intenso seduce la vista. Anticipa un gusto complesso e avvolgente. Offre note aromatiche di erbe e spezie. La dolcezza del vino bilancia il tutto. Si percepiscono sentori di agrumi freschie vaniglia."
-          },
-          {
             "available": true,
             "price": "€6,00",
             "name": "Vermut Rosso-Seri pervas (Friuli)",
@@ -803,19 +796,8 @@
           {
             "available": true,
             "price": "€ 6.00",
-            "name": "Canone occidentale vermouth di torino",
-            "description": ""
-          },
-          {
-            "available": true,
-            "price": "€5.00",
-            "name": "Porto Rosso Tawny-Offley"
-          },
-          {
-            "name": "Amari",
-            "description": "-San Simone\n-Amaro di Torino\n-Amaro Di langa\n-Amaroc\n-Cynar\n-Petrus\n-Fernet Branca\n-Amaro Del Capo\n-Lucano\n-Averna\n-Sambuca\n-Grappa Bianca (Bonollo)\n-Genepy\n-Limoncello\n-Mirto\n-Liquirizia\n-Baileys\n",
-            "price": "€ 5.00",
-            "available": true
+            "name": "Vermouth di Torino Canone occidentale",
+            "description": "Il Vermouth Rosso Canone Occidentale è un Vermouth di Torino Superiore artigianale, prodotto con 100% vino piemontese e botaniche locali, che si distingue per l'uso raro del Langhe DOC Dolcetto come base. offre note di erbe alpine, nocciola e spezie, con tre tipi di artemisia"
           },
           {
             "available": false,
@@ -828,6 +810,18 @@
             "description": "Tabacco e fichi secchi con passito di negroamaro, spezie calde e foglie di coca",
             "price": "€ 8.00",
             "available": false
+          },
+          {
+            "available": true,
+            "price": "€ 6.00",
+            "description": "Base di Erbaluce, Floreale e dolce,  camomilla, rosa moscata, ibisco, vaniglia, cedro, arancia amara e limone.",
+            "name": "Vermouth Rosso di Torino Revel Chion"
+          },
+          {
+            "available": true,
+            "price": "€ 6.00",
+            "description": "Vermut de Capçanes è un vermut dal colore mogano, di corpo generoso e ampio. Al naso rivela una complessità di aromi in cui spiccano il fiore di salice e la salvia, accompagnati da note tostate, erbe di montagna, caramello e frutta secca. Il suo piacevole passaggio in bocca è il risultato di un eccellente equilibrio tra amarezza e dolcezza. ",
+            "name": "Vermouth Rosso de Capcanes (Spagna)"
           }
         ]
       },
@@ -905,6 +899,12 @@
             "name": "Rum Belizean Blue (Belize)",
             "price": "€ 12.00",
             "description": "\n"
+          },
+          {
+            "available": true,
+            "name": "Shinobu",
+            "description": "Blended",
+            "price": "€ 12.00"
           }
         ]
       },
