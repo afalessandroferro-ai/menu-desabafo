@@ -11,7 +11,7 @@
             "price": "€10.00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Taglierozzo Desabafo",
             "description": "Tagliere super potenziato con gran misto di affettati e formaggi, focaccina bianca calda e cose a caso secondo l'estro dello chef. Per veri golosoni goderecci (consigliato 2/3 pax) ",
             "price": "€ 25.00"
