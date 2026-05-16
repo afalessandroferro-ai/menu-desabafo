@@ -11,7 +11,7 @@
             "price": "€10.00"
           },
           {
-            "available": true,
+            "available": false,
             "name": "Taglierozzo Desabafo",
             "description": "Tagliere super potenziato con gran misto di affettati e formaggi, focaccina bianca calda e cose a caso secondo l'estro dello chef. Per veri golosoni goderecci (consigliato 2/3 pax) ",
             "price": "€ 25.00"
@@ -487,6 +487,12 @@
           },
           {
             "available": true,
+            "name": "Bolla-Prosecco-Prà della luna",
+            "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2025\nZona Di Produzione: Veneto",
+            "price": "€ 5.00"
+          },
+          {
+            "available": false,
             "name": "Bolla-Prosecco-Canella",
             "price": "€ 5.00",
             "description": "Gradazione Alcolica: 11%\nVitigno: Glera\nAnnata: 2024\nZona Di Produzione: Treviso"
