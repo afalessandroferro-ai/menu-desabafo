@@ -174,10 +174,16 @@
             "description": "Gin Analcolico"
           },
           {
+            "available": true,
+            "price": "€ 12.00",
+            "name": "Amarula (Sudafrica)",
+            "description": "Amarula è un gin sudafricano che viene ottenuto dall’esotico frutto dell’albero di Marula, coltivato e raccolto a mano nell’Africa subsahariana. Solo la polpa bianca del frutto viene fermentata e distillata per preservare al meglio i suoi freschi e succulenti aromi nello spirito di Marula.\nQuesto gin complesso e delicato viene poi arricchito con altre botaniche, tra cui bacche di ginepro, fiori d’arancio, scorza d’arancio e grani del paradiso."
+          },
+          {
             "name": "Apenera (Italia)",
             "description": "Ginepro dell'Etna, scorza d'arancia di Ribera IGP, limone di Siracusa, miele di ape nera, basilico, timo capocchiuto e mandorle della Val di Noto",
             "price": "€ 12.00",
-            "available": false
+            "available": true
           },
           {
             "name": "Argintario (Italia)",
@@ -243,12 +249,18 @@
             "name": "Duroc Smoked Dry (Italia)",
             "description": "Gin affumicato artigianale italiano",
             "price": "€ 12.00",
-            "available": false
+            "available": true
           },
           {
             "available": true,
             "description": "Prodotto in un piccolo distillatore di rame degli anni Settanta, Dr. Mason Gin si ispira al mondo farmaceutico.\nLe botaniche di ginepro, coriandolo, scorza d’arancia, ireos, fava di Tonka e salicornia, aprono l’olfatto ad aromi mediterranei.",
             "name": "Dr Mason (Italia)",
+            "price": "€ 12.00"
+          },
+          {
+            "available": true,
+            "name": "Duck Dive (Italia)",
+            "description": "Duck Dive è un gin ispirato dall’Australia e dall’amore per il surf che viene fatto con la tecnica “London Dry”, caratterizzato da una botanica insolita: il Lemon Myrtle, un arbusto che cresce spontaneamente nella regione australiana del Queensland.",
             "price": "€ 12.00"
           },
           {
@@ -280,6 +292,12 @@
             "price": "€ 12.00",
             "name": "Haymans Old Tom (Inghilterra)",
             "description": "Il gin Hayman’s Old Tom è prodotto in Inghilterra da una distilleria familiare che segue un’antica ricetta segreta e tradizionale di famiglia sin dal XIX secolo.\n\nÈ un distillato di grano al 100%, ottenuto seguendo il classico metodo del London Dry con infine un’aggiunta di una grossa quantità di zucchero per renderlo più gustoso"
+          },
+          {
+            "available": true,
+            "description": " Realizzato con fiori di elicriso, arricchisce il tuo bicchiere con note speziate, leggermente agrumate, di rosmarino e liquirizia. É come stare immersi nella macchia mediterranea con i suoi profumi pungenti e selvatici.",
+            "name": "Helios (Italia)",
+            "price": "€ 12.00"
           },
           {
             "available": true,
@@ -411,12 +429,6 @@
             "available": false,
             "description": "Dalle rose selvatiche alle misteriose bacche di camemoro, fino al tè del Labrador, le botaniche selezionate riflettono la purezza del Canada artico\n",
             "name": "Ungava (Canada)",
-            "price": "€ 12.00"
-          },
-          {
-            "available": true,
-            "description": " Realizzato con fiori di elicriso, arricchisce il tuo bicchiere con note speziate, leggermente agrumate, di rosmarino e liquirizia. É come stare immersi nella macchia mediterranea con i suoi profumi pungenti e selvatici.",
-            "name": "Helios (Italia)",
             "price": "€ 12.00"
           }
         ]
