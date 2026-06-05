@@ -513,7 +513,7 @@
             "name": "Bolla- Metodo Classico- Ivan- Dante Rivetti (Piemonte)",
             "description": "Gradazione Alcolica: 12,5%\nMetodo Classico\nVitigno: Pinot Nero\nBrut\nAffinamento: 36/48\nZona Di Produzione: Neive",
             "price": "€ 7,00",
-            "available": true
+            "available": false
           },
           {
             "available": false,
@@ -528,7 +528,7 @@
             "available": true
           },
           {
-            "available": false,
+            "available": true,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
             "price": "€ 8.00"
