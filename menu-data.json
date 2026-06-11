@@ -29,13 +29,13 @@
             "price": "€ 8.00/ 12.00"
           },
           {
-            "available": false,
+            "available": true,
             "name": "Anciove al verd",
             "price": "€ 8.00",
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
           },
           {
-            "available": true,
+            "available": false,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
