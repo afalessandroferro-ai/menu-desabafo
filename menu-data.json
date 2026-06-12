@@ -35,7 +35,7 @@
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
           },
           {
-            "available": false,
+            "available": true,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
@@ -468,7 +468,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 6.00"
@@ -492,7 +492,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bianco - Sauvignon-St pauls",
             "description": "Gradazione Alcolica: 13%\nVitigno: Sauvignon\nAnnata: 2025\nZona Di Produzione:Alto Adige",
             "price": "€ 7.00"
@@ -528,7 +528,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
             "price": "€ 8.00"
@@ -540,12 +540,6 @@
             "description": "Gradazione Alcolica: 13%\nVitigno: Sangiovese\nAnnata: 2024\nZona Di Produzione:  Colli senesi"
           },
           {
-            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
-            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
-            "price": "€ 6.00",
-            "available": false
-          },
-          {
             "available": false,
             "name": "Bianco- Chardonnay- Endrizzi (trentino)",
             "price": "€6,00"
@@ -554,6 +548,18 @@
             "available": false,
             "name": "Bolla-Moscato di Castigliole di Asti-Antica Cantina di Calosso",
             "price": "€ 5.00"
+          },
+          {
+            "name": "Bianco - Sable Blanc Mas du Petit Pin (Camargue)",
+            "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
+            "price": "€ 6.00",
+            "available": false
+          },
+          {
+            "available": true,
+            "name": "Bolla-Cremant de Limoux-Les 4 vents (Francia) ",
+            "description": "Gradazione alcolica: 12%\nMetodo Classico\nExtra brut\nVitigno: Chenin, Chardonnay, Pinot Noir\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
+            "price": "€8.00"
           },
           {
             "available": false,
@@ -569,9 +575,9 @@
         "items": [
           {
             "available": true,
-            "description": "Gradazione Alcolica: 13%\nVitigno: Barbera\nAnnata: 2023\nZona Di Produzione: Neive",
-            "name": "Rosso-Barbera D'Alba- Mara- Dante Rivetti- (Piemonte)",
-            "price": "€20,00"
+            "name": "Rosso-Nebbiolo-Dante Rivetti- (Langhe)",
+            "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: 2022\nZona Di Produzione: Neive (Langhe)",
+            "price": "€30,00"
           },
           {
             "available": false,
@@ -581,9 +587,9 @@
           },
           {
             "available": true,
-            "name": "Rosso-Nebbiolo-Dante Rivetti- (Langhe)",
-            "description": "Gradazione Alcolica: 14%\nVitigno: Nebbiolo\nAnnata: 2022\nZona Di Produzione: Neive (Langhe)",
-            "price": "€30,00"
+            "description": "Gradazione Alcolica: 13%\nVitigno: Barbera\nAnnata: 2023\nZona Di Produzione: Neive",
+            "name": "Rosso-Barbera D'Alba- Mara- Dante Rivetti- (Piemonte)",
+            "price": "€20,00"
           },
           {
             "available": true,
@@ -646,16 +652,16 @@
             "name": "Bianco-Falanghina-Cantina di Solopaca (Campania)"
           },
           {
-            "available": true,
-            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
-            "description": "Gradazione Alcolica: 12,5%\nVitigno: Chardonnay\nAnnata: 2024\nZona Di Produzione: Trentino",
-            "price": "€23.00"
-          },
-          {
             "name": "Bianco - Gewürztraminer- St Pauls (Alto Adige)",
             "description": "Gradazione Alcolica: 14%\nVitigno: Traminer\nAnnata: 2024\nZona Di Produzione: Alto Adige",
             "price": "€ 26.00",
             "available": true
+          },
+          {
+            "available": true,
+            "name": "Bianco- Chardonnay- Endrizzi (trentino)",
+            "description": "Gradazione Alcolica: 12,5%\nVitigno: Chardonnay\nAnnata: 2024\nZona Di Produzione: Trentino",
+            "price": "€23.00"
           },
           {
             "name": "Bianco - Sable Blanc- Mas du Petit Pin (Francia) BIO",
@@ -670,12 +676,6 @@
             "available": false
           },
           {
-            "available": false,
-            "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
-            "name": "Bianco- Vermentino- Su'Imari- Su'Entu (Sardegna)",
-            "price": "€25.00"
-          },
-          {
             "available": true,
             "name": "Rosè - Sable Gris- Mas du Petit Pin (Francia) BIO",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2024\nZona Di Produzione: Camargue",
@@ -686,6 +686,12 @@
             "description": "Gradazione Alcolica: 12,5%\nVitigno: Merlot, Sauvignon; Pinot Noir\nAnnata: 2024\nZona Di Produzione: Occitania",
             "price": "€ 26.00",
             "available": false
+          },
+          {
+            "available": false,
+            "description": "Gradazione Alcolica: 13%\nVitigno: Vermentino\nAnnata: 2024\nZona Di Produzione: Marmilla (Oristano)",
+            "name": "Bianco- Vermentino- Su'Imari- Su'Entu (Sardegna)",
+            "price": "€25.00"
           },
           {
             "name": "Orange - Louis Andrieu BIO",
