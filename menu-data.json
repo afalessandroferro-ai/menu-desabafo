@@ -35,7 +35,7 @@
             "description": "Acciughine dell'adriatico nel classico \"bagnet verd\" piemuntèis, boja fauss, accompagnate con crostini integrali.\nCome le ciliegie: una tira l'altra! "
           },
           {
-            "available": false,
+            "available": true,
             "name": "Vitel tonnè",
             "description": "Girello di bovino arrosto con salsa tonnata (preparata da noi), servito su lettino di sarset, impreziosito da fiori di cappero bruttissimi ma deliziosi. Accompagnato da rubatà di mais.",
             "price": "€ 8.00"
@@ -468,7 +468,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Rosè-Sable Gris Mas du Petit Pin (Camargue)",
             "description": "Gradazione Alcolica: 13%\nVitigno: Petit Verdot, Carignan, Grenache blanc\nAnnata: 2023\nZona Di Produzione: Camargue",
             "price": "€ 6.00"
@@ -492,7 +492,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bianco - Sauvignon-St pauls",
             "description": "Gradazione Alcolica: 13%\nVitigno: Sauvignon\nAnnata: 2025\nZona Di Produzione:Alto Adige",
             "price": "€ 7.00"
@@ -528,7 +528,7 @@
             "available": true
           },
           {
-            "available": true,
+            "available": false,
             "name": "Bolla-Blanquette de Limoux-Les 4 vents (Francia) BIO",
             "description": "Gradazione alcolica: 12%\nMetodo Classico\nBrut Nature\nVitigno: Mauzac\nAffinamento: 30 mesi\nZona Di produzione: Occitania",
             "price": "€ 8.00"
@@ -560,6 +560,12 @@
             "name": "Rosso-Nebbiolo-Dante Rivetti",
             "description": "Gradazione Alcolica: 13%\nVitigno: Nebbiolo\nAnnata: 2022\nZona Di Produzione: Neive (Langhe)",
             "price": "€ 7.00"
+          },
+          {
+            "available": true,
+            "name": "Bolla-Cremant de Limoux-Les 4 vents (Francia) BIO",
+            "price": "€8.00",
+            "description": "Gradazione alcolica: 12%\nMetodo Classico\nExtra brut\nVitigno: Chenin, Chardonnay, Pinot Noir\nAffinamento: 30 mesi\nZona Di produzione: Occitania"
           }
         ]
       },
