@@ -5,7 +5,7 @@
         "name": "Da Stuzzicare",
         "items": [
           {
-            "available": false,
+            "available": true,
             "name": "Tumìn fòl",
             "description": "Tomino piemontese scaldato \"incamiciato\", avvolto in sottili fette di speck affumicato con legno di faggio, su lettino di rucola. Guarnito con un filo di miele di castagno e noci, accompagnato da crostone integrale caldo.\nTroppo??",
             "price": "€8,00"
@@ -14,7 +14,7 @@
             "available": true,
             "name": "Taglierino",
             "description": "Selezione di affettati (cotto gran brace affumicato alle erbe, pancetta coppata filettata, Mortadella di cinghiale, salame Finocchiona IGP e formaggi da acquolina in bocca, accompagnati da focaccina bianca calda e taralli (consigliato 1 pax)",
-            "price": "€10.00"
+            "price": "€12.00"
           },
           {
             "available": false,
@@ -49,7 +49,7 @@
           {
             "available": true,
             "name": "Carpacho Ahumado",
-            "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e melograno.Da paura.",
+            "description": "Filetto di maiale lievemente affumicato, in fettine sottili che si sciolgono in bocca, pinzimonio di olio alle erbe aromatiche, pepe rosa e arancia.Da paura.",
             "price": "€ 8.00"
           },
           {
